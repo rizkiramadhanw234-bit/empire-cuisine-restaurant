@@ -72,7 +72,7 @@ export default function MenuPage() {
               Savour authentic Chinese cuisine crafted with <br /> premium
               ingredients and timeless culinary tradition.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-xl font-light leading-7 md:leading-9 md:mt-4">
+            <h3 className="font-chinese text-white text-sm md:text-2xl font-light leading-7 md:leading-9 md:mt-4">
               精选优质食材 <span className="text-(--bg3)">|</span> 匠心烹饪{" "}
               <span className="text-(--bg3)">|</span> 正宗中式美味
             </h3>

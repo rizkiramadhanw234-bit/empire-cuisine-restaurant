@@ -86,7 +86,7 @@ export default function PromotionsPage() {
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
               Exclusive deals and special packages <br /> for every occasion.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-xl font-light leading-7 md:leading-9 md:mt-4">
+            <h3 className="font-chinese text-white text-sm md:text-3xl font-light leading-7 md:leading-9 md:mt-4">
               优惠特价 <span className="text-(--bg3)">|</span> 精选配套
             </h3>
           </div>

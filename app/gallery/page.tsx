@@ -165,7 +165,7 @@ export default function GalleryPage() {
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
               A visual journey through exceptional <br /> dining experiences.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-xl font-light leading-7 md:leading-9 md:mt-4">
+            <h3 className="font-chinese text-white text-sm md:text-3xl font-light leading-7 md:leading-9 md:mt-4">
               御膳楼 <span className="text-(--bg3)">·</span> 光影留存
             </h3>
           </div>

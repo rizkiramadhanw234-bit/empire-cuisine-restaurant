@@ -77,7 +77,7 @@ Remarks: ${form.remarks}`;
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
               Reserve your dining experience <br /> at 御膳楼 Empire Cuisine.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-xl font-light leading-7 md:leading-9 md:mt-4">
+            <h3 className="font-chinese text-white text-sm md:text-3xl font-light leading-7 md:leading-9 md:mt-4">
               预约订位 <span className="text-(--bg3)">|</span> 尊享体验
             </h3>
           </div>

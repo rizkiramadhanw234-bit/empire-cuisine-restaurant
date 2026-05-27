@@ -87,7 +87,7 @@ export default function VipRoomsPage() {
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
               Private Spaces. Exclusive Experiences.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-xl font-light leading-7 md:leading-9 md:mt-4">
+            <h3 className="font-chinese text-white text-sm md:text-3xl font-light leading-7 md:leading-9 md:mt-4">
               私密 <span className="text-(--bg3)">·</span> 尊享{" "}
               <span className="text-(--bg3)">·</span> 典雅
             </h3>
