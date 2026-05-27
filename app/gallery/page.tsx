@@ -8,6 +8,16 @@ import Image from "next/image";
 import bgImage from "../../public/assets/background.png";
 import ListDecoration from "../../public/assets/listDecoration.png";
 
+type GallerySize = "small" | "medium" | "large";
+
+type GalleryItem = {
+  id: number;
+  category: string;
+  label: string;
+  chinese: string;
+  size: GallerySize;
+};
+
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState("All");
 
@@ -24,7 +34,7 @@ export default function GalleryPage() {
 
   // Gallery items – replace `placeholder` with real image imports once assets are ready
   // Each item: { id, category, label, chinese }
-  const galleryItems = [
+  const galleryItems: GalleryItem[] = [
     {
       id: 1,
       category: "Restaurant Interior",

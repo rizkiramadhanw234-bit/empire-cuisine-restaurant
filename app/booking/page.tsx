@@ -23,7 +23,7 @@ export default function BookingPage() {
     remarks: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: string; value: string } }) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 

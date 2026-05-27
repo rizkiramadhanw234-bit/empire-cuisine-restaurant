@@ -150,7 +150,7 @@ export default function PromotionsPage() {
       <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
         <div className="flex flex-col items-center justify-center mb-6">
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
-            Parents' Day Packages
+            Parents&apos; Day Packages
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
           <p className="font-chinese text-(--bg3) text-lg mt-1">敬亲感恩宴</p>
