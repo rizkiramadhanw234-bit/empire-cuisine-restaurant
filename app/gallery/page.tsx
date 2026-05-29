@@ -3,156 +3,40 @@ import { useState } from "react";
 import Image from "next/image";
 import bgImage from "../../public/assets/background.jpeg";
 import ListDecoration from "../../public/assets/listDecoration.png";
+import { GalleryImage } from "@/data/galleryImage";
+import { GalleryVideo } from "@/data/galleryVideo";
 
-type GallerySize = "small" | "medium" | "large";
-
-type GalleryItem = {
-  id: number;
-  category: string;
-  label: string;
-  chinese: string;
-  size: GallerySize;
-};
+const ITEMS_PER_PAGE = 12;
 
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const filterTabs = [
-    "All",
-    "Restaurant Interior",
-    "Dim Sum",
-    "Seafood",
-    "Banquet",
-    "Wedding",
-    "VIP Rooms",
-    "Festive Events",
-  ];
-
-  const galleryItems: GalleryItem[] = [
-    {
-      id: 1,
-      category: "Restaurant Interior",
-      label: "Main Dining Hall",
-      chinese: "大厅",
-      size: "large",
-    },
-    {
-      id: 2,
-      category: "Dim Sum",
-      label: "御膳烧卖",
-      chinese: "烧卖",
-      size: "small",
-    },
-    {
-      id: 3,
-      category: "Seafood",
-      label: "Wok-Fried Lobster",
-      chinese: "炒龙虾",
-      size: "small",
-    },
-    {
-      id: 4,
-      category: "Banquet",
-      label: "Banquet Hall Setup",
-      chinese: "宴会厅",
-      size: "medium",
-    },
-    {
-      id: 5,
-      category: "Wedding",
-      label: "Wedding Decoration",
-      chinese: "婚礼布置",
-      size: "large",
-    },
-    {
-      id: 6,
-      category: "VIP Rooms",
-      label: "VVIP8 Room",
-      chinese: "贵宾室",
-      size: "medium",
-    },
-    {
-      id: 7,
-      category: "Dim Sum",
-      label: "Shanghai Xiao Long Bao",
-      chinese: "小笼包",
-      size: "small",
-    },
-    {
-      id: 8,
-      category: "Festive Events",
-      label: "Festive Gathering",
-      chinese: "节庆",
-      size: "small",
-    },
-    {
-      id: 9,
-      category: "Restaurant Interior",
-      label: "Restaurant Entrance",
-      chinese: "入口",
-      size: "medium",
-    },
-    {
-      id: 10,
-      category: "Seafood",
-      label: "Braised Abalone",
-      chinese: "鲍鱼",
-      size: "small",
-    },
-    {
-      id: 11,
-      category: "Wedding",
-      label: "Wedding Banquet",
-      chinese: "婚宴",
-      size: "medium",
-    },
-    {
-      id: 12,
-      category: "VIP Rooms",
-      label: "V3 Private Room",
-      chinese: "私人包厢",
-      size: "small",
-    },
-    {
-      id: 13,
-      category: "Banquet",
-      label: "Corporate Dinner Setup",
-      chinese: "企业晚宴",
-      size: "large",
-    },
-    {
-      id: 14,
-      category: "Festive Events",
-      label: "Chinese New Year",
-      chinese: "新年",
-      size: "medium",
-    },
-    {
-      id: 15,
-      category: "Dim Sum",
-      label: "Dim Sum Spread",
-      chinese: "点心拼盘",
-      size: "medium",
-    },
-  ];
+  const galleryItems = [...GalleryImage, ...GalleryVideo];
+  const filterTabs = ["All", "Images", "Videos"];
 
   const filtered =
     activeFilter === "All"
       ? galleryItems
       : galleryItems.filter((item) => item.category === activeFilter);
 
-  const heightClass = {
-    small: "h-40",
-    medium: "h-64",
-    large: "h-80",
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+
+  const paginated = filtered.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE,
+  );
+
+  const handleFilterChange = (tab: string) => {
+    setActiveFilter(tab);
+    setCurrentPage(1);
   };
 
   return (
     <div className="bg-(--primaryBackground)">
-      {/* HERO */}
+      {/* HERO — tidak berubah */}
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
-
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
@@ -177,13 +61,11 @@ export default function GalleryPage() {
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
-
-        {/* Scrollable filter tabs on mobile */}
         <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
           {filterTabs.map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveFilter(tab)}
+              onClick={() => handleFilterChange(tab)}
               className={`shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ${
                 activeFilter === tab
                   ? "bg-(--bg2) text-white"
@@ -196,31 +78,33 @@ export default function GalleryPage() {
         </div>
       </div>
 
-      {/* MASONRY GRID */}
+      {/* GRID */}
       <div className="pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">
-          {filtered.map((item) => (
+          {paginated.map((item) => (
             <div
-              key={item.id}
-              className={`break-inside-avoid rounded-2xl overflow-hidden border border-(--bg3) group relative ${heightClass[item.size]}`}
+              key={item.category + item.id}
+              className="flex items-center justify-center rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition duration-300"
             >
-              {/* Placeholder – replace with real Image once assets exist */}
-              <div className="w-full h-full bg-(--bg3)/10 flex items-center justify-center relative">
-                <p className="font-chinese text-(--bg2) text-4xl font-bold opacity-30">
-                  {item.chinese}
-                </p>
-
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-(--bg2)/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center gap-2 p-4">
-                  <p className="font-chinese text-white text-xl font-bold">
-                    {item.chinese}
-                  </p>
-                  <p className="text-white text-sm text-center">{item.label}</p>
-                  <span className="text-xs text-white bg-white/20 px-3 py-1 rounded-full">
-                    {item.category}
-                  </span>
-                </div>
-              </div>
+              {item.category === "Videos" ? (
+                <video
+                  src={item.item}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <Image
+                  src={item.item}
+                  alt={item.category}
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              )}
             </div>
           ))}
         </div>
@@ -231,6 +115,44 @@ export default function GalleryPage() {
             <p className="text-gray-500 text-sm">
               No items found in this category.
             </p>
+          </div>
+        )}
+
+        {/* PAGINATION */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2 mt-10">
+            {/* Prev */}
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              disabled={currentPage === 1}
+              className="px-4 py-2 rounded-full text-sm font-semibold border border-(--bg3) text-(--bg2) disabled:opacity-30 hover:bg-(--bg3)/10 transition duration-300"
+            >
+              ← Prev
+            </button>
+
+            {/* pages numbers */}
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => setCurrentPage(page)}
+                className={`w-9 h-9 rounded-full text-sm font-semibold transition duration-300 ${
+                  currentPage === page
+                    ? "bg-(--bg2) text-white"
+                    : "border border-(--bg3) text-(--bg2) hover:bg-(--bg3)/10"
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+
+            {/* Next */}
+            <button
+              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 rounded-full text-sm font-semibold border border-(--bg3) text-(--bg2) disabled:opacity-30 hover:bg-(--bg3)/10 transition duration-300"
+            >
+              Next →
+            </button>
           </div>
         )}
       </div>

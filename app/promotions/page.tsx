@@ -1,12 +1,15 @@
 import Image from "next/image";
 import bgImage from "../../public/assets/background.jpeg";
 import ListDecoration from "../../public/assets/listDecoration.png";
+import DimsumImage from "../../public/assets/RM3++.jpg";
+import RM2180Image from "../../public/assets/RM2180++.jpg";
 import Link from "next/link";
 
 export default function PromotionsPage() {
   const promotions = [
     {
       id: 1,
+      image: DimsumImage,
       tag: "Dim Sum Special",
       title: "RM3++ Dim Sum Promotion",
       chinese: "点心优惠",
@@ -29,6 +32,7 @@ export default function PromotionsPage() {
     },
     {
       id: 2,
+      image: RM2180Image,
       tag: "Value Meal",
       title: "RM21.80++ Value Set Meal",
       chinese: "超值套餐",
@@ -108,6 +112,14 @@ export default function PromotionsPage() {
               key={promo.id}
               className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col gap-4"
             >
+              <div className="flex items-center justify-center">
+                <Image
+                  src={promo.image}
+                  alt={promo.title}
+                  width={550}
+                  className="object-cover rounded-2xl"
+                />
+              </div>
               <div className="flex items-center gap-3">
                 <div
                   className={`${promo.badgeColor} text-white font-bold text-xl px-4 py-2 rounded-lg shrink-0`}

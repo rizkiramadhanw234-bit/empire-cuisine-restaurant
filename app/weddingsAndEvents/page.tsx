@@ -96,6 +96,15 @@ export default function WeddingsAndEventsPage() {
         <div className="flex flex-col md:flex-row gap-4">
           {/* Hall 1 */}
           <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
+            <video
+              className="w-full h-full object-cover rounded-2xl"
+              src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/banquet1/Banquet.Hall.1.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+            />
             <div className="flex flex-col items-center gap-2">
               <Image src={castle} alt="castle" width={60} />
               <p className="text-(--bg2) font-bold text-2xl">Hall 1</p>
@@ -130,7 +139,16 @@ export default function WeddingsAndEventsPage() {
 
           {/* Hall 2 */}
           <div className="flex-1 border-2 border-(--bg2) rounded-2xl p-6 flex flex-col gap-4 relative overflow-hidden">
-            <div className="absolute top-4 right-4 bg-(--bg3) text-white text-xs px-3 py-1 rounded-full font-semibold">
+            <video
+              className="w-full h-full object-cover rounded-2xl"
+              src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/banquet2/Banquet.Hall.2.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+            />
+            <div className="absolute top-4 right-4 bg-(--bg2) text-white text-xs px-3 py-1 rounded-full font-semibold">
               Largest
             </div>
             <div className="flex flex-col items-center gap-2">

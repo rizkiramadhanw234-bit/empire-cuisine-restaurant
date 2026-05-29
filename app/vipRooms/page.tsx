@@ -13,16 +13,22 @@ export default function VipRoomsPage() {
       id: "V1",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Rooms/V1.VIP.Room.1.mp4",
     },
     {
       id: "V2",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Birthday Celebration", "Business Dining"],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Rooms-2/V2.VIP.Room.2.mp4",
     },
     {
       id: "V3",
       hasWashroom: true,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-3/V3.VIP.Room.3.mp4",
     },
     {
       id: "V5",
@@ -32,21 +38,29 @@ export default function VipRoomsPage() {
         "Business Dining",
         "Private Gathering",
       ],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-5/V5.VIP.Room.5.mp4",
     },
     {
       id: "V6",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-6/V6.VIP.Room.6.mp4",
     },
     {
       id: "V7",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Birthday Celebration", "Business Dining"],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-7/V7.VIP.Room.7.mp4",
     },
     {
       id: "V9",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
+      video:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-9/V9.VIP.Room.9.mp4",
     },
   ];
 
@@ -109,7 +123,7 @@ export default function VipRoomsPage() {
 
         {/* VVIP8 Featured */}
         <div className="border-2 border-(--bg3) rounded-2xl p-6 mb-6 bg-(--bg3)/5">
-          <div className="flex flex-col md:flex-row gap-6 items-start">
+          <div className="flex flex-col md:flex-row gap-4 items-start">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-(--bg2) text-white font-bold text-2xl px-4 py-2 rounded-lg">
@@ -175,10 +189,16 @@ export default function VipRoomsPage() {
             </div>
 
             {/* Placeholder image */}
-            <div className="w-full md:w-72 h-60 bg-(--bg3)/10 rounded-2xl flex items-center justify-center shrink-0">
-              <p className="font-chinese text-(--bg2) text-5xl font-bold">
-                御膳楼
-              </p>
+            <div className="w-full md:w-130 md:h-70 h-60 flex items-center justify-center shrink-0">
+              <video
+                className="w-full h-full rounded-2xl object-cover shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-8/VVIP8.VVIP.Room.8.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+              />
             </div>
           </div>
 
@@ -208,6 +228,15 @@ export default function VipRoomsPage() {
               key={room.id}
               className="border border-(--bg3) rounded-2xl p-5 flex flex-col gap-3 hover:shadow-md hover:border-(--bg2) transition duration-300"
             >
+              <video
+                className="h-full w-full object-cover rounded-2xl"
+                src={room.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+              />
               <div className="flex items-center justify-between">
                 <div className="bg-(--bg2) text-white font-bold text-xl px-3 py-1 rounded-lg">
                   {room.id}
