@@ -187,13 +187,10 @@ export default function VipRoomsPage() {
                 arrangement.
               </p>
             </div>
-
-            {/* Placeholder image */}
             <div className="w-full md:w-130 md:h-70 h-60 flex items-center justify-center shrink-0">
               <video
                 className="w-full h-full rounded-2xl object-cover shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
                 src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-8/VVIP8.VVIP.Room.8.mp4"
-                autoPlay
                 loop
                 muted
                 playsInline
@@ -231,7 +228,6 @@ export default function VipRoomsPage() {
               <video
                 className="h-full w-full object-cover rounded-2xl"
                 src={room.video}
-                autoPlay
                 loop
                 muted
                 playsInline

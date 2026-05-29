@@ -89,7 +89,6 @@ export default function GalleryPage() {
               {item.category === "Videos" ? (
                 <video
                   src={item.item}
-                  autoPlay
                   loop
                   muted
                   playsInline
