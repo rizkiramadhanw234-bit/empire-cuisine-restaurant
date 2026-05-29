@@ -1,18 +1,13 @@
-// NOTE: The contact form sends a WhatsApp message on submit.
-// This is an info website only – no backend email or API integration is used here.
-// To add actual email sending, integrate with EmailJS, Resend, or Next.js API routes.
-
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import bgImage from "../../public/assets/background.png";
+import bgImage from "../../public/assets/background.jpeg";
 import ListDecoration from "../../public/assets/listDecoration.png";
 import Maps from "../../public/assets/maps.png";
 import Link from "next/link";
 import { SiGooglemaps } from "react-icons/si";
 import { FaPhoneAlt, FaRegClock, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdOutlineBedroomChild, MdCelebration } from "react-icons/md";
-import { BsPeopleFill } from "react-icons/bs";
 import { BiSolidDish } from "react-icons/bi";
 
 export default function ContactPage() {
@@ -133,8 +128,8 @@ ${form.message}`;
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
-            <h1 className="text-(--bg3) font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
-              Contact <br /> Us
+            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
+              Contact Us
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={400} />
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
@@ -358,7 +353,7 @@ ${form.message}`;
             {/* Submit */}
             <button
               onClick={handleSubmit}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm font-semibold"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm font-semibold cursor-pointer"
             >
               <FaWhatsapp className="text-lg" />
               Send via WhatsApp

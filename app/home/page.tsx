@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bgImage from "../../public/assets/background.png";
 import image1 from "../../public/assets/viprooms.jpg";
 import castle from "../../public/assets/castle.png";
 import ImagePremium from "../../public/assets/1.png";
@@ -34,24 +33,31 @@ export default function HomePage() {
     <div className="bg-(--primaryBackground)">
       {/*  HERO  */}
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
-        <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
+        <video
+          className="z-0 absolute top-0 left-0 w-full h-full object-cover"
+          src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/videoBackground/Main.Page.Video.Background.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
-            <div className="font-chinese text-(--bg3) text-4xl sm:text-5xl md:text-7xl">
+            <div className="font-chinese text-amber-400 text-4xl sm:text-5xl md:text-7xl">
               御 膳 楼
             </div>
-            <h1 className="text-(--bg3) font-semibold text-3xl sm:text-4xl md:text-6xl md:mb-4">
+            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl md:mb-4">
               Empire Cuisine
             </h1>
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
               Premium Chinese Cuisine {""}
-              <span className="text-(--bg3) font-bold">|</span> Private Rooms{" "}
-              <span className="text-(--bg3) font-bold">|</span>
+              <span className="text-amber-400 font-bold">|</span> Private Rooms{" "}
+              <span className="text-amber-400 font-bold">|</span>
               <br /> Two-Storey Multifunction Banquet Hall
             </h2>
             <Image src={ListDecoration} alt="Empire Cuisine" width={200} />
-            <h3 className="text-white/80 text-sm md:text-lg font-light leading-7 md:leading-9">
+            <h3 className="text-white text-sm md:text-lg font-light leading-7 md:leading-9">
               A refined Chinese dining destination in Klang <br /> for family
               dining, private gatherings and <br /> banquet celebrations.
             </h3>
@@ -250,7 +256,7 @@ export default function HomePage() {
           {DiningHighligts.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center hover:scale-105 duration-300 cursor-pointer"
             >
               <Image
                 src={item.image}

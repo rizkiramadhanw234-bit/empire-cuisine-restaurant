@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bgImage from "../../public/assets/background.png";
+import bgImage from "../../public/assets/background.jpeg";
 import ListDecoration from "../../public/assets/listDecoration.png";
 import Link from "next/link";
 
@@ -79,7 +79,7 @@ export default function PromotionsPage() {
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
-            <h1 className="text-(--bg3) font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
+            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Promotions <br /> & Packages
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={400} />
