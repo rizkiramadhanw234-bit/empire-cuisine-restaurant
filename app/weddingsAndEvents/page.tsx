@@ -141,6 +141,7 @@ export default function WeddingsAndEventsPage() {
             <video
               className="w-full h-full object-cover rounded-2xl"
               src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/banquet2/Banquet.Hall.2.mp4"
+              autoPlay
               loop
               muted
               playsInline
