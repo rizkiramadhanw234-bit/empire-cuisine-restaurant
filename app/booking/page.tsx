@@ -1,7 +1,3 @@
-// NOTE: This is a static information/form page only.
-// No payment gateway or e-wallet integration.
-// On submit, the booking details are sent via WhatsApp message.
-
 "use client";
 import { useState } from "react";
 import Image from "next/image";
