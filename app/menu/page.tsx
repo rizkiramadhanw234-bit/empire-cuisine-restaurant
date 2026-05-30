@@ -355,7 +355,7 @@ export default function MenuPage() {
               <p className="font-chinese text-(--bg3) text-lg font-bold">
                 {item.chinese}
               </p>
-              <p className="font-bold text-(--bg2)">{item.name}</p>
+              <p className="font-bold text-(--bg2) text-center">{item.name}</p>
             </div>
           ))}
         </div>
