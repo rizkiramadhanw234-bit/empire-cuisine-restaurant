@@ -14,21 +14,21 @@ export default function VipRoomsPage() {
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Rooms/V1.VIP.Room.1.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250945/V1_VIP_Room_1_i5ck5m.mp4",
     },
     {
       id: "V2",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Birthday Celebration", "Business Dining"],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Rooms-2/V2.VIP.Room.2.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250946/V2_VIP_Room_2_th8tze.mp4",
     },
     {
       id: "V3",
       hasWashroom: true,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-3/V3.VIP.Room.3.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250946/V3_VIP_Room_3_egnjvv.mp4",
     },
     {
       id: "V5",
@@ -39,28 +39,28 @@ export default function VipRoomsPage() {
         "Private Gathering",
       ],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-5/V5.VIP.Room.5.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250947/V5_VIP_Room_5_pafqzn.mp4",
     },
     {
       id: "V6",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-6/V6.VIP.Room.6.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250947/V6_VIP_Room_6_erd7eq.mp4",
     },
     {
       id: "V7",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Birthday Celebration", "Business Dining"],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-7/V7.VIP.Room.7.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250949/V7_VIP_Room_7_dlvnjm.mp4",
     },
     {
       id: "V9",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-9/V9.VIP.Room.9.mp4",
+        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250955/V9_VIP_Room_9_gxfnwy.mp4",
     },
   ];
 
@@ -199,7 +199,7 @@ export default function VipRoomsPage() {
             <div className="w-full md:w-130 md:h-70 h-60 flex items-center justify-center shrink-0">
               <video
                 className="w-full h-full rounded-2xl object-cover shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
-                src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/VIP-Room-8/VVIP8.VVIP.Room.8.mp4"
+                src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250953/VVIP8_VVIP_Room_8_r59v0k.mp4"
                 autoPlay
                 loop
                 muted

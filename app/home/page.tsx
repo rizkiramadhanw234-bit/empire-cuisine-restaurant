@@ -35,12 +35,16 @@ export default function HomePage() {
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
         <video
           className="z-0 absolute top-0 left-0 w-full h-full object-cover"
-          src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/videoBackground/Main.Page.Video.Background.mp4"
           autoPlay
           loop
           muted
           playsInline
-        />
+        >
+          <source
+            src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250620/Main_Page_Video_Background_l0tjih.mp4"
+            type="video/mp4"
+          />
+        </video>
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div

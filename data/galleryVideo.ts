@@ -6,18 +6,18 @@ type GalleryItem = {
 
 export const GalleryVideo: GalleryItem[] = [
   {
+    id: 39,
+    category: "Videos",
+    item: "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780251015/39_Gallery_Page_anbtor.mp4",
+  },
+  {
     id: 40,
     category: "Videos",
-    item: "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/gallery-video1/39.Gallery.Page.mp4",
+    item: "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780251024/40_Gallery_Page_wf2jdz.mp4",
   },
   {
     id: 41,
     category: "Videos",
-    item: "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/gallery-video2/40.Gallery.Page.mp4",
-  },
-  {
-    id: 42,
-    category: "Videos",
-    item: "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/gallery-video3/41.Gallery.Page.mp4",
+    item: "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780251041/41_Gallery_Page_ja4acs.mp4",
   },
 ];

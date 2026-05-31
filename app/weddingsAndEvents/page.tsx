@@ -104,7 +104,7 @@ export default function WeddingsAndEventsPage() {
           <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
             <video
               className="w-full h-full object-cover rounded-2xl"
-              src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/banquet1/Banquet.Hall.1.mp4"
+              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250984/Banquet_Hall_1_esrce1.mp4"
               autoPlay
               loop
               muted
@@ -147,7 +147,7 @@ export default function WeddingsAndEventsPage() {
           <div className="flex-1 border-2 border-(--bg2) rounded-2xl p-6 flex flex-col gap-4 relative overflow-hidden">
             <video
               className="w-full h-full object-cover rounded-2xl"
-              src="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/banquet2/Banquet.Hall.2.mp4"
+              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250987/Banquet_Hall_2_ndwep7.mp4"
               autoPlay
               loop
               muted
