@@ -93,7 +93,10 @@ export default function VipRoomsPage() {
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               VIP Rooms
             </h1>
@@ -111,7 +114,10 @@ export default function VipRoomsPage() {
 
       {/* VVIP8 FEATURE CARD */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Select Your Private Room
           </h2>
@@ -122,7 +128,10 @@ export default function VipRoomsPage() {
         </div>
 
         {/* VVIP8 Featured */}
-        <div className="border-2 border-(--bg3) rounded-2xl p-6 mb-6 bg-(--bg3)/5">
+        <div
+          className="border-2 border-(--bg3) rounded-2xl p-6 mb-6 bg-(--bg3)/5"
+          data-aos="fade-up"
+        >
           <div className="flex flex-col md:flex-row gap-4 items-start">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-3">
@@ -225,6 +234,7 @@ export default function VipRoomsPage() {
             <div
               key={room.id}
               className="border border-(--bg3) rounded-2xl p-5 flex flex-col gap-3 hover:shadow-md hover:border-(--bg2) transition duration-300"
+              data-aos="zoom-in"
             >
               <video
                 className="h-full w-full object-cover rounded-2xl"
@@ -280,7 +290,10 @@ export default function VipRoomsPage() {
 
       {/* SELLING POINTS */}
       <div className="pt-8 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Why Book a VIP Room?
           </h2>
@@ -292,6 +305,7 @@ export default function VipRoomsPage() {
             <div
               key={point.id}
               className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col gap-2"
+              data-aos="zoom-in"
             >
               <p className="font-chinese text-(--bg3) text-2xl font-bold">
                 {point.chinese}
@@ -304,7 +318,10 @@ export default function VipRoomsPage() {
         </div>
 
         {/* CTA */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
+          data-aos="fade-up"
+        >
           <Link
             href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20VIP%20Rooms`}
             target="_blank"

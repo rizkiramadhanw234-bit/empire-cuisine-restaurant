@@ -43,7 +43,10 @@ export default function HomePage() {
         />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <div className="font-chinese text-amber-400 text-4xl sm:text-5xl md:text-7xl">
               御 膳 楼
             </div>
@@ -64,7 +67,11 @@ export default function HomePage() {
           </div>
 
           {/* cta */}
-          <div className="flex flex-wrap gap-4 mt-8 px-4 sm:px-10">
+          <div
+            className="flex flex-wrap gap-4 mt-8 px-4 sm:px-10"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <Link
               href="/vipRooms"
               className="bg-(--bg2) text-white px-5 py-3 text-xs md:text-base rounded-lg hover:bg-red-800 hover:scale-105 duration-300"
@@ -84,13 +91,20 @@ export default function HomePage() {
       {/*  WHY EMPIRE CUISINE  */}
       <div className="pt-8 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center">
-          <div className="text-center md:text-2xl text-(--bg2) font-bold mb-2">
+          <div
+            className="text-center md:text-2xl text-(--bg2) font-bold mb-2"
+            data-aos="fade-up"
+          >
             Why Empire Cuisine
           </div>
           <Image src={ListDecoration} alt="Empire Cuisine" width={250} />
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 pt-5 pb-10">
+        <div
+          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 pt-5 pb-10"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           {/* premium */}
           <div className="flex items-start justify-center gap-4 w-full md:w-auto">
             <Image src={ImagePremium} alt="castle" width={70} height={70} />
@@ -146,7 +160,10 @@ export default function HomePage() {
 
       {/*  VIP + BANQUET CARDS  */}
       <div className="pt-4 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-stretch justify-center gap-4">
+        <div
+          className="flex flex-col lg:flex-row items-stretch justify-center gap-4"
+          data-aos="fade-up"
+        >
           {/* card 1 – VIP Rooms */}
           <div className="p-4 border border-(--bg3) rounded-2xl flex flex-col lg:flex-row gap-6 lg:gap-8">
             <div className="flex flex-col items-center justify-between">
@@ -246,7 +263,10 @@ export default function HomePage() {
 
       {/*  DINING HIGHLIGHTS  */}
       <div className="pt-8 pb-4 max-w-7xl mx-auto px-4 sm:px-6 md:px-30">
-        <div className="flex flex-col text-center items-center">
+        <div
+          className="flex flex-col text-center items-center"
+          data-aos="fade-up"
+        >
           <p className="text-2xl text-(--bg2) font-bold pb-2">
             Dining Highlights
           </p>
@@ -257,6 +277,7 @@ export default function HomePage() {
             <div
               key={item.id}
               className="flex flex-col items-center justify-center hover:scale-105 duration-300 cursor-pointer"
+              data-aos="zoom-in"
             >
               <Image
                 src={item.image}
@@ -273,13 +294,16 @@ export default function HomePage() {
 
       {/*  VISIT US  */}
       <div className="pt-8 pb-8 border-t border-(--bg3) max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center" data-aos="fade-up">
           <p className="text-2xl text-(--bg2) font-bold text-center pb-2">
             Visit Us
           </p>
           <Image src={ListDecoration} alt="Empire Cuisine" width={150} />
         </div>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-center justify-center pt-4">
+        <div
+          className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-center justify-center pt-4"
+          data-aos="fade-up"
+        >
           <div className="flex flex-col items-start gap-4 w-full lg:w-auto">
             <div className="flex items-start gap-2">
               <SiGooglemaps className="text-2xl text-(--bg2) mt-1 shrink-0" />

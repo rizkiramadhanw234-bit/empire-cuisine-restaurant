@@ -67,7 +67,10 @@ export default function WeddingsAndEventsPage() {
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Weddings <br /> & Events
             </h1>
@@ -86,14 +89,17 @@ export default function WeddingsAndEventsPage() {
 
       {/* BANQUET HALLS */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Banquet Halls
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4" data-aos="fade-up">
           {/* Hall 1 */}
           <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
             <video
@@ -186,7 +192,10 @@ export default function WeddingsAndEventsPage() {
       </div>
 
       {/* WEDDING ARRANGEMENT BANNER */}
-      <div className="py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        className="py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        data-aos="fade-up"
+      >
         <div className="bg-(--bg2) text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col gap-2">
             <p className="font-chinese text-(--bg3) text-2xl font-bold">
@@ -213,7 +222,10 @@ export default function WeddingsAndEventsPage() {
 
       {/* WEDDING PACKAGES */}
       <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Wedding Packages
           </h2>
@@ -229,6 +241,7 @@ export default function WeddingsAndEventsPage() {
                   ? "border-2 border-(--bg2) bg-(--bg2)/5"
                   : "border-(--bg3)"
               }`}
+              data-aos="zoom-in"
             >
               {pkg.featured && (
                 <span className="bg-(--bg3) text-white text-xs px-3 py-1 rounded-full font-semibold">
@@ -256,7 +269,10 @@ export default function WeddingsAndEventsPage() {
         </div>
 
         {/* Package note */}
-        <div className="mt-4 p-4 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
+        <div
+          className="mt-4 p-4 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl"
+          data-aos="fade-up"
+        >
           <p className="text-xs text-gray-600 text-center">
             * For RM988 or RM1,288 package, if the customer wishes to change
             dishes, it can be arranged with added price and manager discussion.
@@ -264,7 +280,10 @@ export default function WeddingsAndEventsPage() {
         </div>
 
         {/* CTA */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
+          data-aos="fade-up"
+        >
           <Link
             href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20wedding%20packages`}
             target="_blank"

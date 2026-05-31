@@ -147,7 +147,10 @@ export default function MenuPage() {
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Our Menu
             </h1>
@@ -166,14 +169,21 @@ export default function MenuPage() {
 
       {/* PROMOTIONS HIGHLIGHT */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Current Promotions
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4">
+        <div
+          className="flex flex-col md:flex-row gap-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           {/* RM1++ Dinner Add-on Promotion */}
           <div className="flex-1 border border-(--bg3) rounded-2xl p-6 bg-(--bg3)/5 hover:scale-105 transition duration-300 cursor-pointer">
             <div className="flex flex-col gap-3">
@@ -299,7 +309,10 @@ export default function MenuPage() {
 
       {/* MENU CATEGORIES */}
       <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Menu Categories
           </h2>
@@ -311,6 +324,7 @@ export default function MenuPage() {
             <div
               key={item.id}
               className="border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-center gap-1 hover:bg-(--bg3)/10 hover:scale-105 transition duration-300 cursor-pointer"
+              data-aos="zoom-in"
             >
               <Image
                 src={item.image}
@@ -329,7 +343,10 @@ export default function MenuPage() {
 
       {/* RECOMMENDED DISHES */}
       <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Recommended Dishes
           </h2>
@@ -344,6 +361,7 @@ export default function MenuPage() {
             <div
               key={item.id}
               className="border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-2 hover:shadow-md transition duration-300"
+              data-aos="zoom-in"
             >
               {/* image */}
               <Image
@@ -361,7 +379,7 @@ export default function MenuPage() {
         </div>
 
         {/* CTA */}
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-8" data-aos="fade-up">
           <Link
             href="/contact"
             className="px-6 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm md:text-base"

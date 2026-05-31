@@ -38,7 +38,10 @@ export default function GalleryPage() {
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Gallery
             </h1>
@@ -55,13 +58,19 @@ export default function GalleryPage() {
 
       {/* FILTER TABS */}
       <div className="pt-10 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Our Gallery
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
-        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+        <div
+          className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide"
+          data-aos="fade-up"
+        >
           {filterTabs.map((tab) => (
             <button
               key={tab}
@@ -85,6 +94,7 @@ export default function GalleryPage() {
             <div
               key={item.category + item.id}
               className="flex items-center justify-center rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition duration-300"
+              data-aos="zoom-in"
             >
               {item.category === "Videos" ? (
                 <video

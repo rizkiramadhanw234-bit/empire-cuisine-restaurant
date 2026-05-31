@@ -82,7 +82,10 @@ export default function PromotionsPage() {
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Promotions <br /> & Packages
             </h1>
@@ -99,7 +102,10 @@ export default function PromotionsPage() {
 
       {/* MAIN PROMOTIONS */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Current Promotions
           </h2>
@@ -111,6 +117,7 @@ export default function PromotionsPage() {
             <div
               key={promo.id}
               className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col gap-4"
+              data-aos="fade-up"
             >
               <div className="flex items-center justify-center">
                 <Image
@@ -160,7 +167,10 @@ export default function PromotionsPage() {
 
       {/* PARENTS' DAY PACKAGES */}
       <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Parents&apos; Day Packages
           </h2>
@@ -173,6 +183,7 @@ export default function PromotionsPage() {
             <div
               key={pkg.id}
               className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-60 mx-auto w-full sm:w-auto"
+              data-aos="zoom-in"
             >
               <p className="text-3xl font-bold text-(--bg2)">{pkg.price}</p>
               <Image src={ListDecoration} alt="listDecoration" width={100} />
@@ -181,7 +192,7 @@ export default function PromotionsPage() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-6" data-aos="fade-up">
           <Link
             href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20Parents'%20Day%20packages`}
             target="_blank"
@@ -194,7 +205,10 @@ export default function PromotionsPage() {
 
       {/* WEDDING PACKAGES */}
       <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Wedding Packages
           </h2>
@@ -207,6 +221,7 @@ export default function PromotionsPage() {
             <div
               key={pkg.id}
               className="border border-(--bg3) rounded-2xl p-4 flex flex-col items-center gap-2"
+              data-aos="zoom-in"
             >
               <p className="font-chinese text-(--bg2) text-lg font-bold text-center">
                 {pkg.name}
@@ -218,7 +233,7 @@ export default function PromotionsPage() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-6" data-aos="fade-up">
           <Link
             href="/weddingsAndEvents"
             className="px-6 py-3 bg-(--bg3) text-white rounded-lg hover:bg-amber-700 hover:scale-105 transition duration-300 text-sm"
@@ -230,7 +245,10 @@ export default function PromotionsPage() {
 
       {/* BRING YOUR OWN FISH / PRAWN */}
       <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Bring Your Own Fish or Prawn
           </h2>
@@ -240,7 +258,10 @@ export default function PromotionsPage() {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          data-aos="fade-up"
+        >
           <div className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-80 mx-auto w-full sm:w-auto">
             <p className="text-sm text-gray-600 text-center">
               Steam cooking fee
@@ -261,7 +282,10 @@ export default function PromotionsPage() {
           </div>
         </div>
 
-        <p className="text-xs text-gray-500 italic text-center mt-4">
+        <p
+          className="text-xs text-gray-500 italic text-center mt-4"
+          data-aos="fade-up"
+        >
           * Advance notice is required and subject to market availability.
         </p>
       </div>

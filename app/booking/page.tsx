@@ -65,7 +65,10 @@ Remarks: ${form.remarks}`;
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Book a Table
             </h1>
@@ -82,7 +85,7 @@ Remarks: ${form.remarks}`;
 
       {/* GUIDES */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4" data-aos="fade-up">
           {/* VVIP8 Guide */}
           <div className="flex-1 border border-(--bg3) rounded-2xl p-5 flex flex-col gap-3">
             <div className="flex items-center gap-3">
@@ -142,7 +145,10 @@ Remarks: ${form.remarks}`;
 
       {/* BOOKING FORM */}
       <div className="pt-4 pb-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="border border-(--bg3) rounded-2xl p-6 sm:p-8">
+        <div
+          className="border border-(--bg3) rounded-2xl p-6 sm:p-8"
+          data-aos="fade-up"
+        >
           <div className="flex flex-col items-center mb-6">
             <h2 className="text-(--bg2) font-bold text-2xl md:text-3xl pb-2">
               Reservation Form
@@ -301,7 +307,10 @@ Remarks: ${form.remarks}`;
         </div>
 
         {/* Important Notes */}
-        <div className="mt-6 p-4 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
+        <div
+          className="mt-6 p-4 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl"
+          data-aos="fade-up"
+        >
           <p className="text-sm font-semibold text-(--bg2) mb-3">
             Important Notes
           </p>

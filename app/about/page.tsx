@@ -77,7 +77,10 @@ export default function AboutPage() {
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
-        <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
+        <div
+          className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8"
+          data-aos="fade-up"
+        >
           <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               About <br /> Empire Cuisine
@@ -97,11 +100,18 @@ export default function AboutPage() {
       {/*  OUR STORY  */}
       <div className="pt-10 pb-6">
         <div className="flex flex-col items-start justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-(--bg2) font-bold text-3xl sm:text-4xl md:text-6xl pb-2">
+          <h2
+            className="text-(--bg2) font-bold text-3xl sm:text-4xl md:text-6xl pb-2"
+            data-aos="fade-up"
+          >
             Our Story
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
-          <p className="pt-3 leading-7 text-sm md:text-base">
+          <p
+            className="pt-3 leading-7 text-sm md:text-base"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Empire Cuisine is a refined Chinese dining destination in Klang,{" "}
             <br className="hidden sm:block" />
             dedicated to delivering exceptional cuisine and warm hospitality.
@@ -115,7 +125,10 @@ export default function AboutPage() {
 
       {/*  WHAT WE OFFER  */}
       <div className="pt-6 pb-4 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center">
+        <div
+          className="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+        >
           <div className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             What We Offer
           </div>
@@ -123,7 +136,11 @@ export default function AboutPage() {
         </div>
 
         {/* cards */}
-        <div className="flex flex-col md:flex-row items-stretch justify-center gap-4 mt-4">
+        <div
+          className="flex flex-col md:flex-row items-stretch justify-center gap-4 mt-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           {whatWeOffer.map((item) => (
             <div
               key={item.id}
@@ -152,7 +169,10 @@ export default function AboutPage() {
 
       {/*  DINING EXPERIENCE  */}
       <div className="pt-6 pb-6 px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15 max-w-7xl mx-auto">
+        <div
+          className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15 max-w-7xl mx-auto"
+          data-aos="fade-up"
+        >
           <Image
             src={DiningExperience}
             alt="DiningExperience"
@@ -185,7 +205,10 @@ export default function AboutPage() {
 
       {/*  VISIT INFORMATION  */}
       <div className="pt-8 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-2 items-center justify-center">
+        <div
+          className="flex flex-col gap-2 items-center justify-center"
+          data-aos="fade-up"
+        >
           <h2 className="font-bold text-2xl md:text-3xl text-(--bg2)">
             Visit Information
           </h2>
@@ -193,7 +216,11 @@ export default function AboutPage() {
         </div>
 
         {/* cards */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mt-4 border border-(--bg3) p-4 sm:p-6 rounded-2xl">
+        <div
+          className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mt-4 border border-(--bg3) p-4 sm:p-6 rounded-2xl"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           {visitInformation.map((item) => (
             <div
               key={item.id}
@@ -214,7 +241,10 @@ export default function AboutPage() {
 
       {/*  PLAN YOUR VISIT  */}
       <div className="pt-4 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-2 items-center justify-center text-center">
+        <div
+          className="flex flex-col gap-2 items-center justify-center text-center"
+          data-aos="fade-up"
+        >
           <h2 className="md:text-3xl text-2xl font-bold text-(--bg2)">
             Plan Your Visit
           </h2>

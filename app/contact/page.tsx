@@ -127,7 +127,10 @@ ${form.message}`;
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12">
+          <div
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            data-aos="fade-up"
+          >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
               Contact Us
             </h1>
@@ -142,7 +145,10 @@ ${form.message}`;
 
       {/* CONTACT CARDS */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Get In Touch
           </h2>
@@ -156,6 +162,7 @@ ${form.message}`;
               href={card.href}
               target={card.href.startsWith("http") ? "_blank" : "_self"}
               className="border border-(--bg3) rounded-2xl p-5 flex flex-col gap-3 hover:shadow-md hover:border-(--bg2) transition duration-300 group"
+              data-aos="zoom-in"
             >
               <div
                 className={`${card.style} text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition duration-300`}
@@ -179,7 +186,10 @@ ${form.message}`;
 
       {/* LOCATION + HOURS */}
       <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div
+          className="flex flex-col lg:flex-row gap-8 items-start"
+          data-aos="fade-up"
+        >
           {/* Info */}
           <div className="flex flex-col gap-5 w-full lg:w-1/3">
             <div className="flex flex-col gap-2">
@@ -243,14 +253,20 @@ ${form.message}`;
 
       {/* QUICK HELP */}
       <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
           <h2 className="text-(--bg2) font-bold text-2xl md:text-3xl pb-2">
             Quick Help
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={200} />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+          data-aos="fade-up"
+        >
           {quickHelp.map((item, i) => (
             <div key={i} className="border border-(--bg3) rounded-2xl p-5">
               <p className="font-bold text-(--bg2) text-sm mb-2">{item.q}</p>
@@ -262,7 +278,10 @@ ${form.message}`;
 
       {/* CONTACT FORM */}
       <div className="pt-6 pb-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="border border-(--bg3) rounded-2xl p-6 sm:p-8">
+        <div
+          className="border border-(--bg3) rounded-2xl p-6 sm:p-8"
+          data-aos="fade-up"
+        >
           <div className="flex flex-col items-center mb-6">
             <h2 className="text-(--bg2) font-bold text-2xl md:text-3xl pb-2">
               Send Us a Message
