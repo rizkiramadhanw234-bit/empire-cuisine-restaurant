@@ -4,11 +4,37 @@ import ListDecoration from "../../public/assets/listDecoration.png";
 import DimsumImage from "../../public/assets/RM3++.jpg";
 import RM2180Image from "../../public/assets/RM2180++.jpg";
 import Link from "next/link";
+import { weddingPackages } from "@/data/weddingPackages";
+import imageWeddingPackages from "../../public/assets/weddingPackages.jpg";
+import ImageParentsPackage from "../../public/assets/parents package.jpg";
+import RM1Image from "../../public/assets/RM1++.jpg";
 
 export default function PromotionsPage() {
   const promotions = [
     {
       id: 1,
+      image: RM1Image,
+      tag: "Dinner hours only",
+      title: "RM1++ Dinner Add-on Promotion",
+      chinese: "",
+      badge: "RM1++",
+      badgeColor: "bg-(--bg3)",
+      details: [
+        {
+          label: "Information",
+          value: "Available Monday to Sunday, including Public Holidays",
+        },
+        {
+          label: "Note",
+          value: "Only applicable with selected special set meals",
+        },
+      ],
+      cta: "View Menu",
+      ctaHref: "/menu",
+      ctaStyle: "bg-(--bg3)",
+    },
+    {
+      id: 2,
       image: DimsumImage,
       tag: "Dim Sum Special",
       title: "RM3++ Dim Sum Promotion",
@@ -31,7 +57,7 @@ export default function PromotionsPage() {
       ctaStyle: "bg-(--bg2)",
     },
     {
-      id: 2,
+      id: 3,
       image: RM2180Image,
       tag: "Value Meal",
       title: "RM21.80++ Value Set Meal",
@@ -65,14 +91,6 @@ export default function PromotionsPage() {
     { id: 1, price: "RM888++", unit: "per 10 pax" },
     { id: 2, price: "RM1,188++", unit: "per 10 pax" },
     { id: 3, price: "RM1,388++", unit: "per 10 pax" },
-  ];
-
-  const weddingPackages = [
-    { id: 1, name: "心心相印宴", price: "RM988++", unit: "per 10 pax" },
-    { id: 2, name: "经典佳宴", price: "RM1,288 nett", unit: "per 10 pax" },
-    { id: 3, name: "豪华佳宴", price: "RM1,488 nett", unit: "per 10 pax" },
-    { id: 4, name: "尊贵佳宴", price: "RM1,688 nett", unit: "per 10 pax" },
-    { id: 5, name: "帝皇佳宴", price: "RM1,888 nett", unit: "per 10 pax" },
   ];
 
   return (
@@ -177,6 +195,26 @@ export default function PromotionsPage() {
           <Image src={ListDecoration} alt="listDecoration" width={250} />
           <p className="font-chinese text-(--bg3) text-lg mt-1">敬亲感恩宴</p>
         </div>
+        <div className="flex justify-center mb-6 gap-8" data-aos="fade-up">
+          <div className="w-70 h-full hover:scale-105 transition duration-300">
+            <Image
+              src={ImageParentsPackage}
+              alt="ParentsDayPackages"
+              className="rounded-2xl"
+            />
+          </div>
+          <div className="w-70 h-full hover:scale-105 transition duration-300">
+            <video
+              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780343617/parents_day_v8hqkp.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-2xl"
+            />
+          </div>
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           {parentsDay.map((pkg) => (
@@ -215,20 +253,42 @@ export default function PromotionsPage() {
           <Image src={ListDecoration} alt="listDecoration" width={250} />
           <p className="font-chinese text-(--bg3) text-lg mt-1">囍宴配套</p>
         </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        <div className="mb-6" data-aos="fade-up">
+          <Image
+            src={imageWeddingPackages}
+            alt="weddingPackages"
+            className="rounded-2xl"
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {weddingPackages.map((pkg) => (
             <div
               key={pkg.id}
-              className="border border-(--bg3) rounded-2xl p-4 flex flex-col items-center gap-2"
+              className={`border border-(--bg3) rounded-2xl p-5 flex flex-col items-center justify-between gap-3 hover:shadow-md transition duration-300 `}
               data-aos="zoom-in"
             >
-              <p className="font-chinese text-(--bg2) text-lg font-bold text-center">
+              <p className="font-chinese text-(--bg2) text-xl font-bold text-center">
                 {pkg.name}
               </p>
-              <Image src={ListDecoration} alt="listDecoration" width={80} />
-              <p className="text-xl font-bold text-(--bg2)">{pkg.price}</p>
-              <p className="text-xs text-gray-500">{pkg.unit}</p>
+              <Image src={ListDecoration} alt="listDecoration" width={100} />
+              <div className="flex flex-col items-center">
+                <p className="text-2xl font-bold text-(--bg2)">
+                  {pkg.price}
+                  <span className="text-sm font-normal">{pkg.suffix}</span>
+                </p>
+                <p className="text-xs text-gray-500">{pkg.unit}</p>
+              </div>
+              <p className="text-xs text-gray-500 italic text-center">
+                * {pkg.note}
+              </p>
+
+              <a
+                href={pkg.download}
+                target="_blank"
+                className="px-4 py-2 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-xs md:text-xs text-center"
+              >
+                Download Menu
+              </a>
             </div>
           ))}
         </div>

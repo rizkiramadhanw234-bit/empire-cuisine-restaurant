@@ -25,7 +25,13 @@ export default function Footer() {
           <span className="font-cormorant text-sm text-amber-500/70 tracking-[3px] uppercase block mb-4">
             Empire Cuisine Restaurant
           </span>
-          <p className="font-eb-garamond text-sm text-amber-50/50 leading-relaxed italic max-w-xs">
+          <div className="font-chinese text-sm text-amber-500 font-semibold tracking-[4px]">
+            好吃 又有面子
+          </div>
+          <div className="font-chinese text-sm text-amber-500 font-semibold tracking-[4px]">
+            位于巴生的精致中式餐饮酒楼，适合家庭聚餐、私人包厢聚会及宴会庆典。
+          </div>
+          <p className="font-eb-garamond text-sm text-amber-50/50 leading-relaxed italic max-w-xs mt-2">
             A refined Chinese dining destination in Klang for family dining,
             private gatherings and banquet celebrations.
           </p>

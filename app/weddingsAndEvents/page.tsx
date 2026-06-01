@@ -4,53 +4,10 @@ import ListDecoration from "../../public/assets/listDecoration.png";
 import castle from "../../public/assets/castle.png";
 import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
+import { weddingPackages } from "@/data/weddingPackages";
+import imageWeddingPackages from "../../public/assets/weddingPackages.jpg";
 
 export default function WeddingsAndEventsPage() {
-  // Wedding packages
-  const weddingPackages = [
-    {
-      id: 1,
-      name: "心心相印宴",
-      price: "RM988",
-      suffix: "++",
-      unit: "per 10 pax",
-      note: "Dish changes can be arranged with added price and manager discussion.",
-    },
-    {
-      id: 2,
-      name: "经典佳宴",
-      price: "RM1,288",
-      suffix: " nett",
-      unit: "per 10 pax",
-      note: "Dish changes can be arranged with added price and manager discussion.",
-    },
-    {
-      id: 3,
-      name: "豪华佳宴",
-      price: "RM1,488",
-      suffix: " nett",
-      unit: "per 10 pax",
-      note: null,
-    },
-    {
-      id: 4,
-      name: "尊贵佳宴",
-      price: "RM1,688",
-      suffix: " nett",
-      unit: "per 10 pax",
-      note: null,
-    },
-    {
-      id: 5,
-      name: "帝皇佳宴",
-      price: "RM1,888",
-      suffix: " nett",
-      unit: "per 10 pax",
-      note: null,
-      featured: true,
-    },
-  ];
-
   // What's included / highlights
   const eventHighlights = [
     "Dedicated banquet coordinator",
@@ -231,23 +188,20 @@ export default function WeddingsAndEventsPage() {
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
-
+        <div className="mb-6" data-aos="fade-up">
+          <Image
+            src={imageWeddingPackages}
+            alt="weddingPackages"
+            className="rounded-2xl"
+          />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {weddingPackages.map((pkg) => (
             <div
               key={pkg.id}
-              className={`border rounded-2xl p-5 flex flex-col items-center gap-3 hover:shadow-md transition duration-300 ${
-                pkg.featured
-                  ? "border-2 border-(--bg2) bg-(--bg2)/5"
-                  : "border-(--bg3)"
-              }`}
+              className={`border border-(--bg3) rounded-2xl p-5 flex flex-col items-center justify-between gap-3 hover:shadow-md transition duration-300 `}
               data-aos="zoom-in"
             >
-              {pkg.featured && (
-                <span className="bg-(--bg3) text-white text-xs px-3 py-1 rounded-full font-semibold">
-                  ★ Premium
-                </span>
-              )}
               <p className="font-chinese text-(--bg2) text-xl font-bold text-center">
                 {pkg.name}
               </p>
@@ -259,11 +213,17 @@ export default function WeddingsAndEventsPage() {
                 </p>
                 <p className="text-xs text-gray-500">{pkg.unit}</p>
               </div>
-              {pkg.note && (
-                <p className="text-xs text-gray-500 italic text-center">
-                  * {pkg.note}
-                </p>
-              )}
+              <p className="text-xs text-gray-500 italic text-center">
+                * {pkg.note}
+              </p>
+
+              <a
+                href={pkg.download}
+                target="_blank"
+                className="px-4 py-2 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-xs md:text-xs text-center"
+              >
+                Download Menu
+              </a>
             </div>
           ))}
         </div>
