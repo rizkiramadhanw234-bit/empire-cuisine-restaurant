@@ -50,13 +50,15 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-5">
             <Link
-              href={"/"}
+              href={"/contact"}
               className="px-4 py-2 lg:px-6 lg:py-2.5 bg-(--bg2) rounded-full text-white hover:bg-red-800 hover:scale-105 transition duration-300 text-sm lg:text-base"
             >
               Contact
             </Link>
             <Link
-              href={"/"}
+              href={
+                "https://api.whatsapp.com/send/?phone=60122248811&text=Hello+Empire+Cuisine%21+I+would+like+to+make+a+reservation.%0A%0AName%3A+%0APhone%3A+%0ADate%3A+%0ATime%3A+%0ANumber+of+Pax%3A+%0AArea%3A+%0AFood+%2F+Package+Preference%3A+%0ARemarks%3A+&type=phone_number&app_absent=0"
+              }
               className="px-4 py-2 lg:px-6 lg:py-2.5 bg-(--bg3) rounded-full text-white hover:bg-amber-700 hover:scale-105 transition duration-300 text-sm lg:text-base"
             >
               WhatsApp

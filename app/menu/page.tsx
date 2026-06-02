@@ -338,12 +338,14 @@ export default function MenuPage() {
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div
+          className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+          data-aos="zoom-in"
+        >
           {menuCategories.map((item) => (
             <div
               key={item.id}
               className="border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-center gap-1 hover:bg-(--bg3)/10 hover:scale-105 transition duration-300 cursor-pointer"
-              data-aos="zoom-in"
             >
               <Image
                 src={item.image}
