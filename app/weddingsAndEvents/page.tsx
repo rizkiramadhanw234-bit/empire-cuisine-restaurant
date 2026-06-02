@@ -70,6 +70,48 @@ export default function WeddingsAndEventsPage() {
             />
             <div className="flex flex-col items-center gap-2">
               <Image src={castle} alt="castle" width={60} />
+              <p className="text-(--bg2) font-bold text-2xl">Main Hall</p>
+              <Image src={ListDecoration} alt="listDecoration" width={150} />
+            </div>
+            <div className="flex flex-col items-center gap-1 text-center">
+              <p className="text-sm text-gray-600">Capacity</p>
+              <p className="text-4xl font-bold text-(--bg2)">35</p>
+              <p className="text-sm">tables</p>
+            </div>
+            <div className="flex flex-col items-center gap-1 text-center bg-(--bg3)/10 rounded-xl p-4">
+              <p className="text-sm text-gray-600">Minimum Spend</p>
+              <p className="text-2xl font-bold text-(--bg3)">RM15,000</p>
+              <p className="text-xs text-gray-500">nett</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              {eventHighlights.slice(0, 4).map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <FaCheckCircle className="text-(--bg3) text-sm mt-1 shrink-0" />
+                  <p className="text-xs">{item}</p>
+                </div>
+              ))}
+            </div>
+            <Link
+              href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20Hall%201`}
+              target="_blank"
+              className="px-4 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm text-center mt-auto"
+            >
+              Enquire for Hall 1
+            </Link>
+          </div>
+          {/* Hall 2 */}
+          <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
+            <video
+              className="w-full h-full object-cover rounded-2xl"
+              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250984/Banquet_Hall_1_esrce1.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+            />
+            <div className="flex flex-col items-center gap-2">
+              <Image src={castle} alt="castle" width={60} />
               <p className="text-(--bg2) font-bold text-2xl">Hall 1</p>
               <Image src={ListDecoration} alt="listDecoration" width={150} />
             </div>
@@ -100,7 +142,7 @@ export default function WeddingsAndEventsPage() {
             </Link>
           </div>
 
-          {/* Hall 2 */}
+          {/* Hall 3 */}
           <div className="flex-1 border-2 border-(--bg2) rounded-2xl p-6 flex flex-col gap-4 relative overflow-hidden">
             <video
               className="w-full h-full object-cover rounded-2xl"

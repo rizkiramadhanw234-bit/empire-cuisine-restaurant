@@ -7,7 +7,6 @@ import RM21 from "../../public/assets/RM2180++.jpg";
 import Link from "next/link";
 
 // menu category images
-import RM1Image from "../../public/assets/menu/RM1++ Dinner Promotion Menu.jpg.jpeg";
 import DimSumImage from "../../public/assets/menu/dimsum.jpg";
 import RM21Image from "../../public/assets/menu/RM2180++.jpg";
 import buffetImage from "../../public/assets/menu/buffet.jpg";
@@ -35,44 +34,64 @@ export default function MenuPage() {
       id: 1,
       name: "RM1++ Dinner Add-On",
       chinese: "RM1++ 超值加购晚餐",
-      image: RM1Image,
+      image: RM1,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM1%2B%2B-Menu/RM1++.Special.Promotion.Package.RM1++.png",
     },
     {
       id: 2,
       name: "⁠RM3++ Dim Sum",
       chinese: "RM3++ 点心",
       image: DimSumImage,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM3-dimsum/01_DIMSUM_FULL_MENU.pdf",
     },
     {
       id: 3,
       name: "RM21.80++ Super Value Package",
       chinese: "RM21.80++ 超值套餐",
       image: RM21Image,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM21.80%2B%2B_Super-value-package/RM21.80++_Super-value-package.jpeg",
     },
-    { id: 4, name: "Buffet", chinese: "自助餐", image: buffetImage },
+    {
+      id: 4,
+      name: "Buffet",
+      chinese: "自助餐",
+      image: buffetImage,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/Buffet/EMPIRE.CUISINE.BUFFET.LEAFLET.pdf",
+    },
     {
       id: 5,
       name: "Ala-Carte Menu",
       chinese: "单点菜单",
       image: alaCarteImage,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/Ala-Carte/01_ALA_CARTE_MENU.pdf",
     },
     {
       id: 6,
       name: "Birthday Meals",
       chinese: "生日套餐",
       image: birthdayImage,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/Birthday-meals-menu/birthday-meals-menu.jpg",
     },
     {
       id: 7,
       name: "Business Events Meals",
       chinese: "商务配套",
       image: businessImage,
+      download:
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/Business-Events-Meals/Business-Events-Meals.jpeg",
     },
     {
       id: 8,
       name: "Wedding Packages",
       chinese: "婚宴配套",
       image: weddingImage,
+      download: "/weddingsAndEvents",
     },
   ];
 
@@ -336,6 +355,13 @@ export default function MenuPage() {
                 {item.chinese}
               </p>
               <p className="text-sm font-semibold text-center">{item.name}</p>
+              <Link
+                href={item.download}
+                target="_blank"
+                className="px-4 py-2 bg-(--bg2) rounded-lg text-xs text-white mt-2 hover:bg-red-800"
+              >
+                Download Menu
+              </Link>
             </div>
           ))}
         </div>

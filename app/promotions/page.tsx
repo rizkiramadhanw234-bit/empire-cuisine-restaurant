@@ -7,6 +7,7 @@ import Link from "next/link";
 import { weddingPackages } from "@/data/weddingPackages";
 import imageWeddingPackages from "../../public/assets/weddingPackages.jpg";
 import ImageParentsPackage from "../../public/assets/parents package.jpg";
+import parentsMenu from "../../public/assets/parents-day-menu.jpg";
 import RM1Image from "../../public/assets/RM1++.jpg";
 
 export default function PromotionsPage() {
@@ -196,12 +197,18 @@ export default function PromotionsPage() {
           <p className="font-chinese text-(--bg3) text-lg mt-1">敬亲感恩宴</p>
         </div>
         <div className="flex justify-center mb-6 gap-8" data-aos="fade-up">
-          <div className="w-70 h-full hover:scale-105 transition duration-300">
+          <div className="relative w-70 h-full hover:scale-105 transition duration-300">
             <Image
               src={ImageParentsPackage}
               alt="ParentsDayPackages"
               className="rounded-2xl"
             />
+            <Link
+              href="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/parents-menu/parents-day-menu.jpg"
+              className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-(--bg2) text-white px-4 py-2 rounded-lg hover:opacity-80 hover:scale-105 transition duration-300 text-sm text-center"
+            >
+              Download Menu
+            </Link>
           </div>
           <div className="w-70 h-full hover:scale-105 transition duration-300">
             <video
