@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import bgImage from "../../public/assets/background.jpeg";
 import ListDecoration from "../../public/assets/listDecoration.png";
@@ -7,10 +8,13 @@ import Link from "next/link";
 import { weddingPackages } from "@/data/weddingPackages";
 import imageWeddingPackages from "../../public/assets/weddingPackages.jpg";
 import ImageParentsPackage from "../../public/assets/parents package.jpg";
-import parentsMenu from "../../public/assets/parents-day-menu.jpg";
 import RM1Image from "../../public/assets/RM1++.jpg";
+import { parentsDay } from "@/data/parentsDay";
+import { StaticImageData } from "next/image";
+import { useState } from "react";
 
 export default function PromotionsPage() {
+  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>();
   const promotions = [
     {
       id: 1,
@@ -86,12 +90,6 @@ export default function PromotionsPage() {
       ctaHref: "/booking",
       ctaStyle: "bg-(--bg3)",
     },
-  ];
-
-  const parentsDay = [
-    { id: 1, price: "RM888++", unit: "per 10 pax" },
-    { id: 2, price: "RM1,188++", unit: "per 10 pax" },
-    { id: 3, price: "RM1,388++", unit: "per 10 pax" },
   ];
 
   return (
@@ -223,13 +221,24 @@ export default function PromotionsPage() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div
+          className="flex flex-col sm:flex-row gap-6 justify-center"
+          data-aos="zoom-in"
+        >
           {parentsDay.map((pkg) => (
             <div
               key={pkg.id}
-              className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-60 mx-auto w-full sm:w-auto"
-              data-aos="zoom-in"
+              onClick={() => setSelectedImage(pkg.image)}
+              className="flex-1 border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-center gap-3 max-w-sm mx-auto w-full sm:w-auto hover:scale-105 transition duration-300 "
             >
+              <div className="h-full w-full flex items-center justify-center">
+                <Image
+                  src={pkg.image}
+                  alt={pkg.unit}
+                  width={300}
+                  className="rounded-2xl"
+                />
+              </div>
               <p className="text-3xl font-bold text-(--bg2)">{pkg.price}</p>
               <Image src={ListDecoration} alt="listDecoration" width={100} />
               <p className="text-sm text-gray-600">{pkg.unit}</p>
@@ -356,6 +365,26 @@ export default function PromotionsPage() {
           * Advance notice is required and subject to market availability.
         </p>
       </div>
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-3xl w-full px-4">
+            <Image
+              src={selectedImage}
+              alt="preview"
+              className="rounded-2xl w-full h-auto"
+            />
+            <button
+              className="absolute top-2 right-6 text-white text-2xl font-bold"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

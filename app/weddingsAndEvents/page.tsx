@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { weddingPackages } from "@/data/weddingPackages";
 import imageWeddingPackages from "../../public/assets/weddingPackages.jpg";
+import MainHallImage from "../../public/assets/main-hall.jpg";
 
 export default function WeddingsAndEventsPage() {
   // What's included / highlights
@@ -59,14 +60,10 @@ export default function WeddingsAndEventsPage() {
         <div className="flex flex-col md:flex-row gap-4" data-aos="fade-up">
           {/* Main Hall */}
           <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
-            <video
-              className="w-full h-full object-cover rounded-2xl"
-              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250984/Banquet_Hall_1_esrce1.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              controls
+            <Image
+              src={MainHallImage}
+              alt="Main Hall"
+              className="w-full h-64 object-cover rounded-2xl"
             />
             <div className="flex flex-col items-center gap-2">
               <Image src={castle} alt="castle" width={60} />
