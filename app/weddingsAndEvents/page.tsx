@@ -57,7 +57,7 @@ export default function WeddingsAndEventsPage() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-4" data-aos="fade-up">
-          {/* Hall 1 */}
+          {/* Main Hall */}
           <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
             <video
               className="w-full h-full object-cover rounded-2xl"
@@ -96,10 +96,10 @@ export default function WeddingsAndEventsPage() {
               target="_blank"
               className="px-4 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm text-center mt-auto"
             >
-              Enquire for Hall 1
+              Enquire for Main Hall
             </Link>
           </div>
-          {/* Hall 2 */}
+          {/* Hall 1 */}
           <div className="flex-1 border-2 border-(--bg3) rounded-2xl p-6 flex flex-col gap-4">
             <video
               className="w-full h-full object-cover rounded-2xl"
@@ -142,7 +142,7 @@ export default function WeddingsAndEventsPage() {
             </Link>
           </div>
 
-          {/* Hall 3 */}
+          {/* Hall 2 */}
           <div className="flex-1 border-2 border-(--bg2) rounded-2xl p-6 flex flex-col gap-4 relative overflow-hidden">
             <video
               className="w-full h-full object-cover rounded-2xl"
