@@ -231,7 +231,7 @@ export default function PromotionsPage() {
               onClick={() => setSelectedImage(pkg.image)}
               className="flex-1 border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-center gap-3 max-w-sm mx-auto w-full sm:w-auto hover:scale-105 transition duration-300 "
             >
-              <div className="h-full w-full flex items-center justify-center">
+              <div className="h-full w-full flex items-center justify-center cursor-pointer">
                 <Image
                   src={pkg.image}
                   alt={pkg.unit}
