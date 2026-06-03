@@ -34,7 +34,7 @@ export default function GalleryPage() {
 
   return (
     <div className="bg-(--primaryBackground)">
-      {/* HERO — tidak berubah */}
+      {/* HERO  */}
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
         <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
