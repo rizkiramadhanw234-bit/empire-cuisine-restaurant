@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   ],
 
   metadataBase: new URL("https://www.empirecuisine.my"),
+  alternates: {
+    canonical: "/",
+  },
 
   // Open Graph
   openGraph: {
