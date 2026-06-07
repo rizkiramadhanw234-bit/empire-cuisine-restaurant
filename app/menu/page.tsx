@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Menu | Premium Chinese Restaurant in Klang",
   description:
-    "Savour authentic Chinese cuisine crafted with premium ingredients and timeless culinary tradition.",
+    "A Feast for Every Gathering Every dish is crafted to celebrate family, friendship, and meaningful moments together.",
 
   keywords: [
     "Chinese restaurant Klang",

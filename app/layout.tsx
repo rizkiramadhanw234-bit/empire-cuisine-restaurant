@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import AOSProvider from "@/components/AosProvider";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const lora = Lora({
   subsets: ["latin"],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Empire Cuisine | Premium Chinese Restaurant in Klang",
     description:
       "Elegant Chinese dining with private VIP rooms & banquet halls. Perfect for family dinners, weddings, and corporate events.",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {
@@ -92,7 +92,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", lora.variable, notoSerifSC.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        lora.variable,
+        notoSerifSC.variable,
+        "font-sans",
+        geist.variable,
+      )}
     >
       <head>
         <script
