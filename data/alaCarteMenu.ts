@@ -1,0 +1,49 @@
+import alaCarte1 from "../public/assets/ala-carte-menu/1.jpg";
+import alaCarte2 from "../public/assets/ala-carte-menu/2.jpg";
+import alaCarte3 from "../public/assets/ala-carte-menu/3.jpg";
+import alaCarte4 from "../public/assets/ala-carte-menu/4.jpg";
+import alaCarte5 from "../public/assets/ala-carte-menu/5.jpg";
+import alaCarte6 from "../public/assets/ala-carte-menu/6.jpg";
+import alaCarte7 from "../public/assets/ala-carte-menu/7.jpg";
+import alaCarte8 from "../public/assets/ala-carte-menu/8.jpg";
+import alaCarte9 from "../public/assets/ala-carte-menu/9.jpg";
+import alaCarte10 from "../public/assets/ala-carte-menu/10.jpg";
+import alaCarte11 from "../public/assets/ala-carte-menu/11.jpg";
+import alaCarte12 from "../public/assets/ala-carte-menu/12.jpg";
+import alaCarte13 from "../public/assets/ala-carte-menu/13.jpg";
+import alaCarte14 from "../public/assets/ala-carte-menu/14.jpg";
+import alaCarte15 from "../public/assets/ala-carte-menu/15.jpg";
+import alaCarte16 from "../public/assets/ala-carte-menu/16.jpg";
+import alaCarte17 from "../public/assets/ala-carte-menu/17.jpg";
+import alaCarte18 from "../public/assets/ala-carte-menu/18.jpg";
+import alaCarte19 from "../public/assets/ala-carte-menu/19.jpg";
+import alaCarte20 from "../public/assets/ala-carte-menu/20.jpg";
+import alaCarte21 from "../public/assets/ala-carte-menu/21.jpg";
+import alaCarte22 from "../public/assets/ala-carte-menu/22.jpg";
+import alaCarte23 from "../public/assets/ala-carte-menu/23.jpg";
+
+export const alaCarteMenu = [
+  { image: alaCarte1 },
+  { image: alaCarte2 },
+  { image: alaCarte3 },
+  { image: alaCarte4 },
+  { image: alaCarte5 },
+  { image: alaCarte6 },
+  { image: alaCarte7 },
+  { image: alaCarte8 },
+  { image: alaCarte9 },
+  { image: alaCarte10 },
+  { image: alaCarte11 },
+  { image: alaCarte12 },
+  { image: alaCarte13 },
+  { image: alaCarte14 },
+  { image: alaCarte15 },
+  { image: alaCarte16 },
+  { image: alaCarte17 },
+  { image: alaCarte18 },
+  { image: alaCarte19 },
+  { image: alaCarte20 },
+  { image: alaCarte21 },
+  { image: alaCarte22 },
+  { image: alaCarte23 },
+];

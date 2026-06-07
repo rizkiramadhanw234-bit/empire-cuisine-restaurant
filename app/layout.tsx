@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Lora, Geist } from "next/font/google";
 import { Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AOSProvider from "@/components/AosProvider";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const lora = Lora({
   subsets: ["latin"],
@@ -89,7 +92,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${lora.variable} ${notoSerifSC.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", lora.variable, notoSerifSC.variable, "font-sans", geist.variable)}
     >
       <head>
         <script

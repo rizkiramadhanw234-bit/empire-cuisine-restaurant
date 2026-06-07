@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import bgImage from "../public/assets/background.jpeg";
+import bgImage from "../public/assets/backgroundMenu.jpeg";
 import ListDecoration from "../public/assets/listDecoration.png";
 import RM1 from "../public/assets/RM1++.jpg";
 import RM3 from "../public/assets/RM3++.jpg";
@@ -26,8 +28,46 @@ import dish7 from "../public/assets/recommededDishes/07_人参瑶柱炖鸡汤.jp
 import dish8 from "../public/assets/recommededDishes/08_上汤蟹皇翅.jpg.jpeg";
 import dish9 from "../public/assets/recommededDishes/09_猪肚汤面线.jpg.jpeg";
 import dish10 from "../public/assets/recommededDishes/10_炭烧脆皮乳猪.jpg.jpeg";
+import CarouselMenu from "@/components/carouselMenu";
+import { IoPeopleSharp } from "react-icons/io5";
+import { FaBusinessTime } from "react-icons/fa";
+import { FaBirthdayCake } from "react-icons/fa";
+import { GiPartyFlags } from "react-icons/gi";
+import { BiSolidBowlHot } from "react-icons/bi";
 
 export default function Menu() {
+  const items = [
+    {
+      id: 1,
+      name: "Family Gathering",
+      chinese: "家庭聚餐",
+      icon: <IoPeopleSharp />,
+    },
+    {
+      id: 2,
+      name: "Business Dining",
+      chinese: "商务宴请",
+      icon: <FaBusinessTime />,
+    },
+    {
+      id: 3,
+      name: "Wedding Banquet",
+      chinese: "婚宴喜庆",
+      icon: <GiPartyFlags />,
+    },
+    {
+      id: 4,
+      name: "Birthday Celebration",
+      chinese: "生日庆祝",
+      icon: <FaBirthdayCake />,
+    },
+    {
+      id: 5,
+      name: "Buffet Feast",
+      chinese: "自助餐宴",
+      icon: <BiSolidBowlHot />,
+    },
+  ];
   // Menu categories
   const menuCategories = [
     {
@@ -175,13 +215,30 @@ export default function Menu() {
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={400} />
             <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
-              Savour authentic Chinese cuisine crafted with <br /> premium
-              ingredients and timeless culinary tradition.
+              A Feast for Every Gathering <br /> Every dish is crafted to
+              celebrate family, friendship,
+              <br /> and meaningful moments together.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-2xl font-light leading-7 md:leading-9 md:mt-4">
-              精选优质食材 <span className="text-(--bg3)">|</span> 匠心烹饪{" "}
-              <span className="text-(--bg3)">|</span> 正宗中式美味
+            <h3 className="font-chinese font-bold text-(--bg3) text-sm md:text-2xl leading-7 md:leading-10 md:mt-2">
+              每一次相聚，都是一场好宴
+              <br />
+              每一道佳肴，都为团圆而准备。
             </h3>
+            <div className="flex gap-6 mt-3">
+              {items.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex flex-col gap-2 items-center justify-between text-white"
+                >
+                  <p className="text-4xl text-(--bg3)">{item.icon}</p>
+                  <p className="font-chinese">{item.chinese}</p>
+                  <p>{item.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="px-4 md:px-10 mt-6">
+            <CarouselMenu />
           </div>
         </div>
       </div>

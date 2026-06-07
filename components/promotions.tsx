@@ -221,6 +221,26 @@ export default function Promotions() {
           </div>
         </div>
 
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-3xl w-full px-4">
+              <Image
+                src={selectedImage}
+                alt="preview"
+                className="rounded-2xl w-full h-auto"
+              />
+              <button
+                className="absolute top-2 right-6 text-white text-2xl font-bold"
+                onClick={() => setSelectedImage(null)}
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        )}
         <div
           className="flex flex-col sm:flex-row gap-6 justify-center"
           data-aos="zoom-in"
@@ -359,7 +379,6 @@ export default function Promotions() {
             <p className="font-semibold text-(--bg2)">Others</p>
           </div>
         </div>
-
         <p
           className="text-xs text-gray-500 italic text-center mt-4"
           data-aos="fade-up"
@@ -367,26 +386,6 @@ export default function Promotions() {
           * Advance notice is required and subject to market availability.
         </p>
       </div>
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-3xl w-full px-4">
-            <Image
-              src={selectedImage}
-              alt="preview"
-              className="rounded-2xl w-full h-auto"
-            />
-            <button
-              className="absolute top-2 right-6 text-white text-2xl font-bold"
-              onClick={() => setSelectedImage(null)}
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
