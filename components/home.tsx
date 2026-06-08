@@ -1,5 +1,4 @@
 import Image from "next/image";
-import image1 from "../public/assets/viprooms.jpg";
 import castle from "../public/assets/castle.png";
 import ImagePremium from "../public/assets/1.png";
 import ImagePrivate from "../public/assets/2.png";
@@ -18,8 +17,75 @@ import { SiGooglemaps } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
 import ListDecoration from "../public/assets/listDecoration.png";
+import VipRoomsImage from "../public/assets/viprooms.jpg";
 
 export default function Home() {
+  const halls = [
+    {
+      id: 1,
+      name: "Main Hall",
+      tables: 32,
+      minSpend: "RM15,000",
+    },
+    {
+      id: 2,
+      name: "Hall 2",
+      tables: 32,
+      minSpend: "RM15,000",
+    },
+    {
+      id: 3,
+      name: "Hall 3",
+      tables: 50,
+      minSpend: "RM30,000",
+    },
+  ];
+
+  const features = [
+    {
+      id: 1,
+      image: ImagePremium,
+      titleChinese: "优 质 中 式 料 理",
+      titleEnglish: "Premium Chinese Cuisine",
+      descChinese: "精选优质食材，匠心烹饪，\n呈现正宗中式美味。",
+    },
+    {
+      id: 2,
+      image: ImagePrivate,
+      titleChinese: "私 人 包 厢",
+      titleEnglish: "Private Rooms",
+      descChinese: "多间风格雅致的私人包厢，\n适合家宴、商务宴请与小型聚会。",
+    },
+    {
+      id: 3,
+      image: ImageBanquet,
+      titleChinese: "双层多功能宴会厅",
+      titleEnglish: "Two-Storey Multifunction\nBanquet Hall",
+      descChinese: "双层宴会空间，设备齐全，\n满足不同规模宴会需求。",
+    },
+    {
+      id: 4,
+      image: ImagePremium,
+      titleChinese: "一站式宴会服务",
+      titleEnglish: "One-Stop Event Solutions",
+      descChinese: "场地、餐饮、流程安排，\n让主办方更轻松。",
+    },
+    {
+      id: 5,
+      image: ImagePrivate,
+      titleChinese: "巴生十大名菜",
+      titleEnglish: "Signature Klang Specialties",
+      descChinese: "品尝最具代表性的巴生风味。",
+    },
+    {
+      id: 6,
+      image: ImageBanquet,
+      titleChinese: "免费停车",
+      titleEnglish: "Ample FREE Parking Convenience",
+      descChinese: "让宾客轻松赴宴。",
+    },
+  ];
+
   const DiningHighligts = [
     { id: 1, name: "Dim Sum", image: Dimsum },
     { id: 2, name: "Seafood", image: Seafood },
@@ -51,22 +117,22 @@ export default function Home() {
             className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
             data-aos="fade-up"
           >
-            <div className="font-chinese text-amber-400 text-4xl sm:text-5xl md:text-7xl">
-              御 膳 楼
+            <div className="font-chinese text-amber-400 text-4xl sm:text-5xl md:text-6xl">
+              御膳楼大酒家
             </div>
-            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl md:mb-4">
-              Empire Cuisine
+            <h1 className="text-amber-400 font-semibold text-2xl sm:text-4xl md:text-5xl md:mb-4">
+              Empire Cuisine Restaurant
             </h1>
-            <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
-              Premium Chinese Cuisine {""}
-              <span className="text-amber-400 font-bold">|</span> Private Rooms{" "}
-              <span className="text-amber-400 font-bold">|</span>
-              <br /> Two-Storey Multifunction Banquet Hall
+            <h2 className="font-chinese font-bold text-amber-400 text-3xl sm:text-4xl md:text-6xl">
+              巴生人的宴客中心之首选
             </h2>
-            <Image src={ListDecoration} alt="Empire Cuisine" width={200} />
-            <h3 className="text-white text-sm md:text-lg font-light leading-7 md:leading-9">
-              A refined Chinese dining destination in Klang <br /> for family
-              dining, private gatherings and <br /> banquet celebrations.
+            <p className="font-bold text-white text-sm md:text-4xl">
+              Authentic Chinese Dining & Banquet Destination
+            </p>
+
+            <Image src={ListDecoration} alt="Empire Cuisine" width={300} />
+            <h3 className="text-white text-sm md:text-2xl font-light leading-7 md:leading-9">
+              从家庭聚餐、商务宴请到婚宴寿宴， 一站式满足您的餐饮与宴会需求。
             </h3>
           </div>
 
@@ -96,7 +162,7 @@ export default function Home() {
       <div className="pt-8 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center">
           <div
-            className="text-center md:text-2xl text-(--bg2) font-bold mb-2"
+            className="text-center text-xl md:text-2xl text-(--bg2) font-bold mb-2"
             data-aos="fade-up"
           >
             Why Empire Cuisine
@@ -105,122 +171,106 @@ export default function Home() {
         </div>
 
         <div
-          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 pt-5 pb-10"
+          className="flex flex-col md:grid md:grid-cols-3 items-start justify-between gap-8 md:gap-8 pt-5 pb-10"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          {/* premium */}
-          <div className="flex items-start justify-center gap-4 w-full md:w-auto">
-            <Image src={ImagePremium} alt="castle" width={70} height={70} />
-            <div className="flex flex-col items-start gap-1">
-              <p className="text-(--bg2) font-bold text-xl">
-                优 质 中 式 料 理
-              </p>
-              <p className="text-base font-bold pb-2">
-                Premium Chinese Cuisine
-              </p>
-              <p className="text-sm">
-                精选优质食材，匠心烹饪，
-                <br />
-                呈现正宗中式美味。
-              </p>
+          {features.map((feature) => (
+            <div
+              key={feature.id}
+              className="flex items-start justify-between gap-8"
+            >
+              <Image
+                src={feature.image}
+                alt={feature.titleEnglish}
+                width={70}
+                height={70}
+                className="object-contain"
+              />
+              <div className="flex flex-col items-start justify-between gap-1">
+                <p className="text-(--bg2) font-bold text-xl">
+                  {feature.titleChinese}
+                </p>
+                <p
+                  className="text-base font-bold pb-2"
+                  style={{ whiteSpace: "pre-line" }}
+                >
+                  {feature.titleEnglish}
+                </p>
+                <p className="text-sm" style={{ whiteSpace: "pre-line" }}>
+                  {feature.descChinese}
+                </p>
+              </div>
+              <span className="hidden md:block border md:border-y-0 md:border-x md:py-15 border-(--bg3) w-full md:w-auto border-t" />
             </div>
-          </div>
-
-          <span className="hidden md:block border md:border-y-0 md:border-x md:py-20 border-(--bg3) w-full md:w-auto border-t"></span>
-
-          {/* private */}
-          <div className="flex items-start justify-center gap-4 w-full md:w-auto">
-            <Image src={ImagePrivate} alt="castle" width={70} height={70} />
-            <div className="flex flex-col items-start gap-1">
-              <p className="text-(--bg2) font-bold text-xl">私 人 包 厢</p>
-              <p className="text-base font-bold pb-2">Private Rooms</p>
-              <p className="text-sm">
-                多间风格雅致的私人包厢，
-                <br />
-                适合家宴、商务宴请与小型聚会。
-              </p>
-            </div>
-          </div>
-
-          <span className="hidden md:block border md:border-y-0 md:border-x md:py-20 border-(--bg3) w-full md:w-auto border-t"></span>
-
-          {/* banquet */}
-          <div className="flex items-start justify-center gap-4 w-full md:w-auto">
-            <Image src={ImageBanquet} alt="castle" width={70} height={70} />
-            <div className="flex flex-col items-start gap-1">
-              <p className="text-(--bg2) font-bold text-xl">双层多功能宴会厅</p>
-              <p className="text-base font-bold pb-2">
-                Two-Storey Multifunction <br /> Banquet Hall
-              </p>
-              <p className="text-sm">
-                双层宴会空间，设备齐全， <br />
-                满足不同规模宴会需求。
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
       {/*  VIP + BANQUET CARDS  */}
-      <div className="pt-4 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-4 pb-4  px-4 sm:px-6 lg:px-8">
         <div
           className="flex flex-col lg:flex-row items-stretch justify-center gap-4"
           data-aos="fade-up"
         >
           {/* card 1 – VIP Rooms */}
           <div className="p-4 border border-(--bg3) rounded-2xl flex flex-col lg:flex-row gap-6 lg:gap-8">
-            <div className="flex flex-col items-center justify-between">
-              <p className="text-center font-bold text-(--bg2) text-xl pb-2">
-                Private Dining & VIP Rooms
-              </p>
-              <Image src={ListDecoration} alt="Empire Cuisine" width={250} />
-              <div className="flex flex-col items-start justify-center gap-2 pt-2">
-                <p className="text-sm">Multiple private rooms available:</p>
-                <p className="text-xl font-bold text-(--bg2)">
-                  VVIP8, V1, V2, V3, V5, V6, V7, V9.
+            <div className="flex flex-col md:flex items-center justify-between">
+              <div className="flex flex-col items-center justify-between p-2">
+                <p className="text-center font-bold text-(--bg2) text-xl pb-2">
+                  Private Dining & VIP Rooms
                 </p>
-                <div className="flex gap-3 items-center justify-center mt-3">
-                  <div className="flex p-2 gap-3 items-center justify-center bg-(--bg2) rounded-full w-10 h-10 shrink-0">
-                    <div className="text-white text-lg">
-                      <BsPeopleFill />
+                <Image src={ListDecoration} alt="Empire Cuisine" width={250} />
+                <div className="flex flex-col items-center justify-center gap-2 pt-2">
+                  <p className="text-sm">Multiple private rooms available:</p>
+                  <p className="text-xl font-bold text-(--bg2)">
+                    VVIP8, V1, V2, V3, V5, V6, V7, V9.
+                  </p>
+                  <div className="flex flex-col items-start">
+                    <div className="flex gap-3 items-start justify-center mt-3">
+                      <div className="flex p-2 gap-3 items-center justify-center bg-(--bg2) rounded-full w-10 h-10 shrink-0">
+                        <div className="text-white text-lg">
+                          <BsPeopleFill />
+                        </div>
+                      </div>
+                      <p className="text-sm ml-2">
+                        <span className="font-bold text-(--bg2)">VVIP8</span>{" "}
+                        accommodates up to{" "}
+                        <span className="text-(--bg2) font-bold">34</span>{" "}
+                        guests in total <br /> (22 at the main table + optional
+                        extra seating for 12).
+                      </p>
+                    </div>
+                    <div className="flex gap-3 items-center justify-center mt-3">
+                      <div className="flex p-2 gap-2 items-center justify-center bg-(--bg2) rounded-full w-10 h-10 shrink-0">
+                        <div className="text-white text-lg">
+                          <MdOutlineBedroomChild />
+                        </div>
+                      </div>
+                      <p className="text-sm ml-2">
+                        <span className="text-(--bg2) font-bold">
+                          VVIP8, V3
+                        </span>{" "}
+                        and <span className="text-(--bg2) font-bold"> V5 </span>
+                        come with attached washroom.
+                      </p>
                     </div>
                   </div>
-                  <p className="text-sm ml-2">
-                    <span className="font-bold text-(--bg2)">VVIP8</span>{" "}
-                    accommodates up to{" "}
-                    <span className="text-(--bg2) font-bold">34</span> guests in
-                    total <br /> (22 at the main table + optional extra seating
-                    for 12).
-                  </p>
                 </div>
-                <div className="flex gap-3 items-center justify-center mt-3">
-                  <div className="flex p-2 gap-2 items-center justify-center bg-(--bg2) rounded-full w-10 h-10 shrink-0">
-                    <div className="text-white text-lg">
-                      <MdOutlineBedroomChild />
-                    </div>
-                  </div>
-                  <p className="text-sm ml-2">
-                    <span className="text-(--bg2) font-bold">VVIP8, V3</span>{" "}
-                    and <span className="text-(--bg2) font-bold"> V5 </span>come
-                    with attached washroom.
-                  </p>
-                </div>
+                <Link
+                  href="/vipRooms"
+                  className="px-4 py-2 bg-(--bg2) text-white rounded-md mt-4 hover:bg-red-800 hover:scale-105 duration-300"
+                >
+                  Explore VIP Rooms
+                </Link>
               </div>
-              <Link
-                href="/vipRooms"
-                className="px-4 py-2 bg-(--bg2) text-white rounded-md mt-4 hover:bg-red-800 hover:scale-105 duration-300"
-              >
-                Explore VIP Rooms
-              </Link>
+              <Image
+                src={VipRoomsImage}
+                alt="Empire Cuisine"
+                width={300}
+                className="rounded-2xl"
+              />
             </div>
-            <Image
-              src={image1}
-              alt="bgImage"
-              width={300}
-              height={300}
-              className="rounded-2xl w-full lg:w-75 object-cover"
-            />
           </div>
 
           {/* card 2 – Banquet */}
@@ -231,31 +281,33 @@ export default function Home() {
               </p>
               <Image src={ListDecoration} alt="Empire Cuisine" width={250} />
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="p-4 bg-(--bg3)/10 rounded-2xl flex flex-col items-center justify-center w-full sm:w-50">
-                <Image src={castle} alt="bgImage" width={50} height={50} />
-                <p className="text-(--bg2) font-bold">Hall 1</p>
-                <p>
-                  up to{" "}
-                  <span className="text-xl text-(--bg2) font-bold">32</span>{" "}
-                  tables
-                </p>
-                <Image src={ListDecoration} alt="Empire Cuisine" width={150} />
-                <p>Minimum spend</p>
-                <p className="text-(--bg2) font-bold text-xl">RM15,000</p>
-              </div>
-              <div className="p-4 bg-(--bg3)/10 rounded-2xl flex flex-col items-center justify-center w-full sm:w-50">
-                <Image src={castle} alt="bgImage" width={50} height={50} />
-                <p className="text-(--bg2) font-bold">Hall 2</p>
-                <p>
-                  up to{" "}
-                  <span className="text-xl text-(--bg2) font-bold">50</span>{" "}
-                  tables
-                </p>
-                <Image src={ListDecoration} alt="Empire Cuisine" width={150} />
-                <p>Minimum spend</p>
-                <p className="text-(--bg2) font-bold text-xl">RM30,000</p>
-              </div>
+
+            <div className="flex flex-col md:flex-row gap-4">
+              {halls.map((hall) => (
+                <div
+                  key={hall.id}
+                  className="p-4 bg-(--bg3)/10 rounded-2xl flex flex-col items-center justify-center w-full sm:w-50"
+                >
+                  <Image src={castle} alt="bgImage" width={50} height={50} />
+                  <p className="text-(--bg2) font-bold">{hall.name}</p>
+                  <p>
+                    up to{" "}
+                    <span className="text-xl text-(--bg2) font-bold">
+                      {hall.tables}
+                    </span>{" "}
+                    tables
+                  </p>
+                  <Image
+                    src={ListDecoration}
+                    alt="Empire Cuisine"
+                    width={150}
+                  />
+                  <p>Minimum spend</p>
+                  <p className="text-(--bg2) font-bold text-xl">
+                    {hall.minSpend}
+                  </p>
+                </div>
+              ))}
             </div>
             <p className="text-sm text-center">
               Ideal for weddings, company dinners, birthdays and large
@@ -328,20 +380,26 @@ export default function Home() {
               </p>
             </div>
             <Link
-              href="https://www.google.com/maps/place/157+Jalan+Limau+Gedong,+Kawasan+18,+41300+Klang,+Selangor"
+              href="https://waze.com/ul/hw281kehrc"
               target="_blank"
               className="px-5 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition-all duration-300"
             >
               Get Direction
             </Link>
           </div>
-          <Image
-            src={Maps}
-            alt="bgImage"
-            width={700}
-            height={500}
-            className="shadow-lg w-full lg:w-1/2 rounded-lg"
-          />
+          <Link
+            href="https://g.co/kgs/QS6EZvW"
+            target="_blank"
+            className="w-full md:w-2xl hover:scale-105 transition-all duration-300"
+          >
+            <Image
+              src={Maps}
+              alt="bgImage"
+              width={1000}
+              height={1000}
+              className="shadow-lg rounded-lg"
+            />
+          </Link>
         </div>
       </div>
     </div>

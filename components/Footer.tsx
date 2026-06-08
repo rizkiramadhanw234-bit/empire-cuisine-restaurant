@@ -2,44 +2,70 @@
 
 import Link from "next/link";
 import { FaWhatsapp, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import listDecoraton from "../public/assets/listDecoration.png";
+import Image from "next/image";
+import { LiaFacebook } from "react-icons/lia";
+import { FaInstagram } from "react-icons/fa";
+import { AiOutlineYoutube } from "react-icons/ai";
 
 const quickLinks = [
   { id: "home", label: "Home", href: "/home" },
   { id: "about", label: "About", href: "/about" },
   { id: "menu", label: "Menu", href: "/menu" },
   { id: "vip", label: "VIP Rooms", href: "/vip" },
-  { id: "weddings", label: "Weddings & Events", href: "/weddings" },
-  { id: "gallery", label: "Gallery", href: "/gallery" },
-  { id: "contact", label: "Contact", href: "/contact" },
+  {
+    id: "weddings",
+    label: "Weddings & Events",
+    href: "/weddings",
+  },
+  {
+    id: "gallery",
+    label: "Gallery",
+    href: "/gallery",
+  },
+  {
+    id: "contact",
+    label: "Contact",
+    href: "/contact",
+  },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-(--bg2) pt-16 pb-8 border-t border-amber-600/20">
-      <div className="max-w-6xl mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+    <footer className="bg-(--bg3)/50 pt-16">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
         {/* Brand */}
         <div>
-          <div className="font-chinese text-2xl text-amber-500 font-semibold tracking-[4px]">
-            御膳楼
+          <div className="flex flex-col items-start justify-center">
+            <p className="font-chinese text-6xl text-(--bg2) font-semibold tracking-[4px]">
+              御膳楼
+            </p>
+            <span className="font-cormorant font-bold text-sm text-(--bg2)  text-center uppercase mb-2 mt-4">
+              Empire Cuisine Restaurant
+            </span>
+            <Image
+              src={listDecoraton}
+              alt="listDecoration"
+              width={200}
+              height={200}
+              className="mb-2"
+            />
           </div>
-          <span className="font-cormorant text-sm text-amber-500/70 tracking-[3px] uppercase block mb-4">
-            Empire Cuisine Restaurant
-          </span>
-          <div className="font-chinese text-sm text-amber-500 font-semibold tracking-[4px]">
-            好吃 又有面子
+          <div className="font-chinese text-sm text-(--bg2) font-semibold tracking-[2px]">
+            每一次相聚，都值得一场好宴
           </div>
-          <div className="font-chinese text-sm text-amber-500 font-semibold tracking-[4px]">
-            位于巴生的精致中式餐饮酒楼，适合家庭聚餐、私人包厢聚会及宴会庆典。
+          <div className="font-chinese text-xs text-black font-semibold tracking-[4px] mt-2">
+            以精致中式料理、贴心服务及专业宴会空间，陪伴每一个重要时刻。
           </div>
-          <p className="font-eb-garamond text-sm text-amber-50/50 leading-relaxed italic max-w-xs mt-2">
-            A refined Chinese dining destination in Klang for family dining,
-            private gatherings and banquet celebrations.
+          <p className="font-eb-garamond text-sm text-black leading-relaxed italic max-w-xs mt-2">
+            More than a restaurant — a place where families gather, friendships
+            grow, and celebrations come to life.
           </p>
         </div>
 
         {/* Quick Links */}
-        <div>
-          <div className="font-cormorant text-xs tracking-[4px] uppercase text-amber-500 mb-5 font-semibold">
+        <div className="px-10">
+          <div className="font-cormorant text-xs tracking-[4px] uppercase text-(--bg2) mb-5 font-semibold">
             Quick Links
           </div>
           <ul className="flex flex-col gap-2.5">
@@ -47,7 +73,7 @@ export default function Footer() {
               <li key={link.id}>
                 <Link
                   href={link.href}
-                  className="font-eb-garamond text-sm text-amber-50/60 hover:text-amber-300 transition-colors"
+                  className="font-eb-garamond text-sm text-black hover:text-amber-800"
                 >
                   {link.label}
                 </Link>
@@ -58,28 +84,28 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <div className="font-cormorant text-xs tracking-[4px] uppercase text-amber-500 mb-5 font-semibold">
+          <div className="font-cormorant text-xs tracking-[4px] uppercase text-(--bg2) mb-5 font-semibold">
             Contact
           </div>
           <div className="flex gap-2.5 mb-3">
-            <FaPhone className="text-amber-500 mt-1 shrink-0 text-sm" />
+            <FaPhone className="text-(--bg2) mt-1 shrink-0 text-sm" />
             <a
               href="tel:+60122248811"
-              className="font-eb-garamond text-sm text-amber-50/60 hover:text-amber-300 transition-colors"
+              className="font-eb-garamond text-sm text-black hover:text-amber-300 transition-colors"
             >
               012-224 8811
             </a>
           </div>
           <div className="flex gap-2.5 mb-4">
-            <FaMapMarkerAlt className="text-amber-500 mt-1 shrink-0 text-sm" />
-            <span className="font-eb-garamond text-sm text-amber-50/60">
+            <FaMapMarkerAlt className="text-(--bg2) mt-1 shrink-0 text-sm" />
+            <span className="font-eb-garamond text-sm text-black leading-6">
               157, Jalan Limau Gedong, Kawasan 18, 41300 Klang, Selangor
             </span>
           </div>
           <Link
             href="https://wa.me/601222488811"
             target="_blank"
-            className="inline-flex items-center gap-2 bg-emerald-700 text-white text-xs uppercase tracking-[2px] py-2.5 px-4 hover:bg-emerald-800 transition-all duration-300 rounded-sm"
+            className="inline-flex items-center gap-2 bg-transparent border border-(--bg2) text-(--bg2) text-xs uppercase tracking-[2px] py-2.5 px-4 hover:bg-(--bg3) hover:text-white transition-all duration-300 rounded-sm"
           >
             <FaWhatsapp size={16} />
             WhatsApp Us
@@ -88,41 +114,63 @@ export default function Footer() {
 
         {/* Opening Hours */}
         <div>
-          <div className="font-cormorant text-xs tracking-[4px] uppercase text-amber-500 mb-5 font-semibold">
+          <div className="font-cormorant text-xs tracking-[4px] uppercase text-(--bg2) mb-5 font-semibold">
             Opening Hours
           </div>
           <div className="flex flex-col gap-0.5 mb-3">
-            <span className="text-amber-500/80 font-semibold text-sm">
+            <span className="text-(--bg2) font-semibold text-sm">
               Mon – Fri
             </span>
-            <span className="font-eb-garamond text-sm text-amber-50/60">
+            <span className="font-eb-garamond text-sm text-black">
               10:30 AM – 2:30 PM
             </span>
-            <span className="font-eb-garamond text-sm text-amber-50/60">
+            <span className="font-eb-garamond text-sm text-black">
               5:30 PM – 10:30 PM
             </span>
           </div>
           <div className="flex flex-col gap-0.5">
-            <span className="text-amber-500/80 font-semibold text-sm">
+            <span className="text-(--bg2) font-semibold text-sm">
               Sat, Sun &amp; PH
             </span>
-            <span className="font-eb-garamond text-sm text-amber-50/60">
+            <span className="font-eb-garamond text-sm text-black">
               8:00 AM – 2:30 PM
             </span>
-            <span className="font-eb-garamond text-sm text-amber-50/60">
+            <span className="font-eb-garamond text-sm text-black">
               5:30 PM – 10:30 PM
             </span>
           </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-5 md:px-10 pt-6 border-t border-amber-600/15 flex flex-col md:flex-row items-center justify-between gap-3">
-        <span className="font-eb-garamond text-xs text-amber-50/60">
-          © 2025 Empire Cuisine Restaurant (御膳楼). All Rights Reserved.
-        </span>
-        <span className="font-noto-serif-sc text-xs tracking-[3px] text-amber-50/60">
-          御膳楼大酒家
-        </span>
+      <div className="bg-amber-950/80 pb-10">
+        <div className="max-w-7xl mx-auto px-10 pt-10 border-t border-amber-600/15 flex flex-col md:flex-row items-center justify-between gap-3">
+          <div className="flex gap-6 md:flex items-center justify-center text-white">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61555584206586&sk=about"
+              target="_blank"
+            >
+              <LiaFacebook size={30} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/empirecuisine/"
+              target="_blank"
+            >
+              <FaInstagram size={24} />
+            </Link>
+            <Link
+              href="https://www.youtube.com/@EmpireCuisineRestaurant"
+              target="_blank"
+            >
+              <AiOutlineYoutube size={30} />
+            </Link>
+          </div>
+          <span className="font-eb-garamond text-sm text-white">
+            © 2025 Empire Cuisine Restaurant (御膳楼). All Rights Reserved.
+          </span>
+          <span className="font-chinese text-lg tracking-[3px] text-white">
+            御膳楼大酒家
+          </span>
+        </div>
       </div>
     </footer>
   );

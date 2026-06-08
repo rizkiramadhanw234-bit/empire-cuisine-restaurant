@@ -29,10 +29,10 @@ import dish8 from "../public/assets/recommededDishes/08_上汤蟹皇翅.jpg.jpeg
 import dish9 from "../public/assets/recommededDishes/09_猪肚汤面线.jpg.jpeg";
 import dish10 from "../public/assets/recommededDishes/10_炭烧脆皮乳猪.jpg.jpeg";
 import CarouselMenu from "@/components/carouselMenu";
-import { IoPeopleSharp } from "react-icons/io5";
+import { IoIosPeople } from "react-icons/io";
 import { FaBusinessTime } from "react-icons/fa";
 import { FaBirthdayCake } from "react-icons/fa";
-import { GiPartyFlags } from "react-icons/gi";
+import { BsCalendar2HeartFill } from "react-icons/bs";
 import { BiSolidBowlHot } from "react-icons/bi";
 
 export default function Menu() {
@@ -41,7 +41,7 @@ export default function Menu() {
       id: 1,
       name: "Family Gathering",
       chinese: "家庭聚餐",
-      icon: <IoPeopleSharp />,
+      icon: <IoIosPeople size={42} />,
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ export default function Menu() {
       id: 3,
       name: "Wedding Banquet",
       chinese: "婚宴喜庆",
-      icon: <GiPartyFlags />,
+      icon: <BsCalendar2HeartFill size={30} />,
     },
     {
       id: 4,
