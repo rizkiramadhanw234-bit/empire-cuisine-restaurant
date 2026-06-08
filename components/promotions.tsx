@@ -7,14 +7,9 @@ import RM2180Image from "../public/assets/RM2180++.jpg";
 import Link from "next/link";
 import { weddingPackages } from "@/data/weddingPackages";
 import imageWeddingPackages from "../public/assets/weddingPackages.jpg";
-import ImageParentsPackage from "../public/assets/parents package.jpg";
 import RM1Image from "../public/assets/RM1++.jpg";
-import { parentsDay } from "@/data/parentsDay";
-import { StaticImageData } from "next/image";
-import { useState } from "react";
 
 export default function Promotions() {
-  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>();
   const promotions = [
     {
       id: 1,
@@ -179,103 +174,6 @@ export default function Promotions() {
               </Link>
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* PARENTS' DAY PACKAGES */}
-      <div className="pt-6 pb-6 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
-        <div
-          className="flex flex-col items-center justify-center mb-6"
-          data-aos="fade-up"
-        >
-          <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
-            Parents&apos; Day Packages
-          </h2>
-          <Image src={ListDecoration} alt="listDecoration" width={250} />
-          <p className="font-chinese text-(--bg3) text-lg mt-1">敬亲感恩宴</p>
-        </div>
-        <div className="flex justify-center mb-6 gap-8" data-aos="fade-up">
-          <div className="relative w-70 h-full hover:scale-105 transition duration-300">
-            <Image
-              src={ImageParentsPackage}
-              alt="ParentsDayPackages"
-              className="rounded-2xl"
-            />
-            <Link
-              href="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/parents-menu/parents-day-menu.jpg"
-              className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-(--bg2) text-white px-4 py-2 rounded-lg hover:opacity-80 hover:scale-105 transition duration-300 text-sm text-center"
-            >
-              Download Menu
-            </Link>
-          </div>
-          <div className="w-70 h-full hover:scale-105 transition duration-300">
-            <video
-              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780343617/parents_day_v8hqkp.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              controls
-              className="rounded-2xl"
-            />
-          </div>
-        </div>
-
-        {selectedImage && (
-          <div
-            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
-            onClick={() => setSelectedImage(null)}
-          >
-            <div className="relative max-w-3xl w-full px-4">
-              <Image
-                src={selectedImage}
-                alt="preview"
-                className="rounded-2xl w-full h-auto"
-              />
-              <button
-                className="absolute top-2 right-6 text-white text-2xl font-bold"
-                onClick={() => setSelectedImage(null)}
-              >
-                ✕
-              </button>
-            </div>
-          </div>
-        )}
-        <div
-          className="flex flex-col sm:flex-row gap-6 justify-center"
-          data-aos="zoom-in"
-        >
-          {parentsDay.map((pkg) => (
-            <div
-              key={pkg.id}
-              className="flex-1 border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-center gap-3 max-w-sm mx-auto w-full sm:w-auto hover:scale-105 transition duration-300 "
-            >
-              <div
-                className="h-full w-full flex items-center justify-center cursor-pointer"
-                onClick={() => setSelectedImage(pkg.image)}
-              >
-                <Image
-                  src={pkg.image}
-                  alt={pkg.unit}
-                  width={300}
-                  className="rounded-2xl"
-                />
-              </div>
-              <p className="text-3xl font-bold text-(--bg2)">{pkg.price}</p>
-              <Image src={ListDecoration} alt="listDecoration" width={100} />
-              <p className="text-sm text-gray-600">{pkg.unit}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex justify-center mt-6" data-aos="fade-up">
-          <Link
-            href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20Parents'%20Day%20packages`}
-            target="_blank"
-            className="px-6 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm"
-          >
-            WhatsApp Enquiry
-          </Link>
         </div>
       </div>
 

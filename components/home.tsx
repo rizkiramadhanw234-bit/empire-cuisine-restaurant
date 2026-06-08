@@ -126,7 +126,7 @@ export default function Home() {
             <h2 className="font-chinese font-bold text-amber-400 text-3xl sm:text-4xl md:text-6xl">
               巴生人的宴客中心之首选
             </h2>
-            <p className="font-bold text-white text-sm md:text-4xl">
+            <p className="font-semibold text-white text-sm md:text-4xl">
               Authentic Chinese Dining & Banquet Destination
             </p>
 
@@ -171,24 +171,24 @@ export default function Home() {
         </div>
 
         <div
-          className="flex flex-col md:grid md:grid-cols-3 items-start justify-between gap-8 md:gap-8 pt-5 pb-10"
+          className="flex flex-col md:grid md:grid-cols-3 items-stretch pt-5 pb-10 gap-0"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="flex items-start justify-between gap-8"
+              className="flex items-start gap-4 px-6 py-4 md:py-0 md:px-8 border-b md:border-b-0 md:border-r border-(--bg3) "
             >
               <Image
                 src={feature.image}
                 alt={feature.titleEnglish}
-                width={70}
-                height={70}
-                className="object-contain"
+                width={60}
+                height={60}
+                className="shrink-0 mt-1"
               />
-              <div className="flex flex-col items-start justify-between gap-1">
-                <p className="text-(--bg2) font-bold text-xl">
+              <div className="flex flex-col gap-1">
+                <p className="text-(--bg2) font-bold text-xl mt-4">
                   {feature.titleChinese}
                 </p>
                 <p
@@ -201,7 +201,6 @@ export default function Home() {
                   {feature.descChinese}
                 </p>
               </div>
-              <span className="hidden md:block border md:border-y-0 md:border-x md:py-15 border-(--bg3) w-full md:w-auto border-t" />
             </div>
           ))}
         </div>
@@ -282,15 +281,15 @@ export default function Home() {
               <Image src={ListDecoration} alt="Empire Cuisine" width={250} />
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {halls.map((hall) => (
                 <div
                   key={hall.id}
-                  className="p-4 bg-(--bg3)/10 rounded-2xl flex flex-col items-center justify-center w-full sm:w-50"
+                  className="p-6 bg-(--bg3)/10 rounded-2xl flex flex-col items-center justify-center gap-2 w-80 md:w-full"
                 >
                   <Image src={castle} alt="bgImage" width={50} height={50} />
-                  <p className="text-(--bg2) font-bold">{hall.name}</p>
-                  <p>
+                  <p className="text-(--bg2) font-bold text-lg">{hall.name}</p>
+                  <p className="text-sm">
                     up to{" "}
                     <span className="text-xl text-(--bg2) font-bold">
                       {hall.tables}
@@ -302,7 +301,7 @@ export default function Home() {
                     alt="Empire Cuisine"
                     width={150}
                   />
-                  <p>Minimum spend</p>
+                  <p className="text-sm">Minimum spend</p>
                   <p className="text-(--bg2) font-bold text-xl">
                     {hall.minSpend}
                   </p>
@@ -401,6 +400,51 @@ export default function Home() {
             />
           </Link>
         </div>
+      </div>
+      {/* BRING YOUR OWN FISH / PRAWN */}
+      <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
+          <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
+            Bring Your Own Fish or Prawn
+          </h2>
+          <Image src={ListDecoration} alt="listDecoration" width={250} />
+          <p className="font-chinese text-(--bg3) text-lg mt-1">
+            自带海鲜加工服务
+          </p>
+        </div>
+
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          data-aos="fade-up"
+        >
+          <div className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-80 mx-auto w-full sm:w-auto">
+            <p className="text-sm text-gray-600 text-center">
+              Steam cooking fee
+            </p>
+            <p className="text-2xl font-bold text-(--bg2)">
+              RM50<span className="text-base font-normal">++ per kg</span>
+            </p>
+            <Image src={ListDecoration} alt="listDecoration" width={100} />
+            <p className="font-semibold text-(--bg2)">Fish or Prawn</p>
+          </div>
+          <div className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-80 mx-auto w-full sm:w-auto">
+            <p className="text-sm text-gray-600 text-center">Cooking fee</p>
+            <p className="text-2xl font-bold text-(--bg2)">
+              RM80<span className="text-base font-normal">++ per kg</span>
+            </p>
+            <Image src={ListDecoration} alt="listDecoration" width={100} />
+            <p className="font-semibold text-(--bg2)">Others</p>
+          </div>
+        </div>
+        <p
+          className="text-xs text-gray-500 italic text-center mt-4"
+          data-aos="fade-up"
+        >
+          * Advance notice is required and subject to market availability.
+        </p>
       </div>
     </div>
   );
