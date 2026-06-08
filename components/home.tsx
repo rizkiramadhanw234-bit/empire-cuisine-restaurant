@@ -215,7 +215,7 @@ export default function Home() {
         >
           {/* card 1 – VIP Rooms */}
           <div className="p-4 border border-(--bg3) rounded-2xl flex flex-col lg:flex-row gap-6 lg:gap-8">
-            <div className="flex flex-col md:flex items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="flex flex-col items-center justify-between p-2">
                 <p className="text-center font-bold text-(--bg2) text-xl pb-2">
                   Private Dining & VIP Rooms
