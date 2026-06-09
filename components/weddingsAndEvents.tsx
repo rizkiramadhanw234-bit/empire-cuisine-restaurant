@@ -361,17 +361,14 @@ export default function WeddingsAndEvents() {
             </p>
           </div>
         </div>
-
-        <div className="pt-6" data-aos="fade-up">
-          <Link
-            href="https://wa.me/60122248811?text=Hi%2C%20I%27m%20interested%20in%20your%20Songwriting%20Offer!"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-3 bg-(--bg2) text-xs md:text-sm text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-center cursor-pointer"
-          >
-            Ask About Our Songwriting Offer Now!
-          </Link>
-        </div>
+        <Link
+          href="https://wa.me/60122248811?text=Hi%2C%20I%27m%20interested%20in%20your%20Songwriting%20Offer!"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-3 mt-4 bg-(--bg2) text-xs md:text-sm text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-center cursor-pointer"
+        >
+          Ask About Our Songwriting Offer Now!
+        </Link>{" "}
       </div>
     </div>
   );
