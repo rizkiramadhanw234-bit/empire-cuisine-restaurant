@@ -230,13 +230,15 @@ export default function Menu() {
               <br />
               每一道佳肴，都为团圆而准备。
             </h3>
-            <div className="grid grid-cols-3  md:grid-cols-5 items-center justify-between gap-1 mt-3">
+            <div className="grid grid-cols-3  md:flex items-baseline justify-between gap-1 md:gap-4 mt-3">
               {items.map((item) => (
                 <div
                   key={item.id}
                   className="flex flex-col gap-2 items-center justify-between text-white"
                 >
-                  <p className="text-4xl text-(--bg3)">{item.icon}</p>
+                  <div className="p-2 bg-white/85 h-15 w-15 rounded-full flex items-center justify-center">
+                    <p className="text-4xl text-(--bg3)">{item.icon}</p>
+                  </div>
                   <p className="font-chinese">{item.chinese}</p>
                   <p className="text-center mb-3">{item.name}</p>
                 </div>
@@ -408,7 +410,7 @@ export default function Menu() {
           {menuCategories.map((item) => (
             <div
               key={item.id}
-              className="border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-center gap-1 hover:bg-(--bg3)/10 hover:scale-105 transition duration-300 cursor-pointer"
+              className="border border-(--bg3) rounded-2xl p-4 flex flex-col items-center justify-between gap-1 hover:bg-(--bg3)/10 hover:scale-105 transition duration-300 cursor-pointer"
             >
               <Image
                 src={item.image}
@@ -416,7 +418,7 @@ export default function Menu() {
                 width={500}
                 className="rounded-2xl"
               />
-              <p className="font-chinese text-(--bg2) text-lg font-bold">
+              <p className="font-chinese text-(--bg2) text-sm md:text-lg font-bold">
                 {item.chinese}
               </p>
               <p className="text-sm font-semibold text-center">{item.name}</p>
@@ -452,7 +454,7 @@ export default function Menu() {
             />
             <Link
               href="https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/parents-menu/parents-day-menu.jpg"
-              className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-(--bg2) text-white px-4 py-2 rounded-lg hover:opacity-80 hover:scale-105 transition duration-300 text-sm text-center"
+              className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-(--bg2) text-white px-4 py-2 rounded-lg hover:opacity-80 hover:scale-105 transition duration-300 text-xs md:text-sm text-center"
             >
               Download Menu
             </Link>

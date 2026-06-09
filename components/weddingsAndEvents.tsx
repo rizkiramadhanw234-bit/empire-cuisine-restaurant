@@ -6,6 +6,8 @@ import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { weddingPackages } from "@/data/weddingPackages";
 import imageWeddingPackages from "../public/assets/weddingPackages.jpg";
+import Weddings from "../public/assets/weddings.jpg";
+import CreateYourSong from "../public/assets/createYourSong.jpg";
 
 export default function WeddingsAndEvents() {
   // What's included / highlights
@@ -29,16 +31,16 @@ export default function WeddingsAndEvents() {
             data-aos="fade-up"
           >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
-              Weddings <br /> & Events
+              Banquet & Event Enquiry <br />
+              <span className="font-chinese font-light">宴会与活动策划</span>
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={400} />
-            <h2 className="font-chinese text-white text-xl md:text-3xl leading-9">
-              囍宴佳期 · 幸福盛宴
+            <h2 className=" text-white text-xl md:text-3xl leading-9">
+              Every Celebration Deserves a Perfect Venue
             </h2>
             <p className="text-white/90 text-sm md:text-lg leading-7 md:leading-8 max-w-lg">
-              Celebrate your most precious moments with exquisite cuisine,
-              elegant venues and impeccable service. At Empire Cuisine, we make
-              every celebration truly unforgettable.
+              从温馨家宴到盛大庆典， 御膳楼以精致佳肴、典雅场地与专业服务，
+              为您打造难忘的宴会体验。
             </p>
           </div>
         </div>
@@ -219,8 +221,12 @@ export default function WeddingsAndEvents() {
         </div>
       </div>
 
+      <div className="max-w-7xl mx-auto px-4 md:px-10 mb-6" data-aos="fade-up">
+        <Image src={Weddings} alt="weddingPackages" className="rounded-2xl" />
+      </div>
+
       {/* WEDDING PACKAGES */}
-      <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-8">
+      <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-b border-(--bg3) px-4 sm:px-6 lg:px-8">
         <div
           className="flex flex-col items-center justify-center mb-6"
           data-aos="fade-up"
@@ -301,6 +307,62 @@ export default function WeddingsAndEvents() {
           </Link>
         </div>
       </div>
+
+      {/* create your song */}
+      <div
+        className="max-w-7xl mx-auto px-4 md:px-10 mb-6 mt-6"
+        data-aos="fade-up"
+      >
+        <h2 className="text-(--bg2) font-bold text-center text-xl md:text-4xl pb-6">
+          Create Your Song for Your Wedding
+        </h2>
+        <Image
+          src={CreateYourSong}
+          alt="weddingPackages"
+          className="rounded-2xl"
+        />
+        <div
+          className="flex flex-col mt-6 items-center justify-center"
+          data-aos="fade-up"
+        >
+          <p className="font-chinese font-bold text-(--bg3) text-xl md:text-2xl">
+            为珍贵时刻，谱写专属回忆
+          </p>
+          <p className="mt-2 mb-2 text-xs md:text-lg">
+            A Song Written for Your Precious Moments
+          </p>
+        </div>
+        <div
+          className="flex flex-col md:flex-row items-center justify-center gap-4 mt-2"
+          data-aos="fade-up"
+        >
+          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
+            <p className="font-chinese font-bold text-(--bg2) text-center">
+              1分钟专属短曲 · 3分钟MV纪念歌曲
+            </p>
+            <p className="text-xs md:text-sm text-gray-700 text-center">
+              Custom 1-Minute Song · 3-Minute MV Memory Song
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
+            <p className="font-chinese font-bold text-(--bg2) text-center">
+              把爱、感恩与祝福，变成一首只属于您的歌。
+            </p>
+            <p className="text-xs md:text-sm text-gray-700 text-center">
+              Turn love, gratitude and blessings into a song made only for you.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
+            <p className="font-chinese font-bold text-(--bg2) text-center">
+              仅限御膳楼，巴生。
+            </p>
+            <p className="text-xs md:text-sm text-gray-700 text-center">
+              Only at Empire Cuisine, Klang.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* BRING YOUR OWN FISH / PRAWN */}
       <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
         <div

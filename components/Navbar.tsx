@@ -19,7 +19,8 @@ export default function Navbar() {
     { id: 5, name: "Weddings & Events", href: "/weddingsAndEvents" },
     { id: 6, name: " Gallery", href: "/gallery" },
     { id: 7, name: "Promotions", href: "/promotions" },
-    { id: 8, name: "Contact", href: "/contact" },
+    { id: 8, name: "Membership & Benefits", href: "/membership" },
+    { id: 9, name: "Contact", href: "/contact" },
   ];
 
   return (

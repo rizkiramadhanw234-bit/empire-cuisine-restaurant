@@ -5,12 +5,14 @@ import bgImage from "../public/assets/background.jpeg";
 import ListDecoration from "../public/assets/listDecoration.png";
 import { GalleryImage } from "@/data/galleryImage";
 import { GalleryVideo } from "@/data/galleryVideo";
+import { gallerySignature } from "@/data/gallerySignature";
 
 const ITEMS_PER_PAGE = 12;
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
+  const [currentSignature, setCurrentSignature] = useState(1);
 
   const galleryItems = [...GalleryImage, ...GalleryVideo];
   const filterTabs = ["All", "Images", "Videos"];
@@ -25,6 +27,15 @@ export default function Gallery() {
   const paginated = filtered.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE,
+  );
+
+  const signaturePaginated = gallerySignature.slice(
+    (currentSignature - 1) * ITEMS_PER_PAGE,
+    currentSignature * ITEMS_PER_PAGE,
+  );
+
+  const totalSignaturePages = Math.ceil(
+    gallerySignature.length / ITEMS_PER_PAGE,
   );
 
   const handleFilterChange = (tab: string) => {
@@ -101,7 +112,6 @@ export default function Gallery() {
               {item.category === "Videos" ? (
                 <video
                   src={item.item}
-                  autoPlay
                   loop
                   muted
                   playsInline
@@ -168,6 +178,95 @@ export default function Gallery() {
           </div>
         )}
       </div>
+
+      {/* food photos and menu highlights*/}
+      <div className="pt-10 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          className="flex flex-col items-center justify-center mb-6"
+          data-aos="fade-up"
+        >
+          <h2 className="text-(--bg2) font-bold text-center text-2xl md:text-4xl pb-2">
+            Signature Taste of Empire Cuisine
+          </h2>
+          <Image src={ListDecoration} alt="listDecoration" width={250} />
+          <p className="font-chinese text-(--bg3) text-lg mt-1">御膳美食</p>
+        </div>
+        <div className="pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4"
+            data-aos="zoom-in"
+          >
+            {signaturePaginated.map((item) => (
+              <div
+                key={item.id}
+                className="flex items-center justify-center rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition duration-300"
+              >
+                <Image
+                  src={item.image}
+                  alt="gallery signature image"
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          {signaturePaginated.length === 0 && (
+            <div className="flex flex-col items-center justify-center py-20">
+              <p className="font-chinese text-(--bg3) text-4xl mb-2">无</p>
+              <p className="text-gray-500 text-sm">
+                No items found in this category.
+              </p>
+            </div>
+          )}
+
+          {/* PAGINATION */}
+          {totalSignaturePages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-10">
+              {/* Prev */}
+              <button
+                onClick={() => setCurrentSignature((p) => Math.max(p - 1, 1))}
+                disabled={currentSignature === 1}
+                className="px-4 py-2 rounded-full text-sm font-semibold border border-(--bg3) text-(--bg2) disabled:opacity-30 hover:bg-(--bg3)/10 transition duration-300"
+              >
+                ← Prev
+              </button>
+
+              {/* pages numbers */}
+              {Array.from({ length: totalSignaturePages }, (_, i) => i + 1).map(
+                (page) => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentSignature(page)}
+                    className={`w-9 h-9 rounded-full text-sm font-semibold transition duration-300 ${
+                      currentSignature === page
+                        ? "bg-(--bg2) text-white"
+                        : "border border-(--bg3) text-(--bg2) hover:bg-(--bg3)/10"
+                    }`}
+                  >
+                    {page}
+                  </button>
+                ),
+              )}
+
+              {/* Next */}
+              <button
+                onClick={() =>
+                  setCurrentSignature((p) =>
+                    Math.min(p + 1, totalSignaturePages),
+                  )
+                }
+                disabled={currentSignature === totalSignaturePages}
+                className="px-4 py-2 rounded-full text-sm font-semibold border border-(--bg3) text-(--bg2) disabled:opacity-30 hover:bg-(--bg3)/10 transition duration-300"
+              >
+                Next →
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* BRING YOUR OWN FISH / PRAWN */}
       <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
         <div
