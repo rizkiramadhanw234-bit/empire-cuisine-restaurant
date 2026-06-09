@@ -380,51 +380,6 @@ ${form.message}`;
           </div>
         </div>
       </div>
-      {/* BRING YOUR OWN FISH / PRAWN */}
-      <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-(--bg3) px-4 sm:px-6 lg:px-50">
-        <div
-          className="flex flex-col items-center justify-center mb-6"
-          data-aos="fade-up"
-        >
-          <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
-            Bring Your Own Fish or Prawn
-          </h2>
-          <Image src={ListDecoration} alt="listDecoration" width={250} />
-          <p className="font-chinese text-(--bg3) text-lg mt-1">
-            自带海鲜加工服务
-          </p>
-        </div>
-
-        <div
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          data-aos="fade-up"
-        >
-          <div className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-80 mx-auto w-full sm:w-auto">
-            <p className="text-sm text-gray-600 text-center">
-              Steam cooking fee
-            </p>
-            <p className="text-2xl font-bold text-(--bg2)">
-              RM50<span className="text-base font-normal">++ per kg</span>
-            </p>
-            <Image src={ListDecoration} alt="listDecoration" width={100} />
-            <p className="font-semibold text-(--bg2)">Fish or Prawn</p>
-          </div>
-          <div className="flex-1 border border-(--bg3) rounded-2xl p-6 flex flex-col items-center gap-3 max-w-80 mx-auto w-full sm:w-auto">
-            <p className="text-sm text-gray-600 text-center">Cooking fee</p>
-            <p className="text-2xl font-bold text-(--bg2)">
-              RM80<span className="text-base font-normal">++ per kg</span>
-            </p>
-            <Image src={ListDecoration} alt="listDecoration" width={100} />
-            <p className="font-semibold text-(--bg2)">Others</p>
-          </div>
-        </div>
-        <p
-          className="text-xs text-gray-500 italic text-center mt-4"
-          data-aos="fade-up"
-        >
-          * Advance notice is required and subject to market availability.
-        </p>
-      </div>
     </div>
   );
 }
