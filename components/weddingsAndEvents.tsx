@@ -221,7 +221,7 @@ export default function WeddingsAndEvents() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 mb-6" data-aos="fade-up">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-6" data-aos="fade-up">
         <Image src={Weddings} alt="weddingPackages" className="rounded-2xl" />
       </div>
 

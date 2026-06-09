@@ -23,6 +23,7 @@ import alaCarte22 from "../public/assets/ala-carte-menu/22.jpg";
 import alaCarte23 from "../public/assets/ala-carte-menu/23.jpg";
 
 export const alaCarteMenu = [
+  { image: alaCarte23 },
   { image: alaCarte1 },
   { image: alaCarte2 },
   { image: alaCarte3 },

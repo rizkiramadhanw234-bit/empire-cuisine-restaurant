@@ -28,7 +28,6 @@ import dish7 from "../public/assets/recommededDishes/07_人参瑶柱炖鸡汤.jp
 import dish8 from "../public/assets/recommededDishes/08_上汤蟹皇翅.jpg.jpeg";
 import dish9 from "../public/assets/recommededDishes/09_猪肚汤面线.jpg.jpeg";
 import dish10 from "../public/assets/recommededDishes/10_炭烧脆皮乳猪.jpg.jpeg";
-import CarouselMenu from "@/components/carouselMenu";
 import { IoIosPeople } from "react-icons/io";
 import { FaBusinessTime } from "react-icons/fa";
 import { FaBirthdayCake } from "react-icons/fa";
@@ -38,6 +37,7 @@ import ImageParentsPackage from "../public/assets/parents package.jpg";
 import { parentsDay } from "@/data/parentsDay";
 import { StaticImageData } from "next/image";
 import { useState } from "react";
+import FlipBookMenu from "./bookFlip";
 
 export default function Menu() {
   const [selectedImage, setSelectedImage] = useState<StaticImageData | null>();
@@ -245,14 +245,14 @@ export default function Menu() {
               ))}
             </div>
           </div>
-          <div className="px-4 md:px-10 mt-6">
-            <CarouselMenu />
-          </div>
         </div>
       </div>
 
       {/* PROMOTIONS HIGHLIGHT */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="pb-4" data-aos="fade-up">
+          <FlipBookMenu />
+        </div>
         <div
           className="flex flex-col items-center justify-center mb-6"
           data-aos="fade-up"

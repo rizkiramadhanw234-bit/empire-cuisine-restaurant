@@ -7,7 +7,7 @@ import { GalleryImage } from "@/data/galleryImage";
 import { GalleryVideo } from "@/data/galleryVideo";
 import { gallerySignature } from "@/data/gallerySignature";
 
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 15;
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -203,7 +203,7 @@ export default function Gallery() {
               >
                 <Image
                   src={item.image}
-                  alt="gallery signature image"
+                  alt={item.name}
                   width={300}
                   height={200}
                   className="w-full h-full object-cover"
