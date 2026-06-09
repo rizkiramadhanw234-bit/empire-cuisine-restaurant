@@ -226,7 +226,7 @@ export default function WeddingsAndEvents() {
       </div>
 
       {/* WEDDING PACKAGES */}
-      <div className="pt-6 pb-10 max-w-7xl mx-auto border-t border-b border-(--bg3) px-4 sm:px-6 lg:px-8">
+      <div className="pt-6 pb-10 max-w-7xl mx-auto  border-t border-b border-(--bg3) px-4 sm:px-6 lg:px-8">
         <div
           className="flex flex-col items-center justify-center mb-6"
           data-aos="fade-up"
@@ -310,7 +310,7 @@ export default function WeddingsAndEvents() {
 
       {/* create your song */}
       <div
-        className="max-w-7xl mx-auto px-4 md:px-10 mb-6 mt-6"
+        className="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 md:px-10 mb-6 mt-6 "
         data-aos="fade-up"
       >
         <h2 className="text-(--bg2) font-bold text-center text-xl md:text-4xl pb-6">
@@ -328,38 +328,44 @@ export default function WeddingsAndEvents() {
           <p className="font-chinese font-bold text-(--bg3) text-xl md:text-2xl">
             为珍贵时刻，谱写专属回忆
           </p>
-          <p className="mt-2 mb-2 text-xs md:text-lg">
+          <p className="mt-4 mb-4 text-xs md:text-lg">
             A Song Written for Your Precious Moments
           </p>
         </div>
         <div
-          className="flex flex-col md:flex-row items-center justify-center gap-4 mt-2"
+          className="flex flex-col md:flex-row items-center justify-center gap-4 mt-2 "
           data-aos="fade-up"
         >
-          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
-            <p className="font-chinese font-bold text-(--bg2) text-center">
+          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl w-full md:h-42">
+            <p className="font-chinese font-bold text-(--bg2) text-center text-sm">
               1分钟专属短曲 · 3分钟MV纪念歌曲
             </p>
             <p className="text-xs md:text-sm text-gray-700 text-center">
               Custom 1-Minute Song · 3-Minute MV Memory Song
             </p>
           </div>
-          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
-            <p className="font-chinese font-bold text-(--bg2) text-center">
+          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl w-full md:h-42">
+            <p className="font-chinese font-bold text-(--bg2) text-center text-sm">
               把爱、感恩与祝福，变成一首只属于您的歌。
             </p>
             <p className="text-xs md:text-sm text-gray-700 text-center">
               Turn love, gratitude and blessings into a song made only for you.
             </p>
           </div>
-          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl">
-            <p className="font-chinese font-bold text-(--bg2) text-center">
+          <div className="flex flex-col gap-2 items-center justify-center p-8 bg-(--bg3)/5 border border-(--bg3)/40 rounded-xl w-full md:h-42">
+            <p className="font-chinese font-bold text-(--bg2) text-center text-sm ">
               仅限御膳楼，巴生。
             </p>
             <p className="text-xs md:text-sm text-gray-700 text-center">
               Only at Empire Cuisine, Klang.
             </p>
           </div>
+        </div>
+
+        <div className="pt-6" data-aos="fade-up">
+          <button className="px-4 py-3 bg-(--bg2) text-xs md:text-sm text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-center cursor-pointer">
+            Ask About Our Songwriting Offer Now!
+          </button>
         </div>
       </div>
 
