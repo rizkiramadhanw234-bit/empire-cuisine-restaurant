@@ -128,13 +128,14 @@ export default function Gallery() {
       {/* GRID */}
       <div className="pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4"
+          className="columns-2 sm:columns-3 md:columns-4 gap-4"
+          style={{ columnFill: "balance" }}
           data-aos="zoom-in"
         >
           {paginated.map((item) => (
             <div
               key={item.category + item.id}
-              className="flex items-center justify-center rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition duration-300"
+              className="break-inside-avoid mb-4 rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition-transform duration-300 transform-gpu will-change-transform"
             >
               {item.category === "Videos" ? (
                 <video
@@ -241,13 +242,14 @@ export default function Gallery() {
 
         <div className="pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4"
+            className="columns-2 sm:columns-3 md:columns-4 gap-4"
+            style={{ columnFill: "balance" }}
             data-aos="zoom-in"
           >
             {signaturePaginated.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center justify-center rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition duration-300"
+                className="break-inside-avoid mb-4 rounded-2xl overflow-hidden border border-(--bg3) group relative cursor-pointer hover:scale-105 hover:shadow-lg transition-transform duration-300 transform-gpu will-change-transform"
               >
                 <Image
                   src={item.image}
