@@ -31,7 +31,7 @@ export default function WeddingsAndEvents() {
             data-aos="fade-up"
           >
             <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
-              Banquet & Event Enquiry <br />
+              Banquets & Event Enquiry <br />
               <span className="font-chinese font-light">宴会与活动策划</span>
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={400} />

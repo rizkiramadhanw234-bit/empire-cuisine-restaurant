@@ -1,4 +1,4 @@
-import WeddingsAndEvents from "@/components/weddingsAndEvents";
+import WeddingsAndEvents from "@/components/banquetsAndEvents";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
