@@ -56,6 +56,76 @@ import ECRFood04_10 from "../public/assets/gallery/gallery1/ECR-food04/empire-cu
 import ECRFood04_11 from "../public/assets/gallery/gallery1/ECR-food04/empire-cuisine-restaurant-klang-hong-kong-style-steamed-giant-grouper-with-fish-maw-01.jpg";
 import ECRFood04_12 from "../public/assets/gallery/gallery1/ECR-food04/empire-cuisine-restaurant-klang-hong-kong-style-steamed-giant-grouper-with-fish-maw-02.jpg";
 
+// ECR-food05
+import ECRFood05_1 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-charcoal-roasted-crispy-suckling-pig-01.jpg";
+import ECRFood05_2 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-charcoal-roasted-crispy-suckling-pig-02.jpg";
+import ECRFood05_3 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-charcoal-roasted-crispy-suckling-pig-03.jpg";
+import ECRFood05_4 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-eight-treasure-lotus-leaf-fragrant-rice-01.jpg";
+import ECRFood05_5 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-eight-treasure-lotus-leaf-fragrant-rice-02.jpg";
+import ECRFood05_6 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-ginseng-dried-scallop-double-boiled-chicken-soup-01.jpg";
+import ECRFood05_7 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-ginseng-dried-scallop-double-boiled-chicken-soup-02.jpg";
+import ECRFood05_8 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-otak-otak-fragrant-rice-01.jpg";
+import ECRFood05_9 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-otak-otak-fragrant-rice-02.jpg";
+import ECRFood05_10 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-salted-crispy-fish-skin-01.jpg";
+import ECRFood05_11 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-salted-crispy-fish-skin-02.jpg";
+import ECRFood05_12 from "../public/assets/gallery/gallery1/ECR-food05/empire-cuisine-restaurant-klang-signature-rich-man-fried-rice-01.jpg";
+
+// ECR-food06
+import ECRFood06_1 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-banquet-dishes-set-01.jpg";
+import ECRFood06_2 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-braised-abalone-in-superior-sauce-01.jpg";
+import ECRFood06_3 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-crispy-fried-prawn-with-herbs-01.jpg";
+import ECRFood06_4 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-crispy-golden-prawn-ring-seafood-platter-01.jpg";
+import ECRFood06_5 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-crispy-roast-suckling-pig-01.jpg";
+import ECRFood06_6 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-curry-seafood-claypot-with-prawns-01.jpg";
+import ECRFood06_7 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-double-boiled-abalone-soup-covered-bowl-01.jpg";
+import ECRFood06_8 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-double-boiled-red-date-herbal-soup-01.jpg";
+import ECRFood06_9 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-double-boiled-red-date-herbal-soup-serving-01.jpg";
+import ECRFood06_10 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-dragon-grouper-fish-slices-seafood-platter-01.jpg";
+import ECRFood06_11 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-hainanese-steamed-chicken-rice-01.jpg";
+import ECRFood06_12 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-honey-bbq-pork-ribs-serving-shot-01.jpg";
+import ECRFood06_13 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-honey-bbq-pork-ribs-with-sauce-01.jpg";
+import ECRFood06_14 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-lobster-five-fortune-seafood-platter-01.jpg";
+import ECRFood06_15 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-lobster-seafood-banquet-platter-01.jpg";
+import ECRFood06_16 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-mixed-roast-meat-seafood-platter-01.jpg";
+import ECRFood06_17 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-prawn-tofu-seafood-in-signature-sauce-01.jpg";
+import ECRFood06_18 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-premium-mud-crab-on-slate-01.jpg";
+import ECRFood06_19 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-premium-mud-crab-sauce-pouring-shot-01.jpg";
+import ECRFood06_20 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-premium-mud-crab-with-signature-sauce-01.jpg";
+import ECRFood06_21 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-premium-seafood-soup-with-prawns-01.jpg";
+import ECRFood06_22 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-red-date-longan-dessert-soup-01.jpg";
+import ECRFood06_23 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-roast-duck-prawn-banquet-platter-01.jpg";
+import ECRFood06_24 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-signature-sauce-crab-claypot-01.jpg";
+import ECRFood06_25 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-signature-seafood-banquet-dishes-menu-display-01.jpg";
+import ECRFood06_26 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-signature-seafood-dishes-set-01.jpg";
+import ECRFood06_27 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-spread-01.jpg";
+import ECRFood06_28 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-steamed-dim-sum-soup-cup-01.jpg";
+import ECRFood06_29 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-steamed-lotus-leaf-rice-with-mushrooms-01.jpg";
+import ECRFood06_30 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-steamed-whole-fish-soy-sauce-01.jpg";
+import ECRFood06_31 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-steamed-whole-fish-with-garlic-sauce-01.jpg";
+import ECRFood06_32 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-stir-fried-scallops-mixed-vegetables-01.jpg";
+import ECRFood06_33 from "../public/assets/gallery/gallery1/ECR-food06/empire-cuisine-restaurant-klang-stir-fried-scallops-mixed-vegetables-action-01.jpg";
+
+// ECR-menu
+import ECRMenu01 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-braised-premium-shark-fin-soup-01.jpg";
+import ECRMenu02 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-braised-premium-shark-fin-soup-02.jpg";
+import ECRMenu03 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-braised-seafood-five-treasure-platter-01.jpg";
+import ECRMenu04 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-braised-seafood-five-treasure-platter-02.jpg";
+import ECRMenu05 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-braised-seafood-five-treasure-platter-03.jpg";
+import ECRMenu06 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-garlic-vermicelli-american-scallop-01.jpg";
+import ECRMenu07 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-garlic-vermicelli-american-scallop-02.jpg";
+import ECRMenu08 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-hong-kong-style-steamed-giant-grouper-fish-maw-01.jpg";
+import ECRMenu09 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-hong-kong-style-steamed-giant-grouper-fish-maw-02.jpg";
+import ECRMenu10 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-pork-tripe-soup-mee-suah-01.jpg";
+import ECRMenu11 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-pork-tripe-soup-mee-suah-02.jpg";
+import ECRMenu12 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-signature-rich-man-fried-rice-01.jpg";
+import ECRMenu13 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-signature-rich-man-fried-rice-02.jpg";
+import ECRMenu14 from "../public/assets/gallery/gallery1/ECR-menu/empire-cuisine-restaurant-klang-menu-signature-rich-man-fried-rice-03.jpg";
+
+// ECR-song
+import ECRSong01 from "../public/assets/gallery/gallery1/ECR-song/empire-cuisine-restaurant-klang-custom-song-making-wedding-parents-corporate-events-01.jpg";
+import ECRSong02 from "../public/assets/gallery/gallery1/ECR-song/empire-cuisine-restaurant-klang-custom-song-making-wedding-parents-corporate-events-02.jpg";
+import ECRSong03 from "../public/assets/gallery/gallery1/ECR-song/empire-cuisine-restaurant-klang-custom-song-making-wedding-parents-corporate-events-03.jpg";
+
 export const gallerySignature = [
   // ECR-food01
   {
@@ -310,8 +380,326 @@ export const gallerySignature = [
     name: `empire-cuisine-restaurant-klang-hong-kong-style-steamed-giant-grouper-with-fish-maw-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Hong Kong Style Steamed Giant Grouper With Fish Maw,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: hong kong style steamed giant grouper with fish maw.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Hong Kong Style Steamed Giant Grouper With Fish Maw,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-gallery-imperial-cuisine-highlights-hong-kong-style-steamed-giant-grouper-with-fish-maw-01.jpg,1066x1600,101`,
   },
   {
-    id: 40,
+    id: 50,
     image: ECRFood04_12,
     name: `empire-cuisine-restaurant-klang-hong-kong-style-steamed-giant-grouper-with-fish-maw-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Hong Kong Style Steamed Giant Grouper With Fish Maw,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: hong kong style steamed giant grouper with fish maw.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Hong Kong Style Steamed Giant Grouper With Fish Maw,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-gallery-imperial-cuisine-highlights-hong-kong-style-steamed-giant-grouper-with-fish-maw-02.jpg,1600x1068,101`,
+  },
+
+  //  ECR-food04
+  {
+    id: 51,
+    image: ECRFood05_1,
+    name: `empire-cuisine-restaurant-klang-charcoal-roasted-crispy-suckling-pig-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Charcoal Roasted Crispy Suckling Pig,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: charcoal roasted crispy suckling pig.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Charcoal Roasted Crispy Suckling Pig,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-charcoal-roasted-crispy-suckling-pig-photo-02.jpg,1600x1066,86`,
+  },
+  {
+    id: 52,
+    image: ECRFood05_2,
+    name: `empire-cuisine-restaurant-klang-charcoal-roasted-crispy-suckling-pig-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Charcoal Roasted Crispy Suckling Pig,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: charcoal roasted crispy suckling pig.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Charcoal Roasted Crispy Suckling Pig,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-charcoal-roasted-crispy-suckling-pig-photo-03.jpg,1068x1600,86`,
+  },
+  {
+    id: 53,
+    image: ECRFood05_3,
+    name: `empire-cuisine-restaurant-klang-charcoal-roasted-crispy-suckling-pig-03.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Charcoal Roasted Crispy Suckling Pig,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: charcoal roasted crispy suckling pig.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Charcoal Roasted Crispy Suckling Pig,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-charcoal-roasted-crispy-suckling-pig-photo-04.jpg,1600x1068,86`,
+  },
+  {
+    id: 54,
+    image: ECRFood05_4,
+    name: `empire-cuisine-restaurant-klang-eight-treasure-lotus-leaf-fragrant-rice-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Eight Treasure Lotus Leaf Fragrant Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: eight treasure lotus leaf fragrant rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Eight Treasure Lotus Leaf Fragrant Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-eight-treasure-lotus-leaf-fragrant-rice-photo-01.jpg,1068x1600,89`,
+  },
+  {
+    id: 55,
+    image: ECRFood05_5,
+    name: `empire-cuisine-restaurant-klang-eight-treasure-lotus-leaf-fragrant-rice-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Eight Treasure Lotus Leaf Fragrant Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: eight treasure lotus leaf fragrant rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Eight Treasure Lotus Leaf Fragrant Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-eight-treasure-lotus-leaf-fragrant-rice-photo-02.jpg,1068x1600,89`,
+  },
+  {
+    id: 56,
+    image: ECRFood05_6,
+    name: `empire-cuisine-restaurant-klang-ginseng-dried-scallop-double-boiled-chicken-soup-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Ginseng Dried Scallop Double Boiled Chicken Soup,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: ginseng dried scallop double boiled chicken soup.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Ginseng Dried Scallop Double Boiled Chicken Soup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-ginseng-dried-scallop-double-boiled-chicken-soup-photo-01.jpg,1068x1600,98`,
+  },
+  {
+    id: 57,
+    image: ECRFood05_7,
+    name: `empire-cuisine-restaurant-klang-ginseng-dried-scallop-double-boiled-chicken-soup-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Ginseng Dried Scallop Double Boiled Chicken Soup,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: ginseng dried scallop double boiled chicken soup.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Ginseng Dried Scallop Double Boiled Chicken Soup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-ginseng-dried-scallop-double-boiled-chicken-soup-photo-02.jpg,1068x1600,98`,
+  },
+  {
+    id: 58,
+    image: ECRFood05_8,
+    name: `empire-cuisine-restaurant-klang-otak-otak-fragrant-rice-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Otak Otak Fragrant Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: otak otak fragrant rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Otak Otak Fragrant Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-otak-otak-fragrant-rice-photo-01.jpg,1066x1600,73`,
+  },
+  {
+    id: 59,
+    image: ECRFood05_9,
+    name: `empire-cuisine-restaurant-klang-otak-otak-fragrant-rice-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Otak Otak Fragrant Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: otak otak fragrant rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Otak Otak Fragrant Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-otak-otak-fragrant-rice-photo-02.jpg,1068x1600,73`,
+  },
+  {
+    id: 60,
+    image: ECRFood05_10,
+    name: `empire-cuisine-restaurant-klang-salted-crispy-fish-skin-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Salted Crispy Fish Skin,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: salted crispy fish skin.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Salted Crispy Fish Skin,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-salted-crispy-fish-skin-photo-01.jpg,1068x1600,73`,
+  },
+  {
+    id: 61,
+    image: ECRFood05_11,
+    name: `empire-cuisine-restaurant-klang-salted-crispy-fish-skin-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Salted Crispy Fish Skin,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: salted crispy fish skin.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Salted Crispy Fish Skin,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-salted-crispy-fish-skin-photo-02.jpg,1068x1600,73`,
+  },
+  {
+    id: 62,
+    image: ECRFood05_12,
+    name: `empire-cuisine-restaurant-klang-signature-rich-man-fried-rice-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Rich Man Fried Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: signature rich man fried rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Rich Man Fried Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-gallery-imperial-cuisine-highlights-signature-rich-man-fried-rice-photo-01.jpg,1600x1066,79`,
+  },
+
+  // ECR-food06
+  {
+    id: 63,
+    image: ECRFood06_1,
+    name: `empire-cuisine-restaurant-klang-lobster-five-fortune-seafood-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Lobster Five Fortune Seafood Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: lobster five fortune seafood platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Lobster Five Fortune Seafood Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-lobster-five-fortune-seafood-platter.jpg,1097x1600,86`,
+  },
+  {
+    id: 64,
+    image: ECRFood06_2,
+    name: `empire-cuisine-restaurant-klang-stir-fried-scallops-mixed-vegetables-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Stir Fried Scallops Mixed Vegetables,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: stir fried scallops mixed vegetables.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Stir Fried Scallops Mixed Vegetables,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-stir-fried-scallops-mixed-vegetables.jpg,1600x1067,86`,
+  },
+  {
+    id: 65,
+    image: ECRFood06_3,
+    name: `empire-cuisine-restaurant-klang-stir-fried-scallops-mixed-vegetables-action-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Stir Fried Scallops Mixed Vegetables Action,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: stir fried scallops mixed vegetables action.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Stir Fried Scallops Mixed Vegetables Action,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-stir-fried-scallops-mixed-vegetables-action.jpg,1600x1067,93`,
+  },
+  {
+    id: 66,
+    image: ECRFood06_4,
+    name: `empire-cuisine-restaurant-klang-steamed-lotus-leaf-rice-with-mushrooms-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Lotus Leaf Rice With Mushrooms,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: steamed lotus leaf rice with mushrooms.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Lotus Leaf Rice With Mushrooms,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-steamed-lotus-leaf-rice-with-mushrooms.jpg,1600x1067,88`,
+  },
+  {
+    id: 67,
+    image: ECRFood06_5,
+    name: `empire-cuisine-restaurant-klang-double-boiled-red-date-herbal-soup-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Double Boiled Red Date Herbal Soup,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: double boiled red date herbal soup.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Double Boiled Red Date Herbal Soup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-double-boiled-red-date-herbal-soup.jpg,1067x1600,84`,
+  },
+  {
+    id: 68,
+    image: ECRFood06_6,
+    name: `empire-cuisine-restaurant-klang-double-boiled-red-date-herbal-soup-serving-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Double Boiled Red Date Herbal Soup Serving,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: double boiled red date herbal soup serving.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Double Boiled Red Date Herbal Soup Serving,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-double-boiled-red-date-herbal-soup-serving.jpg,1067x1600,92`,
+  },
+  {
+    id: 69,
+    image: ECRFood06_7,
+    name: `empire-cuisine-restaurant-klang-roast-duck-prawn-banquet-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Roast Duck Prawn Banquet Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: roast duck prawn banquet platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Roast Duck Prawn Banquet Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-roast-duck-prawn-banquet-platter.jpg,1600x1067,82`,
+  },
+  {
+    id: 70,
+    image: ECRFood06_8,
+    name: `empire-cuisine-restaurant-klang-spread-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Spread,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: spread.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Spread,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-imperial-cuisine-highlights-gallery-spread.jpg,1067x1600,56`,
+  },
+  {
+    id: 71,
+    image: ECRFood06_9,
+    name: `empire-cuisine-restaurant-klang-crispy-golden-prawn-ring-seafood-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Crispy Golden Prawn Ring Seafood Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: crispy golden prawn ring seafood platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Crispy Golden Prawn Ring Seafood Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-crispy-golden-prawn-ring-seafood-platter.jpg,1067x1600,90`,
+  },
+  {
+    id: 72,
+    image: ECRFood06_10,
+    name: `empire-cuisine-restaurant-klang-premium-seafood-soup-with-prawns-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Seafood Soup With Prawns,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: premium seafood soup with prawns.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Seafood Soup With Prawns,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-premium-seafood-soup-with-prawns.jpg,1600x1067,82`,
+  },
+  {
+    id: 73,
+    image: ECRFood06_11,
+    name: `empire-cuisine-restaurant-klang-steamed-whole-fish-with-garlic-sauce-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Whole Fish With Garlic Sauce,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: steamed whole fish with garlic sauce.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Whole Fish With Garlic Sauce,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-steamed-whole-fish-with-garlic-sauce.jpg,1600x1067,86`,
+  },
+  {
+    id: 74,
+    image: ECRFood06_12,
+    name: `empire-cuisine-restaurant-klang-signature-seafood-dishes-set-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Seafood Dishes Set,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: signature seafood dishes set.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Seafood Dishes Set,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-signature-seafood-dishes-gallery-set.jpg,1067x1600,78`,
+  },
+  {
+    id: 75,
+    image: ECRFood06_13,
+    name: `empire-cuisine-restaurant-klang-signature-seafood-banquet-dishes-menu-display-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Seafood Banquet Dishes Display,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: signature seafood banquet dishes display.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Seafood Banquet Dishes Display,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-signature-seafood-banquet-dishes-menu-display.jpg,1067x1600,95`,
+  },
+  {
+    id: 76,
+    image: ECRFood06_14,
+    name: `empire-cuisine-restaurant-klang-lobster-seafood-banquet-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Lobster Seafood Banquet Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: lobster seafood banquet platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Lobster Seafood Banquet Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-lobster-seafood-banquet-platter.jpg,1067x1600,81`,
+  },
+  {
+    id: 77,
+    image: ECRFood06_15,
+    name: `empire-cuisine-restaurant-klang-steamed-dim-sum-soup-cup-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Dim Sum Soup Cup,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: steamed dim sum soup cup.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Dim Sum Soup Cup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-steamed-dim-sum-soup-cup.jpg,1067x1600,74`,
+  },
+  {
+    id: 78,
+    image: ECRFood06_16,
+    name: `empire-cuisine-restaurant-klang-mixed-roast-meat-seafood-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Mixed Roast Meat Seafood Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: mixed roast meat seafood platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Mixed Roast Meat Seafood Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-mixed-roast-meat-seafood-platter.jpg,1067x1600,82`,
+  },
+  {
+    id: 79,
+    image: ECRFood06_17,
+    name: `empire-cuisine-restaurant-klang-honey-bbq-pork-ribs-with-sauce-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Honey Bbq Pork Ribs With Sauce,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: honey bbq pork ribs with sauce.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Honey Bbq Pork Ribs With Sauce,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-honey-bbq-pork-ribs-with-sauce.jpg,1067x1600,80`,
+  },
+  {
+    id: 80,
+    image: ECRFood06_18,
+    name: `empire-cuisine-restaurant-klang-honey-bbq-pork-ribs-serving-shot-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Honey Bbq Pork Ribs Serving Shot,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: honey bbq pork ribs serving shot.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Honey Bbq Pork Ribs Serving Shot,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-honey-bbq-pork-ribs-serving-shot.jpg,1067x1600,82`,
+  },
+  {
+    id: 81,
+    image: ECRFood06_19,
+    name: `empire-cuisine-restaurant-klang-banquet-dishes-set-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Banquet Dishes Set,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: banquet dishes set.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Banquet Dishes Set,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-imperial-banquet-dishes-gallery-set.jpg,1067x1600,68`,
+  },
+  {
+    id: 82,
+    image: ECRFood06_20,
+    name: `empire-cuisine-restaurant-klang-curry-seafood-claypot-with-prawns-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Curry Seafood Claypot With Prawns,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: curry seafood claypot with prawns.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Curry Seafood Claypot With Prawns,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-curry-seafood-claypot-with-prawns.jpg,1600x1067,83`,
+  },
+  {
+    id: 83,
+    image: ECRFood06_21,
+    name: `empire-cuisine-restaurant-klang-dragon-grouper-fish-slices-seafood-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Dragon Grouper Fish Slices Seafood Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: dragon grouper fish slices seafood platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Dragon Grouper Fish Slices Seafood Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-dragon-grouper-fish-slices-seafood-platter.jpg,1600x1067,92`,
+  },
+  {
+    id: 84,
+    image: ECRFood06_22,
+    name: `empire-cuisine-restaurant-klang-braised-abalone-in-superior-sauce-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Braised Abalone In Superior Sauce,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: braised abalone in superior sauce.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Braised Abalone In Superior Sauce,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-braised-abalone-in-superior-sauce.jpg,1600x1067,83`,
+  },
+  {
+    id: 85,
+    image: ECRFood06_23,
+    name: `empire-cuisine-restaurant-klang-hainanese-steamed-chicken-rice-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Hainanese Steamed Chicken Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: hainanese steamed chicken rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Hainanese Steamed Chicken Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-hainanese-steamed-chicken-rice.jpg,1600x1067,80`,
+  },
+  {
+    id: 86,
+    image: ECRFood06_24,
+    name: `empire-cuisine-restaurant-klang-steamed-whole-fish-soy-sauce-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Whole Fish Soy Sauce,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: steamed whole fish soy sauce.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Steamed Whole Fish Soy Sauce,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-steamed-whole-fish-soy-sauce.jpg,1600x1067,78`,
+  },
+  {
+    id: 87,
+    image: ECRFood06_25,
+    name: `empire-cuisine-restaurant-klang-crispy-fried-prawn-with-herbs-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Crispy Fried Prawn With Herbs,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: crispy fried prawn with herbs.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Crispy Fried Prawn With Herbs,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-crispy-fried-prawn-with-herbs.jpg,1067x1600,79`,
+  },
+  {
+    id: 88,
+    image: ECRFood06_26,
+    name: `empire-cuisine-restaurant-klang-prawn-tofu-seafood-in-signature-sauce-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Prawn Tofu Seafood In Signature Sauce,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: prawn tofu seafood in signature sauce.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Prawn Tofu Seafood In Signature Sauce,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-prawn-tofu-seafood-in-signature-sauce.jpg,1067x1600,87`,
+  },
+  {
+    id: 89,
+    image: ECRFood06_27,
+    name: `empire-cuisine-restaurant-klang-signature-sauce-crab-claypot-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Sauce Crab Claypot,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: signature sauce crab claypot.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Signature Sauce Crab Claypot,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-signature-sauce-crab-claypot.jpg,1067x1600,78`,
+  },
+  {
+    id: 90,
+    image: ECRFood06_28,
+    name: `empire-cuisine-restaurant-klang-crispy-roast-suckling-pig-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Crispy Roast Suckling Pig,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: crispy roast suckling pig.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Crispy Roast Suckling Pig,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-crispy-roast-suckling-pig.jpg,1600x1067,75`,
+  },
+  {
+    id: 91,
+    image: ECRFood06_29,
+    name: `empire-cuisine-restaurant-klang-premium-mud-crab-on-slate-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Mud Crab On Slate,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: premium mud crab on slate.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Mud Crab On Slate,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-premium-mud-crab-on-slate.jpg,1067x1600,75`,
+  },
+  {
+    id: 92,
+    image: ECRFood06_30,
+    name: `empire-cuisine-restaurant-klang-premium-mud-crab-with-signature-sauce-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Mud Crab With Signature Sauce,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: premium mud crab with signature sauce.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Mud Crab With Signature Sauce,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-premium-mud-crab-with-signature-sauce.jpg,1067x1600,87`,
+  },
+  {
+    id: 93,
+    image: ECRFood06_31,
+    name: `empire-cuisine-restaurant-klang-premium-mud-crab-sauce-pouring-shot-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Mud Crab Sauce Pouring Shot,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: premium mud crab sauce pouring shot.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Premium Mud Crab Sauce Pouring Shot,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-premium-mud-crab-sauce-pouring-shot.jpg,1067x1600,85`,
+  },
+  {
+    id: 94,
+    image: ECRFood06_32,
+    name: `empire-cuisine-restaurant-klang-double-boiled-abalone-soup-covered-bowl-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Double Boiled Abalone Soup Covered Bowl,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: double boiled abalone soup covered bowl.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Double Boiled Abalone Soup Covered Bowl,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-double-boiled-abalone-soup-covered-bowl.jpg,1067x1600,89`,
+  },
+  {
+    id: 95,
+    image: ECRFood06_33,
+    name: `empire-cuisine-restaurant-klang-red-date-longan-dessert-soup-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Gallery - 御膳美食,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Red Date Longan Dessert Soup,御膳楼大酒家 Empire Cuisine Restaurant Klang signature Chinese restaurant dish: red date longan dessert soup.,御膳楼大酒家 Empire Cuisine Restaurant Klang signature dish - Red Date Longan Dessert Soup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, gallery food signature dishes chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-red-date-longan-dessert-soup.jpg,1067x1600,78`,
+  },
+
+  // ECR-menu
+  {
+    id: 96,
+    image: ECRMenu01,
+    name: `empire-cuisine-restaurant-klang-menu-braised-premium-shark-fin-soup-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Premium Shark Fin Soup,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring braised premium shark fin soup.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Premium Shark Fin Soup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-braised-premium-shark-fin-soup-02.jpg,1800x1201,83`,
+  },
+  {
+    id: 97,
+    image: ECRMenu02,
+    name: `empire-cuisine-restaurant-klang-menu-braised-premium-shark-fin-soup-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Premium Shark Fin Soup,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring braised premium shark fin soup.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Premium Shark Fin Soup,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-braised-premium-shark-fin-soup-01.jpg,1200x1800,83`,
+  },
+  {
+    id: 98,
+    image: ECRMenu03,
+    name: `empire-cuisine-restaurant-klang-menu-braised-seafood-five-treasure-platter-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Seafood Five Treasure Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring braised seafood five treasure platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Seafood Five Treasure Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-braised-seafood-five-treasure-platter-01.jpg,1200x1800,90`,
+  },
+  {
+    id: 99,
+    image: ECRMenu04,
+    name: `empire-cuisine-restaurant-klang-menu-braised-seafood-five-treasure-platter-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Seafood Five Treasure Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring braised seafood five treasure platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Seafood Five Treasure Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-braised-seafood-five-treasure-platter-02.jpg,1800x1200,90`,
+  },
+  {
+    id: 100,
+    image: ECRMenu05,
+    name: `empire-cuisine-restaurant-klang-menu-braised-seafood-five-treasure-platter-03.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Seafood Five Treasure Platter,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring braised seafood five treasure platter.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Braised Seafood Five Treasure Platter,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-braised-seafood-five-treasure-platter-03.jpg,1201x1800,90`,
+  },
+  {
+    id: 101,
+    image: ECRMenu06,
+    name: `empire-cuisine-restaurant-klang-menu-garlic-vermicelli-american-scallop-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Garlic Vermicelli American Scallop,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring garlic vermicelli american scallop.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Garlic Vermicelli American Scallop,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-garlic-vermicelli-american-scallop-02.jpg,1800x1201,87`,
+  },
+  {
+    id: 102,
+    image: ECRMenu07,
+    name: `empire-cuisine-restaurant-klang-menu-garlic-vermicelli-american-scallop-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Garlic Vermicelli American Scallop,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring garlic vermicelli american scallop.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Garlic Vermicelli American Scallop,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-garlic-vermicelli-american-scallop-01.jpg,1200x1800,87`,
+  },
+  {
+    id: 103,
+    image: ECRMenu08,
+    name: `empire-cuisine-restaurant-klang-menu-hong-kong-style-steamed-giant-grouper-fish-maw-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Hong Kong Style Steamed Giant Grouper Fish Maw,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring hong kong style steamed giant grouper fish maw.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Hong Kong Style Steamed Giant Grouper Fish Maw,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-hong-kong-style-steamed-giant-grouper-fish-maw-01.jpg,1200x1800,99`,
+  },
+  {
+    id: 104,
+    image: ECRMenu09,
+    name: `empire-cuisine-restaurant-klang-menu-hong-kong-style-steamed-giant-grouper-fish-maw-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Hong Kong Style Steamed Giant Grouper Fish Maw,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring hong kong style steamed giant grouper fish maw.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Hong Kong Style Steamed Giant Grouper Fish Maw,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-hong-kong-style-steamed-giant-grouper-fish-maw-02.jpg,1800x1201,99`,
+  },
+  {
+    id: 105,
+    image: ECRMenu10,
+    name: `empire-cuisine-restaurant-klang-menu-pork-tripe-soup-mee-suah-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Pork Tripe Soup Mee Suah,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring pork tripe soup mee suah.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Pork Tripe Soup Mee Suah,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-pork-tripe-soup-mee-suah-02.jpg,1800x1201,77`,
+  },
+  {
+    id: 106,
+    image: ECRMenu11,
+    name: `empire-cuisine-restaurant-klang-menu-pork-tripe-soup-mee-suah-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Pork Tripe Soup Mee Suah,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring pork tripe soup mee suah.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Pork Tripe Soup Mee Suah,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-pork-tripe-soup-mee-suah-01.jpg,1200x1800,77`,
+  },
+  {
+    id: 107,
+    image: ECRMenu12,
+    name: `empire-cuisine-restaurant-klang-menu-signature-rich-man-fried-rice-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Signature Rich Man Fried Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring signature rich man fried rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Signature Rich Man Fried Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-signature-rich-man-fried-rice-03.jpg,1199x1800,82`,
+  },
+  {
+    id: 108,
+    image: ECRMenu13,
+    name: `empire-cuisine-restaurant-klang-menu-signature-rich-man-fried-rice-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Signature Rich Man Fried Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring signature rich man fried rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Signature Rich Man Fried Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-signature-rich-man-fried-rice-02.jpg,1800x1201,82`,
+  },
+  {
+    id: 109,
+    image: ECRMenu14,
+    name: `empire-cuisine-restaurant-klang-menu-signature-rich-man-fried-rice-03.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,A La Carte Menu,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Signature Rich Man Fried Rice,御膳楼大酒家 Empire Cuisine Restaurant Klang Chinese restaurant ala carte menu featuring signature rich man fried rice.,御膳楼大酒家 Empire Cuisine Restaurant Klang ala carte menu - Signature Rich Man Fried Rice,"御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, menu ala carte chinese restaurant klang",empire-cuisine-klang-chinese-restaurant-menu-signature-rich-man-fried-rice-01.jpg,1800x1199,82`,
+  },
+
+  // ECR-song
+  {
+    id: 110,
+    image: ECRSong01,
+    name: `empire-cuisine-restaurant-klang-custom-song-making-wedding-parents-corporate-events-01.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Custom Song Making Events,"御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for weddings, parents and corporate events","御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for wedding dinners, parents celebrations and corporate business events.","御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for weddings, parents and corporate events","御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, custom song making wedding parents corporate business events klang",empire-cuisine-klang-custom-song-making-wedding-parents-corporate-events.jpg,1448x1086,99`,
+  },
+  {
+    id: 111,
+    image: ECRSong02,
+    name: `empire-cuisine-restaurant-klang-custom-song-making-wedding-parents-corporate-events-02.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Custom Song Making Events,"御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for weddings, parents and corporate events","御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for wedding dinners, parents celebrations and corporate business events.","御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for weddings, parents and corporate events","御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, custom song making wedding parents corporate business events klang",empire-cuisine-klang-custom-song-making-wedding-parents-corporate-events.webp,1448x1086,99`,
+  },
+  {
+    id: 112,
+    image: ECRSong03,
+    name: `empire-cuisine-restaurant-klang-custom-song-making-wedding-parents-corporate-events-03.jpg,御膳楼大酒家,Empire Cuisine Restaurant,empirecuisine.my,Custom Song Making Events,"御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for weddings, parents and corporate events","御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for wedding dinners, parents celebrations and corporate business events.","御膳楼大酒家 Empire Cuisine Restaurant Klang custom song making service for weddings, parents and corporate events","御膳楼大酒家, Empire Cuisine Restaurant, empire cuisine restaurant, Klang Chinese restaurant, custom song making wedding parents corporate business events klang",empire-cuisine-klang-custom-song-making-wedding-parents-corporate-events.png,1448x1086,99`,
   },
 ];
