@@ -14,9 +14,9 @@ export default function FlipBookMenu() {
     const vw = window.innerWidth;
     if (vw < 480)
       return { width: Math.floor(vw / 2) - 16, height: Math.floor(vw / 2) };
-    if (vw < 768) return { width: 220, height: 220 };
-    if (vw < 1024) return { width: 320, height: 320 };
-    return { width: 400, height: 400 };
+    if (vw < 768) return { width: 220, height: 250 };
+    if (vw < 1024) return { width: 320, height: 350 };
+    return { width: 400, height: 450 };
   }, []);
 
   const initFlip = useCallback(() => {
@@ -79,7 +79,7 @@ export default function FlipBookMenu() {
                 src={item.image}
                 alt={`Menu page ${index + 1}`}
                 fill
-                className="object-cover cursor-pointer "
+                className="object-cover cursor-pointer"
               />
             </div>
           </div>
