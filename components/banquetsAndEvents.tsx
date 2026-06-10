@@ -30,7 +30,7 @@ export default function WeddingsAndEvents() {
             className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
             data-aos="fade-up"
           >
-            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
+            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-10 md:leading-20">
               Banquets & Event Enquiry <br />
               <span className="font-chinese font-light">宴会与活动策划</span>
             </h1>
@@ -38,7 +38,7 @@ export default function WeddingsAndEvents() {
             <h2 className=" text-white text-xl md:text-3xl leading-9">
               Every Celebration Deserves a Perfect Venue
             </h2>
-            <p className="text-white/90 text-sm md:text-lg leading-7 md:leading-8 max-w-lg">
+            <p className="text-white/90 text-lg md:text-lg leading-7 md:leading-8 max-w-lg">
               从温馨家宴到盛大庆典， 御膳楼以精致佳肴、典雅场地与专业服务，
               为您打造难忘的宴会体验。
             </p>

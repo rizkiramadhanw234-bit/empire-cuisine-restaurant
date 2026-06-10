@@ -80,14 +80,14 @@ export default function Gallery() {
             className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
             data-aos="fade-up"
           >
-            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
+            <h1 className="text-amber-400 font-semibold text-4xl md:text-6xl leading-tight md:leading-20">
               Gallery
             </h1>
-            <Image src={ListDecoration} alt="listDecoration" width={400} />
-            <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
+            <Image src={ListDecoration} alt="listDecoration" width={300} />
+            <h2 className="text-white text-lg md:text-2xl leading-7 md:leading-9">
               A visual journey through exceptional <br /> dining experiences.
             </h2>
-            <h3 className="font-chinese text-white text-sm md:text-3xl font-light leading-7 md:leading-9 md:mt-4">
+            <h3 className="font-chinese text-white text-xl md:text-3xl font-light leading-7 md:leading-9 md:mt-4">
               御膳楼 <span className="text-(--bg3)">·</span> 光影留存
             </h3>
           </div>

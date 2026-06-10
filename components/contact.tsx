@@ -131,14 +131,16 @@ ${form.message}`;
             className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
             data-aos="fade-up"
           >
-            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
+            <h1 className="text-amber-400 font-semibold text-4xl md:text-6xl leading-tight md:leading-20">
               Contact Us
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={400} />
-            <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
-              We are here to help. Reach out to us for <br /> reservations,
-              enquiries, events or special occasions.
-            </h2>
+            <div className="md:w-150">
+              <h2 className="text-white text-xl md:text-2xl leading-7 md:leading-9">
+                We are here to help. Reach out to us for reservations,
+                enquiries, events or special occasions.
+              </h2>
+            </div>
           </div>
         </div>
       </div>
