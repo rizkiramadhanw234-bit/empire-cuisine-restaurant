@@ -213,17 +213,16 @@ export default function Menu() {
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div
-            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12"
+            className="flex flex-col gap-4 px-4 sm:px-10 md:mt-12 md:w-2xl w-full"
             data-aos="fade-up"
           >
-            <h1 className="text-amber-400 font-semibold text-3xl sm:text-4xl md:text-6xl leading-tight md:leading-20">
+            <h1 className="text-amber-400 font-semibold text-4xl md:text-6xl leading-tight md:leading-20">
               Our Menu
             </h1>
-            <Image src={ListDecoration} alt="listDecoration" width={400} />
-            <h2 className="text-white text-sm md:text-2xl leading-7 md:leading-9">
+            <Image src={ListDecoration} alt="listDecoration" width={350} />
+            <h2 className="text-white md:text-2xl leading-7 md:leading-9">
               A Feast for Every Gathering <br /> Every dish is crafted to
-              celebrate family, friendship,
-              <br /> and meaningful moments together.
+              celebrate family, friendship, and meaningful moments together.
             </h2>
             <h3 className="font-chinese font-bold text-amber-400 text-xl md:text-2xl leading-7 md:leading-10 md:mt-2">
               每一次相聚，都是一场好宴
@@ -234,13 +233,13 @@ export default function Menu() {
               {items.map((item) => (
                 <div
                   key={item.id}
-                  className="flex flex-col gap-2 items-center justify-between text-white"
+                  className="flex flex-col gap-1 items-center text-white"
                 >
                   <div className="p-2 bg-white/85 h-15 w-15 rounded-full flex items-center justify-center">
                     <p className="text-4xl text-(--bg3)">{item.icon}</p>
                   </div>
                   <p className="font-chinese">{item.chinese}</p>
-                  <p className="text-center mb-3">{item.name}</p>
+                  <p className="mb-3 text-center">{item.name}</p>
                 </div>
               ))}
             </div>
