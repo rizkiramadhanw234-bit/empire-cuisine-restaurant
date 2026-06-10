@@ -96,19 +96,13 @@ export default function Gallery() {
 
       {/* FILTER TABS */}
       <div className="pt-10 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="flex flex-col items-center justify-center mb-6"
-          data-aos="fade-up"
-        >
+        <div className="flex flex-col items-center justify-center mb-6">
           <h2 className="text-(--bg2) font-bold text-2xl md:text-4xl pb-2">
             Our Gallery
           </h2>
           <Image src={ListDecoration} alt="listDecoration" width={250} />
         </div>
-        <div
-          className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide"
-          data-aos="fade-up"
-        >
+        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
           {filterTabs.map((tab) => (
             <button
               key={tab}
@@ -130,7 +124,6 @@ export default function Gallery() {
         <div
           className="columns-2 sm:columns-3 md:columns-4 gap-4"
           style={{ columnFill: "balance" }}
-          data-aos="zoom-in"
         >
           {paginated.map((item) => (
             <div
@@ -170,8 +163,7 @@ export default function Gallery() {
 
         {/* PAGINATION */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-10">
-            {/* Prev */}
+          <div className="flex items-center justify-center gap-3 mt-10">
             <button
               onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
               disabled={currentPage === 1}
@@ -179,23 +171,9 @@ export default function Gallery() {
             >
               ← Prev
             </button>
-
-            {/* pages numbers */}
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-              <button
-                key={page}
-                onClick={() => setCurrentPage(page)}
-                className={`w-9 h-9 rounded-full text-sm font-semibold transition duration-300 ${
-                  currentPage === page
-                    ? "bg-(--bg2) text-white"
-                    : "border border-(--bg3) text-(--bg2) hover:bg-(--bg3)/10"
-                }`}
-              >
-                {page}
-              </button>
-            ))}
-
-            {/* Next */}
+            <span className="text-(--bg2) text-sm font-semibold px-2">
+              {currentPage} / {totalPages}
+            </span>
             <button
               onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
               disabled={currentPage === totalPages}
@@ -209,10 +187,7 @@ export default function Gallery() {
 
       {/* food photos and menu highlights*/}
       <div className="pt-10 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="flex flex-col items-center justify-center mb-6"
-          data-aos="fade-up"
-        >
+        <div className="flex flex-col items-center justify-center mb-6">
           <h2 className="text-(--bg2) font-bold text-center text-2xl md:text-4xl pb-2">
             Signature Taste of Empire Cuisine
           </h2>
@@ -221,10 +196,7 @@ export default function Gallery() {
         </div>
 
         {/* FILTER TABS */}
-        <div
-          className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide justify-center"
-          data-aos="fade-up"
-        >
+        <div className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide justify-center">
           {signatureTabs.map((tab) => (
             <button
               key={tab}
@@ -244,7 +216,6 @@ export default function Gallery() {
           <div
             className="columns-2 sm:columns-3 md:columns-4 gap-4"
             style={{ columnFill: "balance" }}
-            data-aos="zoom-in"
           >
             {signaturePaginated.map((item) => (
               <div
@@ -272,7 +243,7 @@ export default function Gallery() {
           )}
 
           {totalSignaturePages > 1 && (
-            <div className="flex items-center justify-center gap-2 mt-10">
+            <div className="flex items-center justify-center gap-3 mt-10">
               <button
                 onClick={() => setCurrentSignature((p) => Math.max(p - 1, 1))}
                 disabled={currentSignature === 1}
@@ -280,21 +251,11 @@ export default function Gallery() {
               >
                 ← Prev
               </button>
-              {Array.from({ length: totalSignaturePages }, (_, i) => i + 1).map(
-                (page) => (
-                  <button
-                    key={page}
-                    onClick={() => setCurrentSignature(page)}
-                    className={`w-9 h-9 rounded-full text-sm font-semibold transition duration-300 ${
-                      currentSignature === page
-                        ? "bg-(--bg2) text-white"
-                        : "border border-(--bg3) text-(--bg2) hover:bg-(--bg3)/10"
-                    }`}
-                  >
-                    {page}
-                  </button>
-                ),
-              )}
+
+              <span className="text-(--bg2) text-sm font-semibold px-2">
+                {currentSignature} / {totalSignaturePages}
+              </span>
+
               <button
                 onClick={() =>
                   setCurrentSignature((p) =>

@@ -144,35 +144,32 @@ export default function Footer() {
 
       <div className="bg-amber-950/80 pb-10">
         <div className="max-w-7xl mx-auto px-10 pt-10 border-t border-amber-600/15 flex flex-col md:flex-row items-center justify-between gap-3">
-          <div className="flex gap-6 md:flex items-center justify-center text-gray-300">
-            <div className="flex flex-col md:flex-row items-center gap-2">
-              <p className="text-gray-300">Follow Us!</p>
-              <div className="flex items-center justify-between gap-4">
-                <Link
-                  href="https://www.facebook.com/profile.php?id=61555584206586&sk=about"
-                  target="_blank"
-                >
-                  <LiaFacebook size={30} />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/empirecuisine/"
-                  target="_blank"
-                >
-                  <FaInstagram size={24} />
-                </Link>
-                <Link
-                  href="https://www.youtube.com/@EmpireCuisineRestaurant"
-                  target="_blank"
-                >
-                  <AiOutlineYoutube size={30} />
-                </Link>
-              </div>
+          <div className="flex gap-6 md:flex items-center justify-center text-(--bg3)">
+            <div className="flex  md:flex-row items-center gap-4">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61555584206586&sk=about"
+                target="_blank"
+              >
+                <LiaFacebook size={30} />
+              </Link>
+              <Link
+                href="https://www.instagram.com/empirecuisine/"
+                target="_blank"
+              >
+                <FaInstagram size={24} />
+              </Link>
+              <Link
+                href="https://www.youtube.com/@EmpireCuisineRestaurant"
+                target="_blank"
+              >
+                <AiOutlineYoutube size={30} />
+              </Link>
             </div>
           </div>
-          <span className="font-eb-garamond text-sm text-center text-gray-300">
+          <span className="font-eb-garamond text-sm text-center text-(--bg3)">
             © 2025 Empire Cuisine Restaurant (御膳楼). All Rights Reserved.
           </span>
-          <span className="font-chinese text-lg tracking-[3px] text-gray-300">
+          <span className="font-chinese text-lg tracking-[3px] text-(--bg3)">
             御膳楼大酒家
           </span>
         </div>
