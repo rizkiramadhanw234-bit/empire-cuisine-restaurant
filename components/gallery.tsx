@@ -12,6 +12,7 @@ const ITEMS_PER_PAGE = 15;
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeSignatureFilter, setActiveSignatureFilter] = useState("All");
   const [currentSignature, setCurrentSignature] = useState(1);
 
   const galleryItems = [...GalleryImage, ...GalleryVideo];
@@ -29,18 +30,44 @@ export default function Gallery() {
     currentPage * ITEMS_PER_PAGE,
   );
 
-  const signaturePaginated = gallerySignature.slice(
+  const handleFilterChange = (tab: string) => {
+    setActiveFilter(tab);
+    setCurrentPage(1);
+  };
+
+  const getSignatureCategory = (item: { category: string }) =>
+    item.category ?? "";
+
+  const signatureTabs = [
+    "All",
+    "ECR-food01",
+    "ECR-food02",
+    "ECR-food03",
+    "ECR-food04",
+    "ECR-food05",
+    "ECR-food06",
+    "ECR-menu",
+    "ECR-song",
+  ];
+
+  const filteredSignature = gallerySignature.filter(
+    (item) =>
+      activeSignatureFilter === "All" ||
+      getSignatureCategory(item) === activeSignatureFilter,
+  );
+
+  const signaturePaginated = filteredSignature.slice(
     (currentSignature - 1) * ITEMS_PER_PAGE,
     currentSignature * ITEMS_PER_PAGE,
   );
 
   const totalSignaturePages = Math.ceil(
-    gallerySignature.length / ITEMS_PER_PAGE,
+    filteredSignature.length / ITEMS_PER_PAGE,
   );
 
-  const handleFilterChange = (tab: string) => {
-    setActiveFilter(tab);
-    setCurrentPage(1);
+  const handleSignatureFilterChange = (tab: string) => {
+    setActiveSignatureFilter(tab);
+    setCurrentSignature(1);
   };
 
   return (
@@ -191,6 +218,27 @@ export default function Gallery() {
           <Image src={ListDecoration} alt="listDecoration" width={250} />
           <p className="font-chinese text-(--bg3) text-lg mt-1">御膳美食</p>
         </div>
+
+        {/* FILTER TABS */}
+        <div
+          className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide justify-center"
+          data-aos="fade-up"
+        >
+          {signatureTabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => handleSignatureFilterChange(tab)}
+              className={`shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ${
+                activeSignatureFilter === tab
+                  ? "bg-(--bg2) text-white"
+                  : "border border-(--bg3) text-(--bg2) hover:bg-(--bg3)/10"
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
         <div className="pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4"
@@ -221,10 +269,8 @@ export default function Gallery() {
             </div>
           )}
 
-          {/* PAGINATION */}
           {totalSignaturePages > 1 && (
             <div className="flex items-center justify-center gap-2 mt-10">
-              {/* Prev */}
               <button
                 onClick={() => setCurrentSignature((p) => Math.max(p - 1, 1))}
                 disabled={currentSignature === 1}
@@ -232,8 +278,6 @@ export default function Gallery() {
               >
                 ← Prev
               </button>
-
-              {/* pages numbers */}
               {Array.from({ length: totalSignaturePages }, (_, i) => i + 1).map(
                 (page) => (
                   <button
@@ -249,8 +293,6 @@ export default function Gallery() {
                   </button>
                 ),
               )}
-
-              {/* Next */}
               <button
                 onClick={() =>
                   setCurrentSignature((p) =>
