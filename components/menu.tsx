@@ -235,7 +235,7 @@ export default function Menu() {
                   key={item.id}
                   className="flex flex-col gap-1 items-center text-white"
                 >
-                  <div className="p-2 bg-white/85 h-15 w-15 rounded-full flex items-center justify-center">
+                  <div className="p-2 bg-(--bg2) h-15 w-15 rounded-full flex items-center justify-center">
                     <p className="text-4xl text-(--bg3)">{item.icon}</p>
                   </div>
                   <p className="font-chinese">{item.chinese}</p>

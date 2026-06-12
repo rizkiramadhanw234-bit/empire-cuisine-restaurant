@@ -183,9 +183,9 @@ export default function Home() {
               <Image
                 src={feature.image}
                 alt={feature.titleEnglish}
-                width={60}
+                width={50}
                 height={60}
-                className="shrink-0 mt-1"
+                className="shrink-0 mt-4"
               />
               <div className="flex flex-col gap-1">
                 <p className="text-(--bg2) font-bold text-xl mt-4">
@@ -258,7 +258,7 @@ export default function Home() {
                 </div>
                 <Link
                   href="/vipRooms"
-                  className="px-4 py-2 bg-(--bg2) text-white rounded-md mt-4 hover:bg-red-800 hover:scale-105 duration-300"
+                  className="px-4 py-2 bg-(--bg2) text-white rounded-md mt-6 hover:bg-red-800 hover:scale-105 duration-300"
                 >
                   Explore VIP Rooms
                 </Link>
@@ -267,7 +267,7 @@ export default function Home() {
                 src={VipRoomsImage}
                 alt="Empire Cuisine"
                 width={300}
-                className="rounded-2xl"
+                className="rounded-2xl mt-4"
               />
             </div>
           </div>
