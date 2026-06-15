@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/weddingsAndEvents`,
+      url: `${baseUrl}/banquetsAndEvents`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -47,13 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/promotions`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/booking`,
+      url: `${baseUrl}/membership`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

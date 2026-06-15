@@ -22,9 +22,9 @@ const notoSerifSC = Noto_Serif_SC({
 });
 
 export const metadata: Metadata = {
-  title: "Empire Cuisine | Premium Chinese Restaurant in Klang",
+  title: "Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description:
-    "Empire Cuisine (御膳楼) – Premium Chinese dining in Klang. Private VIP rooms, two-storey banquet hall, dim sum, seafood & signature dishes. Book now!",
+    "Empire Cuisine Restaurant 御膳楼大酒家 | Klang – Premium Chinese dining in Klang. Private VIP rooms, two-storey banquet hall, dim sum, seafood & signature dishes. Book now!",
   icons: {
     icon: "/assets/logo/logo.png",
   },
@@ -108,10 +108,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Restaurant",
-              name: "Empire Cuisine",
+              name: "Empire Cuisine Restaurant",
               alternateName: "御膳楼",
-              url: "https://www.empirecuisine.com.my",
-              telephone: "012-224 8811",
+              url: "https://www.empirecuisine.my",
+              telephone: "+60122248811",
+              priceRange: "RM50 - RM200",
+              acceptsReservations: "True",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "157, Jalan Limau Gedong, Kawasan 18",
@@ -120,14 +122,69 @@ export default function RootLayout({
                 postalCode: "41300",
                 addressCountry: "MY",
               },
-              servesCuisine: "Chinese",
-              openingHours: [
-                "Mo-Fr 10:30-14:30",
-                "Mo-Fr 17:30-22:30",
-                "Sa-Su 08:00-14:30",
-                "Sa-Su 17:30-22:30",
+              servesCuisine: ["Chinese", "Dim Sum", "Cantonese"],
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                  ],
+                  opens: "10:30",
+                  closes: "14:30",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                  ],
+                  opens: "17:30",
+                  closes: "22:30",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Saturday", "Sunday"],
+                  opens: "08:00",
+                  closes: "14:30",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Saturday", "Sunday"],
+                  opens: "17:30",
+                  closes: "22:30",
+                },
               ],
-              image: "https://www.empirecuisine.com.my/assets/og-image.jpg",
+              image: "https://www.empirecuisine.my/assets/logo/logo.png",
+              sameAs: [
+                "https://www.facebook.com/profile.php?id=61555584206586&sk=about",
+                "https://www.instagram.com/empirecuisine/",
+                "https://www.youtube.com/@EmpireCuisineRestaurant",
+              ],
+              hasMap:
+                "https://www.google.com/maps/search/?api=1&query=157+Jalan+Limau+Gedong+Kawasan+18+41300+Klang+Selangor",
+              menu: "https://www.empirecuisine.my/menu",
+              potentialAction: {
+                "@type": "ReserveAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://wa.me/601222488811",
+                  actionPlatform: [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform",
+                  ],
+                },
+                result: {
+                  "@type": "Reservation",
+                  name: "Table Reservation",
+                },
+              },
             }),
           }}
         />
