@@ -2,9 +2,9 @@ import Home from "@/components/home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Empire Cuisine | Premium Chinese Restaurant in Klang",
+  title: "Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description:
-    "Empire Cuisine (御膳楼) – Premium Chinese dining in Klang. Private VIP rooms, two-storey banquet hall, dim sum, seafood & signature dishes. Book now!",
+    "Empire Cuisine Restaurant 御膳楼大酒家 | Klang – Premium Chinese dining in Klang. Private VIP rooms, two-storey banquet hall, dim sum, seafood & signature dishes. Book now!",
 
   keywords: [
     "Chinese restaurant Klang",
