@@ -37,6 +37,7 @@ import ImageParentsPackage from "../public/assets/parents package.jpg";
 import { parentsDay } from "@/data/parentsDay";
 import { StaticImageData } from "next/image";
 import { useState } from "react";
+import CarouselMenu from "./carouselMenu";
 import FlipBookMenu from "./bookFlip";
 
 export default function Menu() {
@@ -209,7 +210,12 @@ export default function Menu() {
     <div className="bg-(--primaryBackground)">
       {/* HERO */}
       <div className="min-h-screen w-full relative overflow-hidden items-center justify-center">
-        <Image src={bgImage} alt="bgImage" fill className="object-cover z-0" />
+        <Image
+          src={bgImage}
+          alt="bgImage"
+          fill
+          className="object-cover z-0 object-left md:object-center"
+        />
 
         <div className="relative z-10 flex flex-col items-start justify-center h-screen px-4 sm:px-6 lg:px-8">
           <div
@@ -220,7 +226,7 @@ export default function Menu() {
               Our Menu
             </h1>
             <Image src={ListDecoration} alt="listDecoration" width={350} />
-            <h2 className="text-white md:text-2xl leading-7 md:leading-9">
+            <h2 className="text-gray-800 md:text-[21px] leading-7 md:leading-9">
               A Feast for Every Gathering <br /> Every dish is crafted to
               celebrate family, friendship, and meaningful moments together.
             </h2>
@@ -229,11 +235,11 @@ export default function Menu() {
               <br />
               每一道佳肴，都为团圆而准备。
             </h3>
-            <div className="grid grid-cols-3  md:flex items-baseline justify-between gap-1 md:gap-4 mt-3">
+            <div className="grid grid-cols-3 md:flex items-baseline justify-between gap-1 mt-3">
               {items.map((item) => (
                 <div
                   key={item.id}
-                  className="flex flex-col gap-1 items-center text-white"
+                  className="flex flex-col gap-1 items-center text-gray-800"
                 >
                   <div className="p-2 bg-(--bg2) h-15 w-15 rounded-full flex items-center justify-center">
                     <p className="text-4xl text-(--bg3)">{item.icon}</p>
@@ -244,12 +250,15 @@ export default function Menu() {
               ))}
             </div>
           </div>
+          <div className="px-6 md:px-12 pt-2">
+            <CarouselMenu />
+          </div>
         </div>
       </div>
 
       {/* PROMOTIONS HIGHLIGHT */}
       <div className="pt-10 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="pb-4">
+        <div>
           <FlipBookMenu />
         </div>
         <div

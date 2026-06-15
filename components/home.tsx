@@ -149,7 +149,7 @@ export default function Home() {
               View VIP Rooms
             </Link>
             <Link
-              href="/weddingsAndEvents"
+              href="https://api.whatsapp.com/send/?phone=60122248811&text=Hello+Empire+Cuisine%21+I+would+like+to+make+a+reservation.%0A%0AName%3A+%0APhone%3A+%0ADate%3A+%0ATime%3A+%0ANumber+of+Pax%3A+%0AArea%3A+%0AFood+%2F+Package+Preference%3A+%0ARemarks%3A+&type=phone_number&app_absent=0"
               className="bg-(--bg3) text-white px-5 py-3 text-xs md:text-base rounded-lg hover:bg-amber-700 hover:scale-105 duration-300"
             >
               Enquire for Events
