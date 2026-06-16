@@ -2,7 +2,7 @@ import Gallery from "@/components/gallery";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Premium Chinese Restaurant in Klang",
+  title: "Gallery | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description: "A visual journey through exceptional dining experiences.",
 
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "Gallery | Premium Chinese Restaurant in Klang",
+    title: "Gallery | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description: "A visual journey through exceptional dining experiences.",
     url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",

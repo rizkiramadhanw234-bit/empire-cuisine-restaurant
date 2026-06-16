@@ -2,7 +2,7 @@ import Contact from "@/components/contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Premium Chinese Restaurant in Klang",
+  title: "Contact | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description:
     "We are here to help. Reach out to us for reservations, enquiries, events or special occasions.",
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "Contact | Premium Chinese Restaurant in Klang",
+    title: "Contact | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description: "Reserve your dining experience at 御膳楼 Empire Cuisine.",
     url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",

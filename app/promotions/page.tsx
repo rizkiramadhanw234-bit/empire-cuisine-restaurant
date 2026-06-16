@@ -2,7 +2,8 @@ import Promotions from "@/components/promotions";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Promotions & Packages | Premium Chinese Restaurant in Klang",
+  title:
+    "Promotions & Packages | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description: "Exclusive deals and special packages for every occasion.",
 
   keywords: [
@@ -19,7 +20,8 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "Promotions & Packages | Premium Chinese Restaurant in Klang",
+    title:
+      "Promotions & Packages | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description: "Exclusive deals and special packages for every occasion.",
     url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",

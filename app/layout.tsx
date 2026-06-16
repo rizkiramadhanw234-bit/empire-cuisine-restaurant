@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "Empire Cuisine | Premium Chinese Restaurant in Klang",
+    title: "Empire Cuisine | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description:
       "Elegant Chinese dining with private VIP rooms & banquet halls. Perfect for family dinners, weddings, and corporate events.",
     url: "https://www.empirecuisine.my",

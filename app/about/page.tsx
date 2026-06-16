@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import About from "@/components/about";
 
 export const metadata: Metadata = {
-  title: "About | Premium Chinese Restaurant in Klang",
+  title: "About | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description:
     "Empire Cuisine is a refined Chinese dining destination in Klang, dedicated to delivering exceptional cuisine and warm hospitality. We are the perfect choice for family dining, private gatherings,VIP room dining, and grand banquet celebrations.",
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "About | Premium Chinese Restaurant in Klang",
+    title: "About | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description:
       "Empire Cuisine is a refined Chinese dining destination in Klang, dedicated to delivering exceptional cuisine and warm hospitality. We are the perfect choice for family dining, private gatherings,VIP room dining, and grand banquet celebrations.",
     url: "https://www.empirecuisine.my",

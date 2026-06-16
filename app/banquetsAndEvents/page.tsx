@@ -2,7 +2,7 @@ import WeddingsAndEvents from "@/components/banquetsAndEvents";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Weddings & Events | Premium Chinese Restaurant in Klang",
+  title: "Weddings & Events | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description:
     "Celebrate your most precious moments with exquisite cuisine, elegant venues and impeccable service. At Empire Cuisine, we make every celebration truly unforgettable.",
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "Weddings & Events | Premium Chinese Restaurant in Klang",
+    title: "Weddings & Events | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description:
       "Celebrate your most precious moments with exquisite cuisine, elegant venues and impeccable service. At Empire Cuisine, we make every celebration truly unforgettable.",
     url: "https://www.empirecuisine.my",

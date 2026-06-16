@@ -2,7 +2,7 @@ import VipRooms from "@/components/vipRooms";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "VIP Rooms | Premium Chinese Restaurant in Klang",
+  title: "VIP Rooms | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
   description:
     "Private Spaces. Exclusive Experiences. Elegantly appointed rooms for every special occasion.",
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   // Open Graph
   openGraph: {
-    title: "VIP Rooms | Premium Chinese Restaurant in Klang",
+    title: "VIP Rooms | Empire Cuisine Restaurant 御膳楼大酒家 | Klang",
     description:
       "Private Spaces. Exclusive Experiences. Elegantly appointed rooms for every special occasion.",
     url: "https://www.empirecuisine.my",
