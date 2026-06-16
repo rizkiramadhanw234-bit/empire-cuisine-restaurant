@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "VIP Rooms | Premium Chinese Restaurant in Klang",
     description:
       "Private Spaces. Exclusive Experiences. Elegantly appointed rooms for every special occasion.",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {

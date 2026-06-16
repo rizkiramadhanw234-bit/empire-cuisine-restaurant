@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Empire Cuisine | Premium Chinese Restaurant in Klang",
     description:
       "Empire Cuisine (御膳楼) – Premium Chinese dining in Klang. Private VIP rooms, two-storey banquet hall, dim sum, seafood & signature dishes. Book now!",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "About | Premium Chinese Restaurant in Klang",
     description:
       "Empire Cuisine is a refined Chinese dining destination in Klang, dedicated to delivering exceptional cuisine and warm hospitality. We are the perfect choice for family dining, private gatherings,VIP room dining, and grand banquet celebrations.",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {

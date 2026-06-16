@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Promotions & Packages | Premium Chinese Restaurant in Klang",
     description: "Exclusive deals and special packages for every occasion.",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {

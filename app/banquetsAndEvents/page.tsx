@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Weddings & Events | Premium Chinese Restaurant in Klang",
     description:
       "Celebrate your most precious moments with exquisite cuisine, elegant venues and impeccable service. At Empire Cuisine, we make every celebration truly unforgettable.",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {

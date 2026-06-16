@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Our Menu | Premium Chinese Restaurant in Klang",
     description:
       "Savour authentic Chinese cuisine crafted with premium ingredients and timeless culinary tradition.",
-    url: "https://www.empirecuisine.com.my",
+    url: "https://www.empirecuisine.my",
     siteName: "Empire Cuisine",
     images: [
       {
