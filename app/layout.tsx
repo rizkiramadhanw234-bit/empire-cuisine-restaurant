@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "Empire Cuisine Restaurant 御膳楼大酒家 | Klang – Premium Chinese dining in Klang. Private VIP rooms, two-storey banquet hall, dim sum, seafood & signature dishes. Book now!",
   icons: {
-    icon: "/assets/logo/logo.png",
+    icon: "/logo.png",
   },
 
   keywords: [
