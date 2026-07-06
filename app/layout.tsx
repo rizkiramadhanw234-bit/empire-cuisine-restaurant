@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AOSProvider from "@/components/AosProvider";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -187,6 +188,11 @@ export default function RootLayout({
               },
             }),
           }}
+        />
+        <Script
+          src="https://aeo.dck-consulting.com/cdn/agent.js?v=3"
+          data-key="C-5EUUbs0E7CC1tXCRUa6ihYjAl8PsZr8v98BFGufR8"
+          strategy="beforeInteractive"
         />
       </head>
       <body className="min-h-full flex flex-col">
