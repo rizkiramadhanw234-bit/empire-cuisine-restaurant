@@ -190,7 +190,7 @@ export default function RootLayout({
           }}
         />
         <Script
-          src="https://aeo.dck-consulting.com/cdn/agent.js?v=3"
+          src="https://dckaeo.com/cdn/agent.js?v=3"
           data-key="C-5EUUbs0E7CC1tXCRUa6ihYjAl8PsZr8v98BFGufR8"
         />
       </head>
