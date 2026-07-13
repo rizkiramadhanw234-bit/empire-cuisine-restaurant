@@ -83,7 +83,7 @@ export default function Menu() {
       chinese: "RM1++ 超值加购晚餐",
       image: RM1,
       download:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM1%2B%2B-Menu/RM1++.Special.Promotion.Package.RM1++.png",
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM1%2B%2B-Menu/new.jpg",
     },
     {
       id: 2,
@@ -99,7 +99,7 @@ export default function Menu() {
       chinese: "RM21.80++ 超值套餐",
       image: RM21Image,
       download:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM21.80%2B%2B_Super-value-package/RM21.80++_Super-value-package.jpeg",
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/RM21.80%2B%2B_Super-value-package/RM21.jpg",
     },
     {
       id: 4,
@@ -131,7 +131,7 @@ export default function Menu() {
       chinese: "商务配套",
       image: businessImage,
       download:
-        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/Business-Events-Meals/Business-Events-Meals.jpeg",
+        "https://github.com/rizkiramadhanw234-bit/empire-cuisine-restaurant/releases/download/Business-Events-Meals/VIP.jpg",
     },
     {
       id: 8,
