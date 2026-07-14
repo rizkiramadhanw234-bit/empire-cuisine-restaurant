@@ -194,6 +194,10 @@ export default function RootLayout({
           data-key="C-5EUUbs0E7CC1tXCRUa6ihYjAl8PsZr8v98BFGufR8"
           strategy="afterInteractive"
         />
+        <meta
+          name="facebook-domain-verification"
+          content="8niiw2l5s8ly80lyz69fhfzwhnbj0h"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
