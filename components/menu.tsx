@@ -138,7 +138,7 @@ export default function Menu() {
       name: "Wedding Packages",
       chinese: "婚宴配套",
       image: weddingImage,
-      download: "/weddingsAndEvents",
+      download: "/banquetsAndEvents",
     },
   ];
 
