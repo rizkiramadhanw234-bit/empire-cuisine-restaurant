@@ -164,13 +164,13 @@ export default function Menu() {
     },
     {
       id: 4,
-      name: "“Man Cheong” Chicken with rice ",
+      name: "“Man Cheong” Chicken with Rice ",
       chinese: " 驰名文昌鸡饭",
       image: dish4,
     },
     {
       id: 5,
-      name: "Braised Assorted Dried seafood",
+      name: "Braised Assorted Dried Seafood",
       chinese: "红烧海味五宝拼",
       image: dish5,
     },
