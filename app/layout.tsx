@@ -191,7 +191,7 @@ export default function RootLayout({
         />
         <Script
           src="https://dckaeo.com/cdn/agent.js?v=3"
-          data-key="C-5EUUbs0E7CC1tXCRUa6ihYjAl8PsZr8v98BFGufR8"
+          data-key="Bhoj49wExe1tRcZbXDBSovl03ZpD_mM1qpk1BM0h6tE"
           strategy="afterInteractive"
         />
       </head>
