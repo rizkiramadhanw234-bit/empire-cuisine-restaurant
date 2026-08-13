@@ -10,21 +10,21 @@ export default function VipCards() {
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250945/V1_VIP_Room_1_i5ck5m.mp4",
+        "https://drive.google.com/file/d/1dbLiQAVd609mZIqzWOUP48wBYpiPmYHN/preview",
     },
     {
       id: "V2",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Birthday Celebration", "Business Dining"],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250946/V2_VIP_Room_2_th8tze.mp4",
+        "https://drive.google.com/file/d/1AVuFh3tazE_58pMFZaHOk7wTzTXvLKtu/preview",
     },
     {
       id: "V3",
       hasWashroom: true,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250946/V3_VIP_Room_3_egnjvv.mp4",
+        "https://drive.google.com/file/d/1lOmEqxU4iB3eY0h5vM0q525MMImIn0Ow/preview",
     },
     {
       id: "V5",
@@ -35,28 +35,28 @@ export default function VipCards() {
         "Private Gathering",
       ],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250947/V5_VIP_Room_5_pafqzn.mp4",
+        "https://drive.google.com/file/d/1UMdI-I6QcjOprOpa5xAVQSd-bF3hrzTL/preview",
     },
     {
       id: "V6",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250947/V6_VIP_Room_6_erd7eq.mp4",
+        "https://drive.google.com/file/d/1sIgq7PvxwDy_w-2EkKN6QVSBlO3FAMsT/preview",
     },
     {
       id: "V7",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Birthday Celebration", "Business Dining"],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250949/V7_VIP_Room_7_dlvnjm.mp4",
+        "https://drive.google.com/file/d/1yo8JnCUXJuixWdPdHwbcyI_HTFvdSDk-/preview",
     },
     {
       id: "V9",
       hasWashroom: false,
       suitableFor: ["Family Dinner", "Business Dining", "Private Gathering"],
       video:
-        "https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250955/V9_VIP_Room_9_gxfnwy.mp4",
+        "https://drive.google.com/file/d/1nNOLhFY7p6WfDSIzlS1heOVxZIQhMK9R/preview",
     },
   ];
 
@@ -70,16 +70,13 @@ export default function VipCards() {
               className="border border-(--bg3) rounded-2xl p-5 flex flex-col gap-3 hover:shadow-md hover:border-(--bg2) transition duration-300"
               data-aos="zoom-in"
             >
-              <video
-                className="h-full w-full object-cover rounded-2xl"
-                src={room.video}
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-                preload="none"
-              />
+              <div className="relative w-full h-40 aspect-video rounded-2xl overflow-hidden">
+                <iframe
+                  className="absolute top-1/4 left-1/2 w-[140%] h-[140%] -translate-x-1/2 -translate-y-1/2 border-0"
+                  src={room.video}
+                  allow="autoplay"
+                />
+              </div>
 
               <div className="flex items-center justify-between">
                 <div className="bg-(--bg2) text-white font-bold text-xl px-3 py-1 rounded-lg">

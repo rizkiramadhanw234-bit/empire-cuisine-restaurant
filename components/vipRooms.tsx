@@ -151,28 +151,25 @@ export default function VipRooms() {
               </p>
             </div>
             <div className="w-full md:w-130 md:h-70 h-60 flex items-center justify-center shrink-0">
-              <video
+              <iframe
+                src="https://drive.google.com/file/d/1a5IzYFemV_11BpIpjn7hjuolN-iOMxcN/preview"
+                width="640"
+                height="480"
                 className="w-full h-full rounded-2xl object-cover shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
-                src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780250953/VVIP8_VVIP_Room_8_r59v0k.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
               />
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
             <Link
-              href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20VVIP8%20room`}
+              href={`https://wa.me/15559202436?text=I%20would%20like%20to%20enquire%20about%20VVIP8%20room`}
               target="_blank"
               className="px-5 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm text-center"
             >
               WhatsApp Enquiry
             </Link>
             <Link
-              href="tel:+60122248811"
+              href="tel:+15559202436"
               className="px-5 py-3 border border-(--bg2) text-(--bg2) rounded-lg hover:bg-(--bg2)/10 hover:scale-105 transition duration-300 text-sm text-center"
             >
               Call Us
@@ -221,7 +218,7 @@ export default function VipRooms() {
           data-aos="fade-up"
         >
           <Link
-            href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20VIP%20Rooms`}
+            href={`https://wa.me/15559202436?text=I%20would%20like%20to%20enquire%20about%20VIP%20Rooms`}
             target="_blank"
             className="px-6 py-3 bg-(--bg2) text-white rounded-lg hover:bg-red-800 hover:scale-105 transition duration-300 text-sm md:text-base text-center"
           >

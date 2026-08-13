@@ -103,7 +103,7 @@ export default function Footer() {
             </span>
           </div>
           <Link
-            href="https://wa.me/601222488811"
+            href="https://wa.me/15559202436"
             target="_blank"
             className="inline-flex items-center gap-2 bg-transparent border border-(--bg2) text-(--bg2) text-xs uppercase tracking-[2px] py-2.5 px-4 hover:bg-(--bg3) hover:text-white transition-all duration-300 rounded-sm"
           >
@@ -153,7 +153,7 @@ export default function Footer() {
                 <LiaFacebook size={30} />
               </Link>
               <Link
-                href="https://www.instagram.com/empirecuisine/"
+                href="https://www.facebook.com/EmpireCuisineRestaurant?locale=zh_CN"
                 target="_blank"
               >
                 <FaInstagram size={24} />

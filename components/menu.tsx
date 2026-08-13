@@ -467,15 +467,11 @@ export default function Menu() {
               Download Menu
             </Link>
           </div>
-          <div className="w-70 h-full hover:scale-105 transition duration-300">
-            <video
-              src="https://res.cloudinary.com/dqp0y3avg/video/upload/v1780343617/parents_day_v8hqkp.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              controls
-              className="rounded-2xl"
+          <div className="w-70 aspect-9/16 rounded-2xl overflow-hidden hover:scale-105 transition duration-300 relative">
+            <iframe
+              src="https://drive.google.com/file/d/1R_tAXHpNt1VByKpwRD7JH9u9ImfBAr_I/preview"
+              className="absolute top-1/2 left-1/2 w-[140%] h-[140%] -translate-x-1/2 -translate-y-1/2 border-0"
+              allow="autoplay"
             />
           </div>
         </div>

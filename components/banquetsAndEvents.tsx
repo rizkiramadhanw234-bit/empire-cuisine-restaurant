@@ -212,7 +212,7 @@ export default function WeddingsAndEvents() {
             </p>
           </div>
           <Link
-            href={`https://wa.me/60122248811?text=I%20would%20like%20to%20enquire%20about%20wedding%20arrangements`}
+            href={`https://wa.me/15559202436?text=I%20would%20like%20to%20enquire%20about%20wedding%20arrangements`}
             target="_blank"
             className="px-6 py-3 bg-(--bg3) text-white rounded-lg hover:bg-amber-700 hover:scale-105 transition duration-300 text-sm font-semibold whitespace-nowrap shrink-0"
           >
